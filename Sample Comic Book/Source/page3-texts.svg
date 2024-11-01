@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   width="994"
+   height="1528"
+   sodipodi:docname="page3.jpg">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="744"
+     id="namedview4"
+     showgrid="true"
+     inkscape:zoom="0.68848167"
+     inkscape:cx="688.44557"
+     inkscape:cy="372.34937"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2987" />
+  </sodipodi:namedview>
+  <image
+     width="994"
+     height="1528"
+     xlink:href="file:///C:/ROBO/ACBF/trunk/Sample%20Comic%20Book/Source/page3.jpg"
+     id="image10"
+     x="0"
+     y="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 107,105 4,-4 235,0 4,4 0,43 -4,3 -236,0 -4,-5 0,-40 z"
+     id="path2989"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 616,286 6,-6 162,1 3,4 0,41 -5,5 -161,0 -5,-5 z"
+     id="path2991"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 142,492 6,-5 144,0 5,5 0,43 -5,4 -146,-1 -5,-6 z"
+     id="path2993"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 589,772 7,-6 215,0 5,7 0,39 -4,6 -218,0 -5,-5 z"
+     id="path2995"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 103,871 7,-6 198,0 7,7 0,53 -4,6 -204,0 -4,-5 z"
+     id="path2997"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 288,1250 6,-6 53,0 4,5 0,32 -4,4 -54,0 -5,-6 z"
+     id="path2999"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 385,900 6,-7 162,0 5,6 0,41 -5,4 -164,0 -4,-6 z"
+     id="path3001"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 483,1414 4,-4 1,-1 158,0 6,6 0,19 -9,7 -153,0 -7,-6 z"
+     id="path3003"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 752,1011 6,-6 151,0 6,5 0,20 -4,5 -154,0 -5,-5 z"
+     id="path3005"
+     inkscape:connector-curvature="0" />
+</svg>

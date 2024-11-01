@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.fictionbook-lib.org/xml/acbf/1.0"
+           xmlns="http://www.fictionbook-lib.org/xml/acbf/1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:element name="ACBF">
+        <xs:annotation>
+            <xs:documentation>Root element</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="meta-data">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="book-info">
+                                <xs:annotation>
+                                    <xs:documentation>Information about this particular (xml) document</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="author" type="authorType" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Author(s) of this comic book</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="book-title" type="textFieldType" minOccurs="0">
+                                            <xs:annotation>
+                                                <xs:documentation>Book title</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="genre" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Genre of this book, with the optional match percentage</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="genreType">
+                                                        <xs:attribute name="match" type="xs:integer" use="optional" default="100"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="characters" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Characters appearing in the comic book</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                              <xs:sequence>
+                                                <xs:element name="name" type="textFieldType" maxOccurs="unbounded">
+                                                  <xs:annotation>
+                                                    <xs:documentation>Character's name</xs:documentation>
+                                                  </xs:annotation>
+                                                </xs:element>
+                                              </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="annotation" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Annotation</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                              <xs:sequence>
+                                                <xs:element name="p" type="textFieldType" maxOccurs="unbounded">
+                                                    <xs:annotation>
+                                                      <xs:documentation>Paragraph</xs:documentation>
+                                                    </xs:annotation>
+                                                </xs:element>
+                                              </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="keywords" type="textFieldType" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Keywords</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="coverpage" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Coverpage image</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                              <xs:sequence>
+                                                <xs:element name="image" type="imageType" maxOccurs="unbounded"/>
+                                              </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="languages" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Language layers present in the document</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                              <xs:sequence>
+                                                <xs:element name="text-layer" type="textLayerType" maxOccurs="unbounded">
+                                                  <xs:annotation>
+                                                    <xs:documentation>Text-layer definition</xs:documentation>
+                                                  </xs:annotation>
+                                                </xs:element>
+                                              </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="sequence" type="sequenceType" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Any sequences this comic book might be part of</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="databaseref" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Various references to comic book databases.</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                              <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                  <xs:attribute name="dbname" type="xs:string" use="optional"/>
+                                                  <xs:attribute name="type" type="xs:string" use="optional"/>
+                                                </xs:extension>
+                                              </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="publish-info" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Information about publisher, publish date, license etc.</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="publisher" type="textFieldType" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Comic book publisher</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="publish-date" type="dateType" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Date of publication</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="city" type="textFieldType" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>City where the comic book was published</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="isbn" type="textFieldType" minOccurs="0" maxOccurs="1"/>
+                                        <xs:element name="license" type="textFieldType" minOccurs="0" maxOccurs="1"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="document-info" minOccurs="0" maxOccurs="1">
+                                <xs:annotation>
+                                    <xs:documentation>Information about the particular ACBF document</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="author" type="authorType" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Author(s) of this particular document</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="creation-date" type="dateType"  minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Date of document creation</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="source" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Description of source upon which this ACBF document is based if it's a conversion</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                              <xs:sequence>
+                                                <xs:element name="p" type="textFieldType" maxOccurs="unbounded">
+                                                    <xs:annotation>
+                                                      <xs:documentation>Paragraph</xs:documentation>
+                                                    </xs:annotation>
+                                                </xs:element>
+                                              </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="id" type="xs:token" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>this is a unique identifier for a document. this must not change unless you make substantial updates to the document</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>                                        
+                                        <xs:element name="version" type="xs:float" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Document version, in free format, should be incremented if the document is changed and re-released to the public</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="history" minOccurs="0" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Document history or versioning</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                              <xs:sequence>
+                                                <xs:element name="p" type="textFieldType" maxOccurs="unbounded">
+                                                    <xs:annotation>
+                                                      <xs:documentation>Paragraph</xs:documentation>
+                                                    </xs:annotation>
+                                                </xs:element>
+                                              </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="body" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Main content of the comic book</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="page" minOccurs="1" maxOccurs="unbounded">
+                                <xs:annotation>
+                                    <xs:documentation>Comic book page.</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title" type="textFieldType" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Page title.</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="image" type="imageType" minOccurs="1" maxOccurs="1">
+                                            <xs:annotation>
+                                                <xs:documentation>Background image.</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element name="text-layer" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Text-layer drown over background image.</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                              <xs:sequence>
+                                                <xs:element name="text-area" minOccurs="1" maxOccurs="unbounded">
+                                                    <xs:annotation>
+                                                        <xs:documentation>Text area on a particular comic page inside a given text-layer.</xs:documentation>
+                                                    </xs:annotation>
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="p" type="pType" minOccurs="1" maxOccurs="unbounded">
+                                                            <xs:annotation>
+                                                                <xs:documentation>Paragraph.</xs:documentation>
+                                                            </xs:annotation>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="points" type="xs:string" use="required"/>
+                                                      <xs:attribute name="bgcolor" type="xs:string" use="optional"/>
+                                                      <xs:attribute name="text-rotation" use="optional">
+                                                        <xs:simpleType>
+                                                          <xs:restriction base="xs:integer">
+                                                            <xs:minInclusive value="0"/>
+                                                            <xs:maxInclusive value="360"/>
+                                                          </xs:restriction>
+                                                        </xs:simpleType>
+                                                      </xs:attribute>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                              </xs:sequence>
+                                              <xs:attribute name="lang" type="xs:language" use="required"/>
+                                              <xs:attribute name="bgcolor" type="xs:string" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="frame" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:annotation>
+                                                <xs:documentation>Frame/panel definition on particular comic book page.</xs:documentation>
+                                            </xs:annotation>
+                                            <xs:complexType>
+                                              <xs:attribute name="points" type="xs:string" use="required"/>
+                                              <xs:attribute name="bgcolor" type="xs:string" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="bgcolor" type="xs:string" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="bgcolor" type="xs:string" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="references" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>References section. Links here from body text-area elements.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="reference" minOccurs="1" maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>Particular reference</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="p" type="pType" minOccurs="1" maxOccurs="unbounded">
+                                    <xs:annotation>
+                                        <xs:documentation>Paragraph.</xs:documentation>
+                                    </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="id" type="xs:string" use="required"/>
+                            </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                </xs:element>               
+                <xs:element name="data" minOccurs="0" maxOccurs="unbounded">
+                    <xs:annotation>
+                        <xs:documentation>Data section.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="binary" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                                <xs:documentation>Any binary data that is required for the presentation of the comic book in base64 format. Currently only images are used.</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:base64Binary">
+                                        <xs:attribute name="content-type" type="xs:string" use="required"/>
+                                        <xs:attribute name="id" type="xs:string" use="required"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="authorType">
+        <xs:annotation>
+            <xs:documentation>Information about a single author</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+            <xs:sequence>
+                <xs:element name="first-name" type="textFieldType"/>
+                <xs:element name="middle-name" type="textFieldType" minOccurs="0"/>
+                <xs:element name="last-name" type="textFieldType"/>
+                <xs:element name="nickname" type="textFieldType" minOccurs="0"/>
+                <xs:element name="home-page" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:sequence>
+                <xs:element name="nickname" type="textFieldType"/>
+                <xs:element name="home-page" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="email" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:choice>
+        <xs:attribute name="activity" use="optional">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+                  <xs:enumeration value="Writer"/>
+                  <xs:enumeration value="Adapter"/>
+                  <xs:enumeration value="Artist"/>
+                  <xs:enumeration value="Penciller"/>
+                  <xs:enumeration value="Inker"/>
+                  <xs:enumeration value="Colorist"/>
+                  <xs:enumeration value="Letterer"/>
+                  <xs:enumeration value="CoverArtist"/>
+                  <xs:enumeration value="Editor"/>
+                  <xs:enumeration value="Translator"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="lang" type="xs:language"/>
+    </xs:complexType>
+    <xs:simpleType name="genreType">
+        <xs:annotation>
+            <xs:documentation>List of valid genres</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:token">
+            <xs:enumeration value="science_fiction"/>
+            <xs:enumeration value="fantasy"/>
+            <xs:enumeration value="adventure"/>
+            <xs:enumeration value="horror"/>
+            <xs:enumeration value="mystery"/>
+            <xs:enumeration value="crime"/>
+            <xs:enumeration value="military"/>
+            <xs:enumeration value="real_life"/>
+            <xs:enumeration value="superhero"/>
+            <xs:enumeration value="humor"/>
+            <xs:enumeration value="western"/>
+            <xs:enumeration value="manga"/>
+            <xs:enumeration value="politics"/>
+            <xs:enumeration value="caricature"/>
+            <xs:enumeration value="sports"/>
+            <xs:enumeration value="history"/>
+            <xs:enumeration value="biography"/>
+            <xs:enumeration value="education"/>
+            <xs:enumeration value="computer"/>
+            <xs:enumeration value="religion"/>
+            <xs:enumeration value="romance"/>
+            <xs:enumeration value="children"/>
+            <xs:enumeration value="non-fiction"/>
+            <xs:enumeration value="adult"/>
+            <xs:enumeration value="alternative"/>
+            <xs:enumeration value="other"/>
+        </xs:restriction>
+    </xs:simpleType> 
+    <xs:complexType name="textFieldType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="lang" type="xs:language"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="dateType">
+        <xs:annotation>
+            <xs:documentation>A human readable date, maybe not exact, with an optional computer readable variant</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="value" type="xs:date" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="imageType">
+        <xs:annotation>
+            <xs:documentation>An empty element with an image name as an attribute</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="href" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="pType" mixed="true">
+        <xs:annotation>
+            <xs:documentation>A basic paragraph, may include simple formatting inside</xs:documentation>
+        </xs:annotation>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="strong" type="xs:string"/>
+            <xs:element name="emphasis" type="xs:string"/>
+            <xs:element name="commentary" type="xs:string"/>
+            <xs:element name="a" type="linkType"/>
+            <xs:element name="strikethrough" type="xs:string"/>
+            <xs:element name="sub" type="xs:string"/>
+            <xs:element name="sup" type="xs:string"/>
+            <xs:element name="code" type="xs:string"/>
+            <xs:element name="inverted" type="xs:string"/>
+        </xs:choice>
+        <xs:attribute name="lang" type="xs:language"/>
+    </xs:complexType>
+    <xs:complexType name="linkType" mixed="true">
+        <xs:annotation>
+            <xs:documentation>Generic hyperlinks. Cannot be nested. References should be implemented by links referring to references section</xs:documentation>
+        </xs:annotation>
+        <xs:attribute name="href" type="xs:string" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="sequenceType">
+        <xs:annotation>
+            <xs:documentation>Book sequences</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="lang" type="xs:language"/>
+                <xs:attribute name="title" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="textLayerType">
+        <xs:annotation>
+            <xs:documentation>Text layers present in particular ACBF document.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="lang" type="xs:language" use="required"/>
+                <xs:attribute name="show" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

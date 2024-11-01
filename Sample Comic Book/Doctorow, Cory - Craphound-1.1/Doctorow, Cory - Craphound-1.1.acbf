@@ -1,0 +1,2096 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ACBF xmlns="http://www.acbf.info/xml/acbf/1.1">
+<style type="text/css">
+   text-area {font-family: "fantasquesansmono-regular.otf", "Dejavu Sans", Arial, Sans;
+      font-style: normal;
+      font-stretch: condensed}
+   text-area[type=code] {font-family: FreeMonoBold.otf, "Dejavu Sans Mono", "Courier New", Mono, Sans;
+         font-style: normal;}
+   text-area[type=sign] {font-family: caveatbrush-regular.ttf, "Dejavu Sans Mono", "Courier New", Mono, Sans;
+         font-style: normal;}
+   text-area[type=heading] {font-family: caveatbrush-regular.ttf, "Dejavu Sans Mono", "Courier New", Mono, Sans;
+         font-style: normal;}
+   text-area[type=formal] {font-family: "LiberationSans-Regular.ttf", "Dejavu Sans", Arial, Sans;
+      font-style: normal;
+      font-stretch: condensed}
+   emphasis {font-family: fantasquesansmono-bolditalic.otf, "Dejavu Sans", Arial, Sans;
+             font-style: oblique; 
+             font-weight: bold;}
+   strong {font-family: fantasquesansmono-bold.otf, "Dejavu Sans", Arial, Sans;
+           font-style: normal; 
+           font-weight: bold;}
+ </style>
+ <meta-data>
+  <book-info>
+   <author activity="Writer">
+    <first-name>Cory</first-name>
+    <last-name>Doctorow</last-name>
+    <home-page>http://craphound.com</home-page>
+    <email>doctorow@craphound.com</email>
+   </author>
+   <author activity="Adapter">
+    <first-name>Dara</first-name>
+    <last-name>Naraghi</last-name>
+   </author>
+   <author activity="Artist">
+    <first-name>Paul</first-name>
+    <last-name>McCaffrey</last-name>
+   </author>
+   <author activity="Letterer">
+    <first-name>Robbie</first-name>
+    <last-name>Robbins</last-name>
+   </author>
+   <author activity="CoverArtist">
+    <first-name>Paul</first-name>
+    <last-name>Pope</last-name>
+   </author>
+   <author activity="Editor">
+    <first-name>Tom</first-name>
+    <last-name>Waltz</last-name>
+   </author>
+   <author activity="Translator" lang="sk">
+    <first-name>Róbert</first-name>
+    <last-name>Pastierovič</last-name>
+   </author>
+   <book-title lang="sk">Craphound (Zberač)</book-title>
+   <book-title lang="en">Craphound</book-title>
+   <genre match="100">science_fiction</genre>
+   <characters>
+    <name>Craphound</name>
+    <name>Jerry Abington</name>
+    <name>Scott</name>
+   </characters>
+   <annotation lang="sk">
+     <p>Toto je tretia časť komiksovej kolekcie IDW "Cory Doctorow's Futuristic Tales of the Here and Now," ktorá obsahuje šesť komiksov, ktoré sú adaptáciami ocenených Doctorowových sci-fi príbehov.</p>
+	 <p>Táto tretia časť obsahuje komiksový príbeh nazvaný Craphound (Zberač) o zberačovi starožitných vecí a jeho mimozemskom priateťovi.</p>
+   </annotation>
+   <annotation lang="en">
+     <p>This is the third part of the IDW comic collection "Cory Doctorow's Futuristic Tales of the Here and Now," which collects the six-issue comic of adaptations from Doctorow's award-winning science fiction stories.</p>
+	 <p>This third part contains the Craphound comic story.</p>
+   </annotation>
+   <keywords>Craphound, science fiction, comic book, Cory Doctorow</keywords>
+   <coverpage>
+    <image href="cover.jpg"/>
+   </coverpage>
+   <languages>
+    <text-layer lang="en" show="False"/>
+    <text-layer lang="en" show="True"/>
+    <text-layer lang="sk" show="True"/>
+   </languages>
+   <sequence title="Cory Doctorow's Futuristic Tales of the Here and Now">3</sequence>
+   <content-rating type="Marvel Rating System">T</content-rating>
+  </book-info>
+  <publish-info>
+   <publisher>Róbert Pastierovič</publisher>
+   <publish-date value="2012-05-01">2012</publish-date>
+   <city>Bratislava, Slovakia</city>
+   <isbn>N/A</isbn>
+   <license>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 United States</license>
+  </publish-info>
+  <document-info>
+   <author>
+    <nickname>jrw</nickname>
+   </author>
+   <creation-date value="2012-05-01">May 1st 2012</creation-date>
+   <source>
+     <p>Cory Doctorow's Futuristic Tales of the Here and Now</p>
+     <p>IDW Publishing (www.idwpublishing.com) May 2008</p>
+     <p>ISBN: 978-1-60010-172-4</p>
+     <p>http://www.archive.org/details/CoryDoctorowsFuturisticTalesOfTheHereAndNow</p>
+   </source>
+   <id>jrw-doctorow-craphound-0123456789</id>
+   <version>0.9</version>
+   <history>
+     <p>v 0.1 – Initial Conversion</p>
+     <p>v 0.2 – Corrected frames on page 2</p>
+     <p>v 0.3 – added pages up to page 16</p>
+     <p>v 0.4 – all comic book pages added with frame definition</p>
+     <p>v 0.5 – added source definition according to the latest specs</p>
+     <p>v 0.6 – added first text layers and some translation</p>
+     <p>v 0.7 – all english text layers are included, plus slovak translation up to page 15</p>
+     <p>v 0.8 - slovak translation finished</p>
+     <p>v 0.9 - setup for two english layers (one with original background and lettering, the other rendered by application)</p>
+     <p>v 1.0 - modified for version 1.1 of specifications</p>
+   </history>
+  </document-info>
+ </meta-data>
+ <body bgcolor="#ffffff">
+  <page>
+   <title lang="en">Old Lady</title>
+   <title lang="sk">Stará pani</title>
+   <image href="page1.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="63,61 68,57 374,57 379,62 379,93 374,97 67,97 63,93" type="commentary">
+       <p>CRAPHOUND<a href="#ref_001">[*]</a> HAD <emphasis>WICKED</emphasis> YARD-SALE KARMA FOR A ROTTEN, FILTHY ALIEN BASTARD.</p>
+     </text-area>
+     <text-area points="194,386 201,380 471,380 477,385 477,416 473,420 198,420 194,415" type="commentary">
+       <p>HE WAS TOO GOOD AT IT FOR ME NOT TO LIKE HIM. <emphasis>RESPECT</emphasis> HIM, ANYWAY.</p>
+     </text-area>
+     <text-area points="521,64 528,58 827,58 831,63 831,85 827,89 525,88 521,83" type="commentary">
+       <p>BUT THEN HE FOUND THE <emphasis>COWBOY TRUNK.</emphasis></p>
+     </text-area>
+     <text-area points="541,381 544,377 807,377 810,380 810,424 806,428 545,428 541,424" type="commentary">
+       <p>IT WAS TWO MONTH'S RENT TO ME AND NOTHING BUT SOME SQUIRRELLY ALIEN KITCH-FETISH TO CRAPHOUND.</p>
+     </text-area>
+     <text-area points="43,579 49,573 246,573 252,578 252,601 248,605 46,604 43,601" type="commentary">
+       <p>SO I DID THE UNTHINKABLE.</p>
+     </text-area>
+     <text-area points="183,670 188,665 433,665 438,671 438,702 432,707 188,707 183,701" type="commentary">
+       <p>I VIOLATED THE <emphasis>CODE.</emphasis> I GOT INTO A BIDDING WAR WITH A BUDDY.</p>
+     </text-area>
+     <text-area points="798,471 804,467 924,467 929,472 929,526 923,531 803,531 798,526" bgcolor="#ffffff" type="code">
+       <p>TURN THERE! TURN NOW, JERRY, NOW, TURN THERE!</p>
+     </text-area>
+     <text-area points="78,1063 83,1058 392,1058 398,1063 398,1096 393,1100 83,1100 78,1095" type="commentary">
+       <p>AND WHEN CRAPHOUND GETS <emphasis>THAT</emphasis> EXCITED. IT'S A SIGN THAT HE'S SPOTTED A RICH VEIN.</p>
+     </text-area>
+     <text-area points="373,1147 373,1142 378,1136 385,1133 399,1131 404,1129 441,1129 444,1131 453,1132 459,1134 465,1136 469,1140 469,1148 466,1152 461,1155 456,1157 451,1158 441,1159 437,1161 405,1161 402,1159 390,1158 381,1155 376,1152" bgcolor="#ffffff">
+       <p>HOOO-EEE!<a href="#ref_002">[*]</a></p>
+     </text-area>
+     <text-area points="585,1061 591,1055 909,1055 914,1059 914,1082 909,1086 591,1086 585,1080" type="commentary">
+       <p>MAN, ONTARIO IS <emphasis>BEAUTIFUL</emphasis> IN THE SUMMER.</p>
+     </text-area>
+     <text-area points="803,1289 928,1296 888,1518 755,1503" bgcolor="#e8f335" text-rotation="355" type="sign">
+       <p>EAST MUSKOSA VOLUNTARY FIRE DEPARTMENT LADIES AUXILIARY RUMMAGE SALE SATURDAY 28TH JUNE</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="63,61 68,57 374,57 379,62 379,93 374,97 67,97 63,93" type="commentary">
+       <p>CRAPHOUND MAL AKO ZHNITÝ, ŠPINAVÝ, MIMOZEMSKÝ PARCHANT <emphasis>HRIEŠNU</emphasis> KARMU OBCHODNÍKA.</p>
+     </text-area>
+     <text-area points="194,386 201,380 471,380 477,385 477,416 473,420 198,420 194,415" type="commentary">
+       <p>BOL V TOM VEĽMI DOBRÝ NA TO, ABY SOM HO NEMAL RÁD. <emphasis>REŠPEKTOVAL</emphasis> SOM HO KAŽDOPÁDNE.</p>
+     </text-area>
+     <text-area points="521,64 528,58 827,58 831,63 831,85 827,89 525,88 521,83" type="commentary">
+       <p>ALE POTOM NAŠIEL <emphasis>KOVBOJSKÚ TRUHLICU.</emphasis></p>
+     </text-area>
+     <text-area points="541,381 544,377 807,377 810,380 810,424 806,428 545,428 541,424" type="commentary">
+       <p>PRE MŇA TO ZNAMENALO DVOJMESAČNÝ NÁJOM A PRE CRAPHOUNDA NIČ, LEN POTRHLÝ GÝČOVÝ FETIŠ.</p>
+     </text-area>
+     <text-area points="43,579 49,573 246,573 252,578 252,601 248,605 46,604 43,601" type="commentary">
+       <p>A TAK SOM SPRAVIL NIEČO NEMYSLITEĽNÉ.</p>
+     </text-area>
+     <text-area points="183,670 188,665 433,665 438,671 438,702 432,707 188,707 183,701" type="commentary">
+       <p>PORUŠIL SOM <emphasis>NEPÍSANÝ ZÁKON.</emphasis> DOSTAL SOM SA DO LICITAČNEJ VOJNY S KÁMOŠOM.</p>
+     </text-area>
+     <text-area points="798,471 804,467 924,467 929,472 929,526 923,531 803,531 798,526" bgcolor="#ffffff" type="code">
+       <p>ZABOČ SEM! ZABOČ TERAZ, JERRY, TERAZ, ZABOČ SEM!</p>
+     </text-area>
+     <text-area points="78,1063 83,1058 392,1058 398,1063 398,1096 393,1100 83,1100 78,1095" type="commentary">
+       <p>A KEĎ SA CRAPHOUND <emphasis>TAKTO</emphasis> VZRUŠÍ, JE TO ZNAMENIE, ŽE ZACÍTIL NEJAKÝ VEĽKÝ POKLAD.</p>
+     </text-area>
+     <text-area points="373,1147 373,1142 378,1136 385,1133 399,1131 404,1129 441,1129 444,1131 453,1132 459,1134 465,1136 469,1140 469,1148 466,1152 461,1155 456,1157 451,1158 441,1159 437,1161 405,1161 402,1159 390,1158 381,1155 376,1152" bgcolor="#ffffff">
+       <p>UUUU-AAA!</p>
+     </text-area>
+     <text-area points="585,1061 591,1055 909,1055 914,1059 914,1082 909,1086 591,1086 585,1080" type="commentary">
+       <p>ČLOVEČE, ONTARIO JE V LETE TAK <emphasis>KRÁSNE.</emphasis></p>
+     </text-area>
+     <text-area points="803,1289 928,1296 888,1518 755,1503" bgcolor="#e8f335" text-rotation="355" type="sign">
+       <p>DOBROVOĽNÍCKE HASIČSKÉ ZDRUŽENIE. EAST MUSKOSA. ŽENSKÝ SPOLOK. PREDAJ HARABURDIA. SOBOTA 28. JÚN</p>
+     </text-area>
+   </text-layer>
+   <frame points="45,36 500,35 500,445 44,446"/>
+   <frame points="510,35 963,35 965,442 511,443"/>
+   <frame points="22,551 550,549 552,922 21,921"/>
+   <frame points="545,452 965,452 965,807 985,807 990,812 995,822 995,832 991,837 982,847 973,852 969,857 969,1017 550,1017"/>
+   <frame points="44,1028 551,1030 553,1492 44,1491"/>
+   <frame points="565,1027 965,1027 965,1427 980,1507 971,1517 907,1508 898,1533 744,1514 749,1495 565,1495"/>
+  </page>
+  <page>
+   <image href="page2.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="70,63 75,58 390,58 395,64 395,93 390,98 74,98 70,93" type="commentary">
+       <p>CRAPHOUND BEAT ME OUT THE DOOR AS USUAL. HIS EXOSKELETON IS PROGRAMMABLE.</p>
+     </text-area>
+     <text-area points="270,150 274,146 338,146 342,150 342,174 337,179 275,179 270,174" bgcolor="#ffffff" type="code">
+       <p>THERE!</p>
+     </text-area>
+     <text-area points="478,63 483,58 756,58 762,64 762,81 758,86 482,86 478,82" type="commentary">
+       <p>HE CAN RECORD LITTLE SCRIPT FOR IT.</p>
+     </text-area>
+     <text-area points="483,109 486,105 713,105 717,109 717,165 711,170 488,170 483,165" type="commentary">
+       <p>LIKE: MOVE LEFT ARM TO DOOR HANDLE, POP IT, SWING LEGS OUT TO RUNNING-BOARD. JUMP TO GROUND ... YOU GET THE IDEA.</p>
+     </text-area>
+     <text-area points="63,568 78,550 105,542 138,543 165,550 180,561 184,574 185,595 176,613 155,622 138,625 120,625 90,622 72,613 63,595" bgcolor="#ffffff">
+       <p>WELCOME, WELCOME! MY, YOU'VE COME A LONG WAY FOR US!</p>
+     </text-area>
+     <text-area points="201,567 203,562 206,555 213,549 222,545 233,543 273,543 280,546 290,551 297,559 300,568 300,585 297,594 291,601 281,607 271,610 228,610 215,605 205,596 200,586" bgcolor="#ffffff">
+       <p>JUST UP FROM TORONTO, MA'AM.</p>
+     </text-area>
+     <text-area points="253,859 258,855 449,856 454,861 454,900 449,905 258,905 252,901" type="commentary">
+       <p>IT'S AN OLD JOKE, BUT IT'S ALSO PART OF THE <emphasis>RITUAL,</emphasis> AND IT'S GOT TO BE DONE.</p>
+     </text-area>
+     <text-area points="504,575 510,565 525,556 546,552 594,551 618,556 633,565 639,577 639,592 630,604 612,611 600,614 570,614 552,613 539,612 530,611 519,607 511,601 504,591" bgcolor="#ffffff">
+       <p>I MEANT YOUR FRIEND, SIR. THIS GENTLEMAN.</p>
+     </text-area>
+     <text-area points="802,556 808,550 934,550 939,556 939,614 933,619 807,619 802,614 802,556" bgcolor="#ffffff" type="code">
+       <p>OF COURSE I CAME, DEAR LADY. I WOULDN'T MISS IT FOR THE WORLDS!</p>
+     </text-area>
+     <text-area points="651,940 656,935 936,936 939,940 939,982 933,987 655,987 651,982" type="commentary">
+       <p>WHEN IT COMES TO STOCK PHRASES LIKE THIS, HE'S GOT SO MUCH POLISH YOU'D THINK HE WAS READING THE NEWS.</p>
+     </text-area>
+     <text-area points="227,1038 233,1032 594,1032 599,1039 599,1064 592,1069 233,1069 227,1063" type="commentary">
+       <p>I CHOSE MY FIRST SPOT, ABOUT HALF WAY DOWN, WHERE THINGS WOULDN'T BE QUITE SO PICKED-OVER.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="70,63 75,58 390,58 395,64 395,93 390,98 74,98 70,93" type="commentary">
+       <p>CRAPHOUND MA AKO ZVYČAJNE PRI VYSTUPOVANÍ PREDBEHOL. JEHO EXOSKELETON JE PROGRAMOVATEĽNÝ.</p>
+     </text-area>
+     <text-area points="270,150 274,146 338,146 342,150 342,174 337,179 275,179 270,174" bgcolor="#ffffff" type="code">
+       <p>TADIAĽTO!</p>
+     </text-area>
+     <text-area points="478,63 483,58 756,58 762,64 762,81 758,86 482,86 478,82" type="commentary">
+       <p>VIE SI NA TO VYTVÁRAŤ RÔZNE SKRIPTY.</p>
+     </text-area>
+     <text-area points="483,109 486,105 713,105 717,109 717,165 711,170 488,170 483,165" type="commentary">
+       <p>AKO NAPRÍKLAD: POHNI ĽAVOU RUKOU KU KĽUČKE NA DVERÁCH, ZATIAHNI ZA ŇU, ŠVIHNI NOHAMI SMEROM VON. SKOČ NA ZEM ... ATĎ.</p>
+     </text-area>
+     <text-area points="63,568 78,550 105,542 138,543 165,550 180,561 184,574 185,595 176,613 155,622 138,625 120,625 90,622 72,613 63,595" bgcolor="#ffffff">
+       <p>VITAJTE, VITAJTE! Ó, PRIŠLI STE KVÔLI NÁM ISTE Z VEĽKEJ DIAĽKY!</p>
+     </text-area>
+     <text-area points="201,567 203,562 206,555 213,549 222,545 233,543 273,543 280,546 290,551 297,559 300,568 300,585 297,594 291,601 281,607 271,610 228,610 215,605 205,596 200,586" bgcolor="#ffffff">
+       <p>LEN NEĎALEKO ODTIAĽTO Z TORONTA MADAM.</p>
+     </text-area>
+     <text-area points="253,859 258,855 449,856 454,861 454,900 449,905 258,905 252,901" type="commentary">
+       <p>JE TO STARÝ VTIP, ALE TAKISTO AJ SÚČASŤ <emphasis>RITUÁLU,</emphasis> A VŽDY SA TO ROBÍ.</p>
+     </text-area>
+     <text-area points="504,575 510,565 525,556 546,552 594,551 618,556 633,565 639,577 639,592 630,604 612,611 600,614 570,614 552,613 539,612 530,611 519,607 511,601 504,591" bgcolor="#ffffff">
+       <p>MALA SOM NA MYSLI VÁŠHO PRIATEĽA. TOHTO DŽENTLMENA.</p>
+     </text-area>
+     <text-area points="802,556 808,550 934,550 939,556 939,614 933,619 807,619 802,614 802,556" bgcolor="#ffffff" type="code">
+       <p>SAMOZREJME Z VEĽKEJ DIAĽKY, MILÁ PANI. TÚTO AKCIU BY SOM SI ANI ZA SVET NENECHAL UJSŤ!</p>
+     </text-area>
+     <text-area points="651,940 656,935 936,936 939,940 939,982 933,987 655,987 651,982" type="commentary">
+       <p>AK PRÍDE NA TAKÉTO FRÁZY, MÁ TOĽKO UHĽADENOSTI, ŽE BY SI ČLOVEK POMYSLEL, ŽE ČÍTAVAL SPRÁVY V TELKE.</p>
+     </text-area>
+     <text-area points="227,1038 233,1032 594,1032 599,1039 599,1064 592,1069 233,1069 227,1063" type="commentary">
+       <p>VYBRAL SOM SI MIESTO NIEKDE V STREDE, KDE TO NEBOLO TAK PREPLNENÉ ĽUĎMI.</p>
+     </text-area>
+   </text-layer>
+   <frame points="43,39 456,39 455,520 42,520"/>
+   <frame points="465,36 962,36 962,518 467,518"/>
+   <frame points="41,528 474,528 475,1006 37,1007"/>
+   <frame points="482,527 960,527 963,1005 483,1006"/>
+   <frame points="40,1015 961,1013 963,1498 38,1503"/>
+  </page>
+  <page>
+   <image href="page3.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="107,105 111,101 346,101 350,105 350,148 346,151 110,151 106,146 106,106" type="commentary">
+       <p>TIME WAS, I'D BUILD ONE PILE OF <emphasis>MAYBES</emphasis> AND ANOTHER PILE OF <emphasis>DEFINITES.</emphasis> TRY TO STRATEGIZE.</p>
+     </text-area>
+     <text-area points="616,286 622,280 784,281 787,285 787,326 782,331 621,331 616,326" type="commentary">
+       <p>BUT IN TIME, I CAME TO RELY ON <emphasis>INSTINCT</emphasis> AND ON THE <emphasis>FATES</emphasis> ...</p>
+     </text-area>
+     <text-area points="142,492 148,487 292,487 297,492 297,535 292,539 146,538 141,532" type="commentary">
+       <p>... TO WHOM I MAKE MY OBEISANCES AT EVERY OPPORTUNITY.</p>
+     </text-area>
+     <text-area points="589,772 596,766 811,766 816,773 816,812 812,818 594,818 589,813" type="commentary">
+       <p>I HAD TWO BOXES FULL WHEN I COLLIDED WITH CRAPHOUND. HE GRINNED HIS NATURAL GRIN.</p>
+     </text-area>
+     <text-area points="103,871 110,865 308,865 315,872 315,925 311,931 107,931 103,926" type="commentary">
+       <p>THE ONE THAT SHOWED ROW ON ROW OF WET, SLIMY GUMS, TIPPED WITH WRITHING <emphasis>POISONOUS</emphasis> SUCKERS.</p>
+     </text-area>
+     <text-area points="288,1250 294,1244 347,1244 351,1249 351,1281 347,1285 293,1285 288,1279" bgcolor="#ffffff" type="code">
+       <p>GOLD! GOLD!</p>
+     </text-area>
+     <text-area points="385,900 391,893 553,893 558,899 558,940 553,944 389,944 385,938" type="commentary">
+       <p>I SUCKED AIR BETWEEN MY TEETH WHEN I SAW THE COWBOY TRUNK.</p>
+     </text-area>
+     <text-area points="483,1414 487,1410 488,1409 646,1409 652,1415 652,1434 643,1441 490,1441 483,1435" type="commentary">
+       <p>IT WAS <emphasis>MAGNIFICIENT.</emphasis></p>
+     </text-area>
+     <text-area points="752,1011 758,1005 909,1005 915,1010 915,1030 911,1035 757,1035 752,1030" type="commentary">
+       <p>I CAUGHT MY BREATH.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="107,105 111,101 346,101 350,105 350,148 346,151 110,151 106,146 106,106" type="commentary">
+       <p>NADIŠIEL ČAS, ABY SOM SI VYBUDOVAL JEDNU HROMADU PRE <emphasis>MOŽNO</emphasis> A ĎAĽŠIU PRE <emphasis>URČITE.</emphasis> TREBA PREMÝŠĽAŤ STRATEGICKY.</p>
+     </text-area>
+     <text-area points="616,286 622,280 784,281 787,285 787,326 782,331 621,331 616,326" type="commentary">
+       <p>AVŠAK NAPOKON SA VŽDY SPOĽAHNEM NA <emphasis>INŠTINKT</emphasis> A NA <emphasis>OSUD,</emphasis> ...</p>
+     </text-area>
+     <text-area points="142,492 148,487 292,487 297,492 297,535 292,539 146,538 141,532" type="commentary">
+       <p>... KTORÉMU DOBRE NASLÚCHAM PRI KAŽDEJ PRÍLEŽITOSTI.</p>
+     </text-area>
+     <text-area points="589,772 596,766 811,766 816,773 816,812 812,818 594,818 589,813" type="commentary">
+       <p>MAL SOM UŽ DVE KRABICE PLNÉ, KEĎ SOM NARAZIL NA CRAPHOUNDA. VYŠKIERAL SA SVOJIM TYPICKÝM ÚŠKLEBKOM.</p>
+     </text-area>
+     <text-area points="103,871 110,865 308,865 315,872 315,925 311,931 107,931 103,926" type="commentary">
+       <p>TAKÝM, KTORÝM VYCEROVAL SVOJE DVE RADY VLHKÝCH, SLIZKÝCH ĎASIEN, POKRYTÝCH <emphasis>JEDOVATÝMI</emphasis> SLINAMI.</p>
+     </text-area>
+     <text-area points="288,1250 294,1244 347,1244 351,1249 351,1281 347,1285 293,1285 288,1279" bgcolor="#ffffff" type="code">
+       <p>ZLATO! ZLATO!</p>
+     </text-area>
+     <text-area points="385,900 391,893 553,893 558,899 558,940 553,944 389,944 385,938" type="commentary">
+       <p>NASAL SOM VZDUCH POMEDZI ZUBY, KEĎ SOM ZBADAL TÚ KOVBOJSKÚ TRUHLICU.</p>
+     </text-area>
+     <text-area points="483,1414 487,1410 488,1409 646,1409 652,1415 652,1434 643,1441 490,1441 483,1435" type="commentary">
+       <p>BOLA <emphasis>VEĽKOLEPÁ.</emphasis></p>
+     </text-area>
+     <text-area points="752,1011 758,1005 909,1005 915,1010 915,1030 911,1035 757,1035 752,1030" type="commentary">
+       <p>ZATAJIL SOM DYCH.</p>
+     </text-area>
+   </text-layer>
+   <frame points="35,33 960,33 960,443 35,448"/>
+   <frame points="35,448 960,448 960,858 35,858"/>
+   <frame points="95,868 100,863 110,858 310,858 320,863 325,878 325,923 315,938 290,938 310,953 325,978 335,1023 335,1038 350,1053 355,1063 355,1093 350,1113 335,1133 320,1138 310,1148 310,1163 290,1193 290,1208 285,1218 285,1233 280,1243 265,1233 245,1243 240,1258 260,1268 270,1268 280,1273 280,1243 290,1233 300,1233 290,1213 295,1208 300,1208 320,1233 345,1233 355,1238 360,1248 360,1278 355,1288 350,1293 310,1293 325,1303 340,1343 335,1353 335,1383 330,1403 345,1413 350,1423 350,1438 370,1463 380,1468 385,1468 395,1458 410,1458 420,1463 470,1523 470,1528 315,1528 310,1513 300,1503 285,1503 285,1528 0,1528 0,1223 25,1223 35,1228 70,1178 85,1153 80,1143 75,1118 55,1058 50,1048 10,1023 10,1013 15,1003 30,998 55,1003 65,998 70,973 75,968 60,968 50,958 55,948 85,943 95,933"/>
+   <frame points="365,868 625,868 680,1018 680,1488 600,1488 560,1513 505,1488 435,1488 365,1403"/>
+   <frame points="635,873 640,853 785,853 795,863 805,868 960,868 960,1493 690,1493 690,1048 660,968 660,928 640,913 635,898"/>
+  </page>
+  <page>
+   <image href="page4.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="119,102 131,91 141,89 174,89 186,93 195,102 195,118 190,125 175,131 137,131 124,125 118,115" bgcolor="#ffffff">
+       <p>OH. MY GOD.</p>
+     </text-area>
+     <text-area points="81,493 90,472 111,457 132,451 179,451 204,458 216,466 228,485 230,496 230,511 227,526 217,541 199,552 113,553 91,540 81,517" bgcolor="#ffffff">
+       <p>THAT'S MY BILLY'S THINGS - BILLY THE KID, WE CALLED HIM. HE WAS <emphasis>DOTTY</emphasis> FOR COWBOYS WHEN HE WAS A BOY.</p>
+     </text-area>
+     <text-area points="120,577 135,559 138,556 198,556 216,565 225,580 225,595 216,607 201,616 183,619 153,619 129,610 120,589" bgcolor="#ffffff">
+       <p>HE'S A <emphasis>LAWYER</emphasis> NOW, IN TORONTO.</p>
+     </text-area>
+     <text-area points="747,625 747,625 747,601 762,580 795,568 846,568 879,574 897,583 906,601 906,628 900,640 885,652 861,658 843,661 810,661 792,658 768,652 753,640" bgcolor="#ffffff">
+       <p>I CALLED HIM, TO ASK IF HE MINDED MY PUTTING HIS COWBOY THINGS IN THE SALE. AND YOU KNOW WHAT?</p>
+     </text-area>
+     <text-area points="795,808 804,784 834,766 861,763 900,763 930,769 951,784 960,808 960,826 951,847 933,862 912,868 891,871 861,871 831,865 804,850 795,826" bgcolor="#ffffff">
+       <p>HE DIDN'T KNOW WHAT I WAS TALKING ABOUT! DOESN'T THAT BEAT EVERYTHING? HE WAS DOTTY FOR COWBOYS WHEN HE WAS A BOY.</p>
+     </text-area>
+     <text-area points="243,1024 247,1020 451,1020 456,1025 456,1065 451,1070 246,1070 242,1064 242,1025" type="commentary">
+       <p>IN MY HEAD, I WAS ALREADY BREAKING DOWN THE COWBOY TRUNK AND ITS CONTENTS.</p>
+     </text-area>
+     <text-area points="412,1087 418,1082 420,1081 547,1081 552,1086 552,1156 547,1161 416,1161 411,1154 411,1088" type="commentary">
+       <p>SOLD INDIVIDUALLY AT <emphasis>SOTHEBY'S,</emphasis> I FIGURED I COULD GET OVER <emphasis>TWO GRAND</emphasis> FOR THEM.</p>
+     </text-area>
+     <text-area points="607,1025 613,1019 711,1019 717,1027 717,1123 711,1130 612,1130 607,1125" bgcolor="#ffffff" type="code">
+       <p>THIS IS WONDERFULL! HOW MUCH WOULD YOU LIKE FOR THE COLLECTION?</p>
+     </text-area>
+     <text-area points="738,1027 743,1022 931,1022 936,1026 936,1047 930,1052 744,1052 738,1047" type="commentary">
+       <p>I FELT A KNIFE IN MY GUTS.</p>
+     </text-area>
+     <text-area points="759,1071 764,1066 934,1066 939,1072 939,1112 933,1118 764,1118 759,1112" type="commentary">
+       <p>CRAPHOUND HAD FOUND THE COWBOY TRUNK, SO THAT MEANT IT WAS HIS.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="119,102 131,91 141,89 174,89 186,93 195,102 195,118 190,125 175,131 137,131 124,125 118,115" bgcolor="#ffffff">
+       <p>Ó, MÔJ BOŽE.</p>
+     </text-area>
+     <text-area points="81,493 90,472 111,457 132,451 179,451 204,458 216,466 228,485 230,496 230,511 227,526 217,541 199,552 113,553 91,540 81,517" bgcolor="#ffffff">
+       <p>TO SÚ VECI MÔJHO BILLYHO - "BILLY THE KID" SME HO VOLALI. BOL <emphasis>POBLÁZNENÝ</emphasis> DO KOVBOJOV, KEĎ BOL MALÝ CHLAPEC.</p>
+     </text-area>
+     <text-area points="120,577 135,559 138,556 198,556 216,565 225,580 225,595 216,607 201,616 183,619 153,619 129,610 120,589" bgcolor="#ffffff">
+       <p>TERAZ JE <emphasis>PRÁVNIKOM.</emphasis> V TORONTE.</p>
+     </text-area>
+     <text-area points="747,625 747,625 747,601 762,580 795,568 846,568 879,574 897,583 906,601 906,628 900,640 885,652 861,658 843,661 810,661 792,658 768,652 753,640" bgcolor="#ffffff">
+       <p>VOLALA SOM MU, ABY SOM SA HO SPÝTALA, ČI MU NEVADÍ, ŽE PREDÁME JEHO KOVBOJSKÉ VECI. A VIETE ČO?</p>
+     </text-area>
+     <text-area points="795,808 804,784 834,766 861,763 900,763 930,769 951,784 960,808 960,826 951,847 933,862 912,868 891,871 861,871 831,865 804,850 795,826" bgcolor="#ffffff">
+       <p>ANI NEVEDEL O ČOM HOVORÍM! JE TO VÔBEC MOŽNÉ? BOL POBLÁZNENÝ DO KOVBOJOV, KEĎ BOL MALÝ CHLAPEC.</p>
+     </text-area>
+     <text-area points="243,1024 247,1020 451,1020 456,1025 456,1065 451,1070 246,1070 242,1064 242,1025" type="commentary">
+       <p>V HLAVE SOM SI UŽ TRIEDIL A PREPOČÍTAVAL OBSAH KOVBOJSKEJ TRUHLICE.</p>
+     </text-area>
+     <text-area points="412,1087 418,1082 420,1081 547,1081 552,1086 552,1156 547,1161 416,1161 411,1154 411,1088" type="commentary">
+       <p>PRI PREDAJI JEDNOTLIVO U <emphasis>SOTHEBY'S,</emphasis> BY SOM MOHOL DOSTAŤ ZA TO VYŠE <emphasis>DVE TISÍCKY.</emphasis></p>
+     </text-area>
+     <text-area points="607,1025 613,1019 711,1019 717,1027 717,1123 711,1130 612,1130 607,1125" bgcolor="#ffffff" type="code">
+       <p>JE TO NÁDHERNÉ MADAM! KOĽKO BY STE CHCELI ZA CELÚ KOLEKCIU?</p>
+     </text-area>
+     <text-area points="738,1027 743,1022 931,1022 936,1026 936,1047 930,1052 744,1052 738,1047" type="commentary">
+       <p>AKOBY SOM POCÍTIL NÔŽ V BRUCHU.</p>
+     </text-area>
+     <text-area points="759,1071 764,1066 934,1066 939,1072 939,1112 933,1118 764,1118 759,1112" type="commentary">
+       <p>CRAPHOUND NAŠIEL TRUHLICU A TO ZNAMENALO, ŽE PATRÍ JEMU.</p>
+     </text-area>
+   </text-layer>
+   <frame points="20,18 320,18 320,428 20,428"/>
+   <frame points="310,-1 370,-1 670,-1 690,8 710,-1 730,8 820,8 840,18 880,18 920,8 940,8 940,38 970,38 970,248 990,268 980,278 1000,308 990,328 970,348 970,358 1000,348 1000,498 990,498 970,488 970,548 830,548 810,558 780,558 760,548 680,548 670,558 650,548 640,558 620,578 610,568 600,548 600,548 440,548 410,558 330,598 320,598 300,588 300,588 300,588 300,588 270,508 250,448 300,428 310,418 310,398 310,18"/>
+   <frame points="48,560 119,560 99,552 86,541 76,523 76,486 89,463 117,448 156,447 184,448 211,456 232,477 235,499 233,524 227,538 223,544 210,554 220,558 290,558 350,558 410,558 530,558 530,988 213,987 199,1020 190,1021 170,1008 163,1008 161,1022 155,1056 145,1073 129,1073 123,1063 129,1038 135,993 130,988 120,988 70,988 60,1008 40,1028 30,1028 20,1018 50,948 30,933 40,878 46,856 46,838"/>
+   <frame points="540,773 540,748 555,723 565,713 565,688 565,663 580,643 605,628 625,628 655,633 660,638 690,638 750,653 740,623 740,598 750,583 770,568 800,563 855,563 895,573 910,593 915,608 915,623 910,638 900,648 890,658 880,663 890,698 895,718 895,753 895,758 910,758 935,763 955,778 965,798 965,828 965,833 960,848 945,863 925,873 900,878 845,878 820,868 760,868 750,868 740,883 740,888 745,903 755,913 770,928 830,988 535,988 535,888 550,878 555,868 570,858 575,858 575,848 580,843 550,808 540,783 540,773"/>
+   <frame points="40,998 590,998 590,1498 440,1498 400,1518 370,1498 40,1498 40,1428 -9,1378 -9,1348 40,1248"/>
+   <frame points="590,998 960,998 960,1498 590,1498"/>
+  </page>
+  <page>
+   <image href="page5.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="60,61 66,56 278,56 284,62 284,102 278,108 65,108 60,100" type="commentary">
+       <p>BUT HE USUALLY LET ME TAKE THE STUFF WITH STREET VALUE. SO I COULD <emphasis>EKE</emphasis> OUT A LIVING.</p>
+     </text-area>
+     <text-area points="74,366 91,351 118,343 167,343 188,348 206,360 216,375 219,404 211,427 198,440 171,449 142,450 115,449 96,444 76,429 67,408 69,380" bgcolor="#ffffff" type="commentary">
+       <p>I WAS HOPING TO GET <emphasis>TWENTY</emphasis> DOLLARS FOR THE LOT, BUT IF THAT'S TOO MUCH, I'M WILLING TO COME DOWN.</p>
+     </text-area>
+     <text-area points="515,74 526,63 544,58 572,58 588,62 598,69 603,79 603,96 597,106 584,114 571,116 552,117 536,115 523,109 514,98 513,86" bgcolor="#ffffff">
+       <p>I'LL GIVE YOU THIRTY.</p>
+     </text-area>
+     <text-area points="631,61 637,55 866,55 873,61 873,93 866,99 637,99 630,93 630,62" type="commentary">
+       <p>MY <emphasis>MOUTH</emphasis> TOOK OVER WITHOUT INTERVENTION FROM MY <emphasis>BRAIN.</emphasis></p>
+     </text-area>
+     <text-area points="662,143 663,134 673,123 691,117 712,115 741,117 759,123 768,134 770,145 766,158 756,167 737,172 717,173 694,172 682,169 667,160 662,150" bgcolor="#ffffff">
+       <p>OH, MY! FOR THIS OLD MESS?</p>
+     </text-area>
+     <text-area points="800,126 806,118 882,118 889,125 889,160 884,166 805,166 800,158" bgcolor="#ffffff" type="code">
+       <p>I WILL PAY FIFTY.</p>
+     </text-area>
+     <text-area points="287,491 305,492 324,497 333,506 334,515 333,522 322,523 317,529 317,536 307,539 287,540 268,538 256,535 246,527 243,516 245,505 255,496 272,492" bgcolor="#ffffff">
+       <p>SEVENTY FIVE.</p>
+     </text-area>
+     <text-area points="319,535 324,527 332,525 396,525 404,532 404,562 399,568 367,568 356,569 341,568 325,568 319,561" bgcolor="#ffffff" type="code">
+       <p>FIVE HUNDRED.</p>
+     </text-area>
+     <text-area points="64,826 70,819 400,819 406,824 407,827 407,868 183,868 176,874 176,883 68,883 64,878" type="commentary">
+       <p>CRAPHOUND HAD BUILD HIS STAKE ON EARTH BY SELLING A COMPLICATED BIOCHEMICAL PROCESS FOR NON-CHLOROPHYL PHOTOSYNTHESIS TO A SAUDI BANKER.</p>
+     </text-area>
+     <text-area points="180,875 185,871 187,870 505,870 512,878 512,894 507,900 184,900 179,895 179,876" type="commentary">
+       <p>I WOULDN'T <emphasis>EVER</emphasis> BEAT HIM IN A BIDDING WAR.</p>
+     </text-area>
+     <text-area points="728,518 732,508 744,501 763,497 786,495 810,497 836,502 847,512 847,525 844,530 835,537 759,537 755,540 745,538 735,533 728,524" bgcolor="#ffffff">
+       <p>A THOUSAND DOLLARS.</p>
+     </text-area>
+     <text-area points="756,544 761,540 882,540 886,544 886,569 880,574 762,574 756,568 755,555" bgcolor="#ffffff" type="code">
+       <p>TEN THOUSAND.</p>
+     </text-area>
+     <text-area points="55,969 58,958 66,949 83,944 103,942 124,944 139,948 149,956 153,970 149,984 140,992 123,997 85,997 74,994 63,989 55,978" bgcolor="#ffffff">
+       <p>WHAT'S GOING ON, EVA?</p>
+     </text-area>
+     <text-area points="157,979 167,965 188,955 208,951 238,949 264,950 292,955 310,963 321,975 325,989 326,998 323,1015 312,1030 292,1039 265,1044 213,1044 194,1041 171,1032 158,1017 154,1001 155,985" bgcolor="#ffffff">
+       <p>THIS .. GENTLEMAN IS GOING TO PAY <emphasis>TEN THOUSAND DOLLARS</emphasis> FOR BILLY'S OLD COWBOY THINGS, TOM.</p>
+     </text-area>
+     <text-area points="410,1306 423,1294 449,1286 480,1284 513,1289 537,1301 547,1318 547,1343 543,1354 530,1366 510,1374 440,1374 428,1369 413,1359 406,1345 404,1331 406,1314" bgcolor="#ffffff">
+       <p>THAT'S TEN THOUSAND DOLLARS. ALL RIGHT. THANK YOU <strong>VERY</strong> MUCH MISTER.</p></text-area>
+     <text-area points="411,1408 414,1398 419,1388 428,1381 439,1377 467,1376 506,1378 519,1385 527,1397 530,1413 527,1430 522,1440 511,1448 493,1453 468,1455 449,1453 432,1449 420,1440 412,1427 412,1423" bgcolor="#ffffff">
+       <p>CAN I GIVE YOU A HAND GETTING THIS TO YOUR CAR?</p></text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="60,61 66,56 278,56 284,62 284,102 278,108 65,108 60,100" type="commentary">
+       <p>ALE ZVYČAJNE MA NECHAL KÚPIŤ VECI ZA NORMÁLNU CENU. TAK, ABY SOM MOHOL ZAROBIŤ PRACHY NA <emphasis>ŽIVOBYTIE.</emphasis></p>
+     </text-area>
+     <text-area points="74,366 91,351 118,343 167,343 188,348 206,360 216,375 219,404 211,427 198,440 171,449 142,450 115,449 96,444 76,429 67,408 69,380" bgcolor="#ffffff">
+       <p>DÚFALA SOM, ŽE ZA TO CELÉ DOSTANEM <emphasis>DVADSAŤ</emphasis> DOLÁROV. ALE AK JE TO VEĽA, MÔŽEM ÍSŤ S CENOU NIŽŠIE.</p>
+     </text-area>
+     <text-area points="515,74 526,63 544,58 572,58 588,62 598,69 603,79 603,96 597,106 584,114 571,116 552,117 536,115 523,109 514,98 513,86" bgcolor="#ffffff">
+       <p>DÁM VÁM TRIDSAŤ.</p>
+     </text-area>
+     <text-area points="631,61 637,55 866,55 873,61 873,93 866,99 637,99 630,93 630,62" type="commentary">
+       <p>MOJE <emphasis>ÚSTA</emphasis> BEZ ROZMÝŠĽANIA PREBRALI INICIATÍVU.</p>
+     </text-area>
+     <text-area points="662,143 663,134 673,123 691,117 712,115 741,117 759,123 768,134 770,145 766,158 756,167 737,172 717,173 694,172 682,169 667,160 662,150" bgcolor="#ffffff">
+       <p>Ó, MÔJ! ZA TIETO STARÉ VECI?</p>
+     </text-area>
+     <text-area points="800,126 806,118 882,118 889,125 889,160 884,166 805,166 800,158" bgcolor="#ffffff" type="code">
+       <p>JA ZAPLATÍM PÄŤDESIAT.</p>
+     </text-area>
+     <text-area points="287,491 305,492 324,497 333,506 334,515 333,522 322,523 317,529 317,536 307,539 287,540 268,538 256,535 246,527 243,516 245,505 255,496 272,492" bgcolor="#ffffff">
+       <p>SEDEMDESIAT PÄŤ.</p>
+     </text-area>
+     <text-area points="319,535 324,527 332,525 396,525 404,532 404,562 399,568 367,568 356,569 341,568 325,568 319,561" bgcolor="#ffffff" type="code">
+       <p>PÄŤSTO.</p>
+     </text-area>
+     <text-area points="64,826 70,819 400,819 406,824 407,827 407,868 183,868 176,874 176,883 68,883 64,878" type="commentary">
+       <p>CRAPHOUND ZÍSKAL PRACHY NA ZEMI PREDAJOM KOMPLIKOVANÉHO BIOCHEMICKÉHO PROCESU PRE BEZCHLOROFILNÚ FOTOSYNTÉZU JEDNÉMU SAUDSKÉMU BANKÁROVI.</p>
+     </text-area>
+     <text-area points="180,875 185,871 187,870 505,870 512,878 512,894 507,900 184,900 179,895 179,876" type="commentary">
+       <p><emphasis>NIKDY</emphasis> BY SOM HO V LICITAČNEJ VOJNE NEPORAZIL.</p>
+     </text-area>
+     <text-area points="728,518 732,508 744,501 763,497 786,495 810,497 836,502 847,512 847,525 844,530 835,537 759,537 755,540 745,538 735,533 728,524" bgcolor="#ffffff">
+       <p>TISÍC DOLÁROV.</p>
+     </text-area>
+     <text-area points="756,544 761,540 882,540 886,544 886,569 880,574 762,574 756,568 755,555" bgcolor="#ffffff" type="code">
+       <p>DESAŤ TISÍC.</p>
+     </text-area>
+     <text-area points="55,969 58,958 66,949 83,944 103,942 124,944 139,948 149,956 153,970 149,984 140,992 123,997 85,997 74,994 63,989 55,978" bgcolor="#ffffff">
+       <p>ČO SA DEJE EVA?</p>
+     </text-area>
+     <text-area points="157,979 167,965 188,955 208,951 238,949 264,950 292,955 310,963 321,975 325,989 326,998 323,1015 312,1030 292,1039 265,1044 213,1044 194,1041 171,1032 158,1017 154,1001 155,985" bgcolor="#ffffff">
+       <p>TENTO .. DŽENTLMEN CHCE ZAPLATIŤ <emphasis>DESAŤ TISÍC DOLÁROV</emphasis> ZA BILLYHO STARÉ KOVBOJSKÉ VECI TOM.</p>
+     </text-area>
+     <text-area points="410,1306 423,1294 449,1286 480,1284 513,1289 537,1301 547,1318 547,1343 543,1354 530,1366 510,1374 440,1374 428,1369 413,1359 406,1345 404,1331 406,1314" bgcolor="#ffffff">
+       <p>TO JE DESAŤTISÍC DOLÁROV. V PORIADKU. ĎAKUJEM <emphasis>VEĽMI</emphasis> PEKNE, PANE.</p></text-area>
+     <text-area points="411,1408 414,1398 419,1388 428,1381 439,1377 467,1376 506,1378 519,1385 527,1397 530,1413 527,1430 522,1440 511,1448 493,1453 468,1455 449,1453 432,1449 420,1440 412,1427 412,1423" bgcolor="#ffffff">
+       <p>MÔŽEM VÁM POMÔCŤ NALOŽIŤ TIE VECI DO VÁŠHO AUTA.</p></text-area>
+   </text-layer>
+   <frame points="35,33 475,33 475,468 35,468"/>
+   <frame points="480,28 950,28 950,468 480,468"/>
+   <frame points="35,478 535,478 535,913 35,913"/>
+   <frame points="540,478 950,478 950,913 540,913"/>
+   <frame points="35,923 340,923 340,1488 35,1488"/>
+   <frame points="345,923 570,923 585,913 775,913 795,913 800,918 790,928 805,948 805,958 790,953 800,978 805,988 800,1013 795,1008 790,1018 785,1033 785,1048 795,1058 790,1068 780,1063 775,1078 780,1098 780,1118 770,1148 770,1168 765,1178 750,1188 760,1198 755,1208 760,1218 785,1228 800,1218 810,1218 835,1188 860,1173 900,1163 945,1163 975,1173 995,1178 995,1533 390,1533 385,1523 390,1503 390,1488 345,1488"/>
+  </page>
+  <page>
+   <image href="page6.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="127,81 134,75 342,75 349,83 349,151 343,158 132,158 127,152" bgcolor="#ffffff" type="code">
+       <p>I WONDER IF I COULD IMPOSE ON YOU TO TAKE ME TO THE NEAREST BUS STATION. I THINK I'M GOING TO BE MAKING MY OWN WAY HOME.</p>
+     </text-area>
+     <text-area points="553,105 561,95 580,87 609,85 644,87 665,94 674,105 675,113 673,124 667,131 656,137 638,140 618,141 590,140 574,137 563,133 556,125 553,114 553,105" bgcolor="#ffffff">
+       <p>AW. C'MON. I'LL DRIVE YOU HOME.</p>
+     </text-area>
+     <text-area points="824,150 829,145 916,145 921,151 921,195 917,201 828,201 824,196" bgcolor="#ffffff" type="code">
+       <p>I THINK I PREFER THE BUS.</p>
+     </text-area>
+     <text-area points="220,593 220,574 229,561 252,551 270,548 309,548 330,552 346,560 355,571 358,583 354,599 344,610 329,616 313,619 266,619 248,616 234,610 223,599" bgcolor="#ffffff">
+       <p>IT'S NO TROUBLE AT ALL TO GIVE YOU A LIFT, <emphasis>FRIEND.</emphasis></p></text-area>
+     <text-area points="727,548 733,542 901,542 908,549 908,602 901,608 733,608 727,602" type="commentary">
+       <p>I CALLED IT QUITS FOR THE DAY AND DROVE HOME ALONE WITH THE TRUCK ONLY HALF-FILLED.</p>
+     </text-area>
+     <text-area points="231,1026 238,1019 586,1019 592,1027 592,1059 584,1066 237,1066 231,1060" type="commentary">
+       <p>I SPENT THE EVENING WATCHING A NATURE SHOW ON A DESERT RECLAMATION PROJECT IN ARIZONA ...</p>
+     </text-area>
+     <text-area points="625,1405 631,1399 895,1399 900,1406 900,1459 892,1466 633,1466 625,1459" type="commentary">
+       <p>... WHERE THE STATE LEGISLATURE HAD TRADED A <emphasis>DERELICT</emphasis> MEGA-MALL TO AN ALIEN FOR A LOCAL-AREA WEATHER CONTROL MACHINE.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="127,81 134,75 342,75 349,83 349,151 343,158 132,158 127,152" bgcolor="#ffffff" type="code">
+       <p>MÔŽEM VÁS POŽIADAŤ, ČI BY STE MA NEVZALI K NAJBLIŽŠEJ AUTOBUSOVEJ ZASTÁVKE. MYSLÍM, ŽE DNES PÔJDEM DOMOV SÁM.</p>
+     </text-area>
+     <text-area points="553,105 561,95 580,87 609,85 644,87 665,94 674,105 675,113 673,124 667,131 656,137 638,140 618,141 590,140 574,137 563,133 556,125 553,114 553,105" bgcolor="#ffffff">
+       <p>ÁLE CHOĎ. JA ŤA DOMOV ZAVEZIEM.</p>
+     </text-area>
+     <text-area points="824,150 829,145 916,145 921,151 921,195 917,201 828,201 824,196" bgcolor="#ffffff" type="code">
+       <p>MYSLÍM, ŽE PÔJDEM RADŠEJ AUTOBUSOM.</p>
+     </text-area>
+     <text-area points="220,593 220,574 229,561 252,551 270,548 309,548 330,552 346,560 355,571 358,583 354,599 344,610 329,616 313,619 266,619 248,616 234,610 223,599" bgcolor="#ffffff">
+       <p>NIE JE TO PRE MŇA ŽIADEN PROBLÉM VÁS ODVIESŤ <emphasis>PRIATEĽU.</emphasis></p>
+     </text-area>
+     <text-area points="727,548 733,542 901,542 908,549 908,602 901,608 733,608 727,602" type="commentary">
+       <p>V TEN DEŇ SOM TO UŽ NECHAL TAK A IŠIEL DOMOV S AUTOM LEN DO POLOVICE NALOŽENÝM.</p>
+     </text-area>
+     <text-area points="231,1026 238,1019 586,1019 592,1027 592,1059 584,1066 237,1066 231,1060" type="commentary">
+       <p>VEČER SOM TRÁVIL POZERANÍM PRÍRODOPISNÉHO FILMU O PROJEKTE REKULTIVÁCIE PÚŠTE V ARIZONE ...</p>
+     </text-area>
+     <text-area points="625,1405 631,1399 895,1399 900,1406 900,1459 892,1466 633,1466 625,1459" type="commentary">
+       <p>... KDE SI ŠTÁT S MIMOZEMŠŤANOM VYMENIL <emphasis>OPUSTENÉ</emphasis> NÁKUPNÉ CENTRUM ZA LOKÁLNU STANICU PRE OVLÁDANIE POČASIA.</p>
+     </text-area>
+   </text-layer>
+   <frame points="40,33 455,33 455,508 40,508"/>
+   <frame points="465,33 955,33 955,508 465,508"/>
+   <frame points="40,723 45,718 80,708 100,673 105,668 120,668 130,663 160,658 160,643 170,623 185,613 205,613 235,628 215,603 210,588 210,573 215,563 235,548 260,543 315,543 340,548 360,563 365,578 365,593 355,613 335,623 300,628 280,628 230,668 255,693 270,723 320,703 340,688 360,683 385,688 400,698 400,708 395,713 405,718 390,728 380,738 390,753 405,758 415,773 410,788 420,793 430,813 435,828 440,838 445,843 445,853 415,888 410,903 405,908 405,918 415,933 410,943 405,948 410,958 415,968 415,978 410,993 350,993 315,983 310,973 310,958 315,943 300,933 290,948 275,948 265,938 230,953 230,973 225,983 210,993 175,993 170,988 170,973 160,978 145,978 135,973 130,953 130,933 115,908 110,893 110,818 25,788"/>
+   <frame points="445,518 955,518 955,993 445,993"/>
+   <frame points="35,1003 575,1003 575,1018 590,1018 595,1023 595,1048 595,1058 595,1063 585,1068 575,1068 575,1483 35,1483"/>
+   <frame points="595,1083 600,1068 625,1043 645,1038 900,1038 915,1048 930,1058 940,1073 945,1148 945,1193 940,1273 940,1293 955,1328 955,1348 950,1363 935,1373 945,1453 955,1463 955,1478 945,1488 930,1488 915,1478 895,1473 620,1473 615,1483 605,1488 595,1488 585,1478 585,1463 595,1448 600,1368 585,1358 585,1338 585,1323 605,1288 595,1253 595,1193"/>
+  </page>
+  <page>
+   <title lang="en">Reminiscences</title>
+   <title lang="sk">Spomienky</title>
+   <image href="page7.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="74,71 81,65 424,65 431,73 431,111 422,118 81,118 74,111" type="commentary">
+       <p>I'D FIRST MET CRAPHOUND AT AN AUCTION HOUSE, WHEN HE BID ON A CASE OF LINCOLN LOGS I WAS SELLING. I'D KNOWN HIM FOR A KINDRED SPIRIT.</p>
+     </text-area>
+     <text-area points="127,295 135,288 430,288 437,295 437,333 430,340 133,340 127,334" type="commentary">
+       <p>WE'D TALKED AFTERWARDS, AT HIS PLACE. A SPRAWLING, TWO-STORY WAREHOUSE AMID A CLUSTER OF AUTO-WRACKING YARDS.</p>
+     </text-area>
+     <text-area points="461,340 466,334 655,334 659,339 659,372 654,377 467,377 461,371" type="commentary">
+       <p>INSIDE WAS <emphasis>PARADISE.</emphasis> HIS TASTE RAN TO <emphasis>SHRINES.</emphasis></p>
+     </text-area>
+     <text-area points="89,442 95,434 375,434 379,440 379,481 374,486 94,486 89,479" type="commentary">
+       <p>THE KITCHEN WAS NEARLY UNUSABLE, SO PACKED IT WAS WITH OLD BARN-BOARD FUNITURE AND RURAL MEMORABILIA.</p>
+     </text-area>
+     <text-area points="388,581 395,575 603,575 610,581 610,622 603,629 395,629 388,623" type="commentary">
+       <p>HE HAD A LEATHER-APPOINTED LIBRARY STRAIGHT OUT OF A VICTORIAN GENTLEMEN'S CLUB.</p>
+     </text-area>
+     <text-area points="697,956 703,950 933,950 940,957 940,996 935,1002 702,1002 697,996" type="commentary">
+       <p>AND MY FAVOURITE, THE SOLARIUM DRESSED IN WICKER AND BAMBOO AND TIKI-IDOLS.</p>
+     </text-area>
+     <text-area points="100,1068 106,1061 365,1061 372,1067 372,1118 365,1124 107,1124 100,1117" type="commentary">
+       <p>CRAPHOUND HAD KNOWN ALL ABOUT THE GOODWILLS AND THE AUCTION HOUSES, BUT HE STILL HADN'T FIGURED OUT GARAGE AND RUMMAGE SALES.</p>
+     </text-area>
+     <text-area points="386,1115 392,1108 500,1108 508,1116 508,1173 501,1181 391,1181 386,1175" bgcolor="#ffffff" type="code">
+       <p>BUT WHERE ARE THESE? WHO IS ALLOWED TO MAKE THEM?</p>
+     </text-area>
+     <text-area points="625,1091 632,1083 643,1078 658,1076 673,1075 692,1076 707,1079 718,1084 724,1093 724,1102 721,1109 714,1113 707,1116 703,1118 646,1118 634,1114 627,1107 624,1101" bgcolor="#ffffff">
+       <p>WHO? WELL, ANYONE.</p>
+     </text-area>
+     <text-area points="602,1163 607,1149 614,1139 623,1130 637,1124 647,1121 702,1121 717,1126 730,1133 739,1144 747,1159 749,1173 750,1182 750,1206 746,1222 740,1237 731,1246 716,1256 703,1261 654,1262 644,1259 627,1253 616,1244 605,1228 601,1210 600,1199 600,1174" bgcolor="#ffffff">
+       <p>YOU JUST ONE DAY DECIDE THAT YOU NEED TO CLEAN OUT THE BASEMENT. YOU PUT AN AD IN THE <emphasis>STAR.</emphasis> TAPE UP A FEW SIGNS. AND <emphasis>VOILA.</emphasis> YARD SALE.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="74,71 81,65 424,65 431,73 431,111 422,118 81,118 74,111" type="commentary">
+       <p>PRVÝ-KRÁT SOM CRAPHOUNDA STRETOL V AUKČNOM DOME, KEĎ PRIHADZOVAL NA KRABICU S KOCKAMI LEGA, KTORÚ SOM PREDÁVAL. SPOZNAL SOM HO AKO SPRIAZNENÚ DUŠU.</p>
+     </text-area>
+     <text-area points="127,295 135,288 430,288 437,295 437,333 430,340 133,340 127,334" type="commentary">
+       <p>POTOM SME SA SPOLU ZHOVÁRALI. V JEHO DOME. V ROZĽAHLOM, DVOJPOSCHODOVOM SKLADE MEDZI HROMADOU VRAKOV ÁUT.</p>
+     </text-area>
+     <text-area points="461,340 466,334 655,334 659,339 659,372 654,377 467,377 461,371" type="commentary">
+       <p>VO VNÚTRI TO BOL <emphasis>RAJ.</emphasis> AKOBY SOM VSTÚPIL DO <emphasis>SVÄTINE.</emphasis></p>
+     </text-area>
+     <text-area points="89,442 95,434 375,434 379,440 379,481 374,486 94,486 89,479" type="commentary">
+       <p>KUCHYŇA BOLA SKORO NEPOUŽITEĽNÁ, KEĎŽE BOLA PREPLNENÁ STARÝM NÁBYTKOM A SUVENÍRMI Z VIDIEKA.</p>
+     </text-area>
+     <text-area points="388,581 395,575 603,575 610,581 610,622 603,629 395,629 388,623" type="commentary">
+       <p>MAL KOŽOU VYČALÚNENÚ KNIŽNICU AKOBY PRIAMO Z VIKTORIÁNSKEHO KLUBU DŽENTLMENOV.</p>
+     </text-area>
+     <text-area points="697,956 703,950 933,950 940,957 940,996 935,1002 702,1002 697,996" type="commentary">
+       <p>A MOJE OBĽÚBENÉ BOLO SOLÁRIUM OBLOŽENÉ PRÚTÍM, BAMBUSMI A SOŠKAMI "TIKI".</p>
+     </text-area>
+     <text-area points="100,1068 106,1061 365,1061 372,1067 372,1118 365,1124 107,1124 100,1117" type="commentary">
+       <p>CRAPHOUND VEDEL VŠETKO O HODNOTNÝCH VECIACH A AUKČNÝCH DOMOCH, ALE STÁLE EŠTE NEPRIŠIEL NATO, AKO FUNGUJÚ GARÁŽOVÉ PREDAJE.</p>
+     </text-area>
+     <text-area points="386,1115 392,1108 500,1108 508,1116 508,1173 501,1181 391,1181 386,1175" bgcolor="#ffffff" type="code">
+       <p>ALE KDE TIETO BÝVAJÚ? KTO MÁ DOVOLENÉ ICH ORGANIZOVAŤ?</p>
+     </text-area>
+     <text-area points="625,1091 632,1083 643,1078 658,1076 673,1075 692,1076 707,1079 718,1084 724,1093 724,1102 721,1109 714,1113 707,1116 703,1118 646,1118 634,1114 627,1107 624,1101" bgcolor="#ffffff">
+       <p>KTO? PREDSA HOCIKTO.</p>
+     </text-area>
+     <text-area points="602,1163 607,1149 614,1139 623,1130 637,1124 647,1121 702,1121 717,1126 730,1133 739,1144 747,1159 749,1173 750,1182 750,1206 746,1222 740,1237 731,1246 716,1256 703,1261 654,1262 644,1259 627,1253 616,1244 605,1228 601,1210 600,1199 600,1174" bgcolor="#ffffff">
+       <p>JEDNÉHO DŇA SA PROSTE ROZHODNEŠ, ŽE POTREBUJEŠ VYČISTIŤ PIVNICU. ZADÁŠ INZERÁT DO <emphasis>ČASOPISU,</emphasis> ZBÚCHAŠ PÁR ORIENTAČNÝCH TABÚĽ, A <emphasis>VOILÁ ...</emphasis> GARÁŽOVÝ PREDAJ.</p>
+     </text-area>
+   </text-layer>
+   <frame points="40,38 960,38 960,388 40,388"/>
+   <frame points="40,398 340,398 340,433 375,433 380,438 380,483 375,488 340,488 340,1028 40,1028"/>
+   <frame points="385,398 650,398 650,1028 350,1028 350,488 380,488 380,453 390,413"/>
+   <frame points="660,398 960,398 955,1028 660,1028"/>
+   <frame points="40,1038 580,1038 580,1488 40,1488"/>
+   <frame points="590,1038 955,1038 955,1488 590,1488"/>
+  </page>
+  <page>
+   <image href="page8.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="53,62 59,56 179,56 184,63 185,64 185,97 177,105 60,105 53,97" bgcolor="#ffffff" type="code">
+       <p>AND HOW DO YOU LOCATE THESE?</p>
+     </text-area>
+     <text-area points="131,155 134,144 142,132 152,125 166,119 181,116 199,115 213,116 224,117 240,122 251,128 259,136 264,146 267,158 269,171 267,185 264,197 260,206 253,214 242,221 226,227 180,227 170,225 160,222 150,217 139,208 134,198 131,188 129,178" bgcolor="#ffffff">
+       <p>WELL. THERE'RE AMATEURS WHO JUST READ THE ADS, OR PICK A NEIGHBORHOOD AND WANDER AROUND.</p>
+     </text-area>
+     <text-area points="330,412 330,400 333,394 339,387 346,384 355,381 365,378 376,378 392,376 412,378 425,379 433,381 444,385 453,392 456,399 458,406 455,418 446,427 435,431 419,434 399,436 375,436 368,434 359,433 352,431 344,428 337,424 332,417" bgcolor="#ffffff">
+       <p>BUT THAT'S NO WAY TO GO ABOUT IT.</p>
+     </text-area>
+     <text-area points="656,93 658,85 662,76 670,67 684,59 698,54 716,51 740,50 762,50 784,51 796,53 807,56 818,60 828,66 836,74 840,81 843,91 845,101 843,112 840,122 836,130 825,139 813,145 804,148 789,151 776,153 725,153 710,151 691,147 677,141 665,132 659,121 656,110" bgcolor="#ffffff">
+       <p>WHAT <emphasis>I</emphasis> DO IS, I GET IN A TRUCK, AND I <emphasis>SNIFF</emphasis> THE AIR, CATCH THE SCENT OF CRAD AND <emphasis>WROOM!</emphasis> I'M OFF LIKE A BLOODHOUND ON A TRAIL.</p>
+     </text-area>
+     <text-area points="685,383 691,376 809,376 816,384 816,425 809,433 691,433 685,426" bgcolor="#ffffff" type="code">
+       <p>DO YOU THINK I MIGHT ACCOMPANY YOU SOME DAY?</p>
+     </text-area>
+     <text-area points="77,993 80,983 91,972 108,966 130,963 176,963 188,964 201,967 216,974 222,980 227,991 227,1005 224,1013 219,1019 209,1025 195,1030 173,1033 131,1033 116,1031 102,1028 90,1023 83,1017 78,1009 77,1003" bgcolor="#ffffff">
+       <p>HELL, SURE. NEXT SATURDAY? WE'LL HEAD OVER TO CABBAGETOWN.</p>
+     </text-area>
+     <text-area points="428,498 435,489 576,489 582,497 582,556 575,563 434,563 428,554" bgcolor="#ffffff" type="code">
+       <p>I WOULD LIKE TO GO WITH YOU ON NEXT SATURDAY VERY MUCH MR. JERRY ABINGTON.</p>
+     </text-area>
+     <text-area points="416,982 422,976 592,976 596,983 596,1032 590,1036 422,1036 416,1031" type="commentary">
+       <p>HE USED TO TALK LIKE THAT. WITHOUT COMMAS OR QUESTION MARKS. JUST ONE BIG SENTENCE.</p>
+     </text-area>
+     <text-area points="714,527 703,524 694,518 691,512 689,506 691,497 696,489 704,484 717,481 733,480 751,481 760,483 768,486 775,492 778,498 779,504 777,512 768,523" bgcolor="#ffffff">
+       <p>CALL ME JERRY.</p>
+     </text-area>
+     <text-area points="686,561 691,550 704,537 716,531 769,525 786,526 797,528 809,531 822,537 830,543 837,554 841,564 842,575 840,593 837,602 830,613 813,623 803,626 786,629 778,631 741,629 730,628 722,626 707,621 695,611 688,599 685,586 685,568" bgcolor="#ffffff">
+       <p>TELL YOU WHAT, THOUGH - THERE'S A CODE YOU GOT TO LEARN BEFORE WE GO OUT. THE <emphasis>CRAPHOUND'S CODE.</emphasis></p>
+     </text-area>
+     <text-area points="665,656 672,649 754,649 761,656 761,689 753,697 672,697 665,690" bgcolor="#ffffff" type="code">
+       <p>WHAT IS A CRAPHOUND?</p>
+     </text-area>
+     <text-area points="92,1121 95,1111 103,1100 115,1092 130,1087 141,1085 160,1084 180,1086 195,1089 203,1091 213,1098 222,1109 227,1124 227,1147 225,1154 220,1168 209,1177 192,1184 121,1183 110,1178 100,1169 93,1156 91,1150" bgcolor="#ffffff">
+       <p>YOU'RE LOOKING AT ONE. YOU'LL GET TO KNOW SOME OF THE LOCAL CRAPHOUNDS, TOO.</p>
+     </text-area>
+     <text-area points="78,1224 81,1213 87,1203 98,1194 120,1186 193,1188 208,1194 219,1203 225,1212 229,1222 228,1252 224,1264 215,1274 199,1283 185,1288 129,1288 113,1285 101,1280 90,1273 81,1260 78,1249" bgcolor="#ffffff">
+       <p>THEY'RE THE <emphasis>COMPETITION,</emphasis> BUT THE'RE ALSO YOUR <emphasis>BUDDIES.</emphasis> AND THERE'RE CERTAIN RULES WE HAVE.</p>
+     </text-area>
+     <text-area points="502,1073 509,1067 764,1067 770,1073 770,1114 764,1120 508,1120 502,1113" type="commentary">
+       <p>AND THEN I EXPLAINED TO HIM ALL ABOUT HOW YOU <emphasis>NEVER</emphasis> BID AGAINST A CRAPHOUND AT A YARD SALE.</p>
+     </text-area>
+     <text-area points="500,1135 506,1129 713,1129 719,1135 719,1210 713,1217 508,1217 500,1209" type="commentary">
+       <p>HOW YOU GET TO KNOW THE OTHER FELLOWS TASTES, AND WHEN YOU SEE SOMETHING THEY MIGHT LIKE, YOU HAUL IT OUT FOR THEM. AND THEY'LL DO THE SAME FOR YOU.</p>
+     </text-area>
+     <text-area points="510,1238 518,1230 597,1230 603,1236 603,1283 600,1285 599,1290 591,1290 587,1293 587,1297 577,1303 573,1310 518,1310 510,1302" type="commentary">
+       <p>JUST GOOD FORM AND COMMON SENSE, REALLY.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="53,62 59,56 179,56 184,63 185,64 185,97 177,105 60,105 53,97" bgcolor="#ffffff" type="code">
+       <p>A AKO SA DAJÚ TIETO NÁJSŤ?</p>
+     </text-area>
+     <text-area points="131,155 134,144 142,132 152,125 166,119 181,116 199,115 213,116 224,117 240,122 251,128 259,136 264,146 267,158 269,171 267,185 264,197 260,206 253,214 242,221 226,227 180,227 170,225 160,222 150,217 139,208 134,198 131,188 129,178" bgcolor="#ffffff">
+       <p>NO. SÚ AMATÉRY, KTORÝ LEN ČÍTAJÚ INZERÁTY, ALEBO SI VYBERÚ NEJAKÉ MIESTO A TÚLAJÚ SA PO JEHO OKOLÍ.</p>
+     </text-area>
+     <text-area points="330,412 330,400 333,394 339,387 346,384 355,381 365,378 376,378 392,376 412,378 425,379 433,381 444,385 453,392 456,399 458,406 455,418 446,427 435,431 419,434 399,436 375,436 368,434 359,433 352,431 344,428 337,424 332,417" bgcolor="#ffffff">
+       <p>ALE TO NIE JE DOBRÝ SPÔSOB AKO ÍSŤ NA TO.</p>
+     </text-area>
+     <text-area points="656,93 658,85 662,76 670,67 684,59 698,54 716,51 740,50 762,50 784,51 796,53 807,56 818,60 828,66 836,74 840,81 843,91 845,101 843,112 840,122 836,130 825,139 813,145 804,148 789,151 776,153 725,153 710,151 691,147 677,141 665,132 659,121 656,110" bgcolor="#ffffff">
+       <p>ČO ALE ROBÍM <emphasis>JA</emphasis> JE, ŽE NASADNEM DO AUTA, <emphasis>ČUCHÁM</emphasis> VZDUCH, ZAVETRÍM STOPU A <emphasis>VRRR!</emphasis> VYRAZÍM VPRED AKO LOVECKÝ PES.</p>
+     </text-area>
+     <text-area points="685,383 691,376 809,376 816,384 816,425 809,433 691,433 685,426" bgcolor="#ffffff" type="code">
+       <p>MYSLÍTE, ŽE BY SOM VÁS MOHOL NIEKEDY SPREVÁDZAŤ?</p>
+     </text-area>
+     <text-area points="77,993 80,983 91,972 108,966 130,963 176,963 188,964 201,967 216,974 222,980 227,991 227,1005 224,1013 219,1019 209,1025 195,1030 173,1033 131,1033 116,1031 102,1028 90,1023 83,1017 78,1009 77,1003" bgcolor="#ffffff">
+       <p>NO JASNE. BUDÚCU SOBOTU? ZAMIERIME DO CABBAGETOWNU.</p>
+     </text-area>
+     <text-area points="428,498 435,489 576,489 582,497 582,556 575,563 434,563 428,554" bgcolor="#ffffff" type="code">
+       <p>CHCEL BY SOM ÍSŤ S VAMI BUDÚCU SOBOTU VEĽMI RÁD PÁN JERRY ABINGTON.</p>
+     </text-area>
+     <text-area points="416,982 422,976 592,976 596,983 596,1032 590,1036 422,1036 416,1031" type="commentary">
+       <p>TAKTO ZVYČAJNE ROZPRÁVAL. BEZ ČIAROK ČI OTÁZNIKOV. LEN JEDNA DLHÁ VETA.</p>
+     </text-area>
+     <text-area points="714,527 703,524 694,518 691,512 689,506 691,497 696,489 704,484 717,481 733,480 751,481 760,483 768,486 775,492 778,498 779,504 777,512 768,523" bgcolor="#ffffff">
+       <p>MÔŽEŠ MA VOLAŤ JERRY.</p>
+     </text-area>
+     <text-area points="686,561 691,550 704,537 716,531 769,525 786,526 797,528 809,531 822,537 830,543 837,554 841,564 842,575 840,593 837,602 830,613 813,623 803,626 786,629 778,631 741,629 730,628 722,626 707,621 695,611 688,599 685,586 685,568" bgcolor="#ffffff">
+       <p>NIEČO TI POVIEM. EXISTUJE NEPÍSANÝ ZÁKON, KTORÝ SA MUSÍŠ NAUČIŤ, PRV NEŽ VYRAZÍME. <emphasis>CRAPHOUNDSKÝ ZÁKON.</emphasis></p>
+     </text-area>
+     <text-area points="665,656 672,649 754,649 761,656 761,689 753,697 672,697 665,690" bgcolor="#ffffff" type="code">
+       <p>ČO JE TO CRAPHOUND?</p>
+     </text-area>
+     <text-area points="92,1121 95,1111 103,1100 115,1092 130,1087 141,1085 160,1084 180,1086 195,1089 203,1091 213,1098 222,1109 227,1124 227,1147 225,1154 220,1168 209,1177 192,1184 121,1183 110,1178 100,1169 93,1156 91,1150" bgcolor="#ffffff">
+       <p>NA JEDNÉHO SA PRÁVE POZERÁŠ. ONEDLHO TAKISTO SPOZNÁŠ NIEKOĽKO TUNAJŠÍCH CRAPHOUNDOV.</p>
+     </text-area>
+     <text-area points="78,1224 81,1213 87,1203 98,1194 120,1186 193,1188 208,1194 219,1203 225,1212 229,1222 228,1252 224,1264 215,1274 199,1283 185,1288 129,1288 113,1285 101,1280 90,1273 81,1260 78,1249" bgcolor="#ffffff">
+       <p>ONI SÚ <emphasis>KONKURENCIA,</emphasis> NO ZÁROVEŇ AJ TVOJI <emphasis>PRIATELIA.</emphasis> A SÚ ISTÉ PRÁVIDLÁ, KTORÉ MÁME.</p>
+     </text-area>
+     <text-area points="502,1073 509,1067 764,1067 770,1073 770,1114 764,1120 508,1120 502,1113" type="commentary">
+       <p>A POTOM SOM MU VYSVETLIL VŠETKO O TOM, AKO <emphasis>NIKDY</emphasis> NELICITUJEŠ PROTI ZBERAČOVI - CRAPHOUNDOVI.</p>
+     </text-area>
+     <text-area points="500,1135 506,1129 713,1129 719,1135 719,1210 713,1217 508,1217 500,1209" type="commentary">
+       <p>AKO SPOZNÁŠ VKUS OSTATNÝCH KOLEGOV, A KEĎ UVIDÍŠ NIEČO, ČO BY SA IM MOHLO VEĽMI PÁČIŤ, NECHÁŠ IM TO. A ONI SPRAVIA TO ISTÉ PRE TEBA.</p>
+     </text-area>
+     <text-area points="510,1238 518,1230 597,1230 603,1236 603,1283 600,1285 599,1290 591,1290 587,1293 587,1297 577,1303 573,1310 518,1310 510,1302" type="commentary">
+       <p>V PODSTATE LEN DOBRÝ ZVYK A SEDLIACKY ROZUM.</p>
+     </text-area>
+   </text-layer>
+   <frame points="35,33 490,33 490,448 35,448"/>
+   <frame points="500,33 950,33 950,448 495,448"/>
+   <frame points="320,463 320,1053 35,1053 35,463"/>
+   <frame points="330,463 610,463 610,1053 330,1053"/>
+   <frame points="620,458 950,458 955,1053 620,1053"/>
+   <frame points="35,1063 490,1063 495,1493 35,1498"/>
+   <frame points="495,1063 955,1063 955,1493 500,1498"/>
+  </page>
+  <page>
+   <image href="page9.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="68,62 74,55 309,55 315,62 315,101 310,107 73,107 68,100" type="commentary">
+       <p>THE NEXT TIME I SAW CRAPHOUND AT AN AUCTION HOUSE, HE DIDN'T ACKNOWLEDGE MY PRESENCE.</p>
+     </text-area>
+     <text-area points="460,64 466,58 649,58 656,66 656,94 649,101 466,101 460,96" type="commentary">
+       <p>TRUTH BE TOLD I <emphasis>MISSED</emphasis> THE LITTLE BASTARD.</p>
+     </text-area>
+     <text-area points="737,72 745,64 911,64 918,71 918,99 912,104 743,104 737,97" type="commentary">
+       <p>HE BID ON AND BOUGHT MORE COWBOY THINGS.</p>
+     </text-area>
+     <text-area points="83,663 91,656 300,656 309,664 309,702 302,709 89,709 83,703" type="commentary">
+       <p>SOME PEOPLE SAID THAT WE SHOULD HAVE RUN CRAPHOUND AND HIS KIN OFF THE PLANET.</p>
+     </text-area>
+     <text-area points="415,419 423,412 620,413 626,420 626,472 619,480 421,480 415,472" type="commentary">
+       <p>THEY SAID THAT IT WASN'T <emphasis>FAIR</emphasis> FOR THE ALIENS KEEP US IN DARK ABOUT THEIR <emphasis>TECHNOLOGIES.</emphasis></p>
+     </text-area>
+     <text-area points="692,431 698,425 894,425 900,431 900,482 893,489 700,489 692,482" type="commentary">
+       <p>THEY SAY THAT WE SHOULD HAVE CAPTURED A SHIP AND <emphasis>REVERSE-ENGINEERED</emphasis> IT, BUILT OUR OWN AND KICKED ASS.</p>
+     </text-area>
+     <text-area points="614,772 619,767 724,767 729,772 729,790 723,796 621,796 614,790" type="commentary">
+       <p>SOME PEOPLE!</p>
+     </text-area>
+     <text-area points="653,815 660,809 872,809 879,816 879,855 871,862 661,862 653,855 653,815" type="commentary">
+       <p>FIRST OF ALL, NOBODY WITH HUMAN DNA COULD <emphasis>SURVIVE</emphasis> A TRIP IN ONE OF THOSE SHIPS.</p>
+     </text-area>
+     <text-area points="60,1173 66,1167 270,1167 275,1172 275,1203 268,1209 68,1209 60,1202" type="commentary">
+       <p>SECOND OF ALL, THEY <emphasis>WERE</emphasis> SHARING THEIR TECH WITH US.</p>
+     </text-area>
+     <text-area points="516,1171 522,1164 766,1164 772,1171 772,1190 764,1197 523,1197 516,1190" type="commentary">
+       <p>THEY JUST WEREN'T GIVING IT AWAY.</p>
+     </text-area>
+     <text-area points="516,1438 521,1433 718,1433 723,1439 723,1461 717,1466 522,1466 516,1459" type="commentary">
+       <p><emphasis>FAIR TRADES</emphasis> EVERY TIME.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="68,62 74,55 309,55 315,62 315,101 310,107 73,107 68,100" type="commentary">
+       <p>NAJBLIŽŠIE SOM VIDEL CRAPHOUNDA V AUKČNOM DOME. TVÁRIL SA, ŽE MA NEVIDÍ.</p>
+     </text-area>
+     <text-area points="460,64 466,58 649,58 656,66 656,94 649,101 466,101 460,96" type="commentary">
+       <p>PRAVDUPOVEDIAC, <emphasis>CHÝBAL MI</emphasis> TEN MALÝ BASTARD.</p>
+     </text-area>
+     <text-area points="737,72 745,64 911,64 918,71 918,99 912,104 743,104 737,97" type="commentary">
+       <p>LICITOVAL A NAKÚPIL VIACERO DAĽŠÍCH KOVBOJSKÝCH VECÍ.</p>
+     </text-area>
+     <text-area points="83,663 91,656 300,656 309,664 309,702 302,709 89,709 83,703" type="commentary">
+       <p>NIEKTORÍ ĽUDIA HOVORIA, ŽE BY SME MALI CRAPHOUNDA A JEHO DRUH VYHNAŤ Z PLANÉTY.</p>
+     </text-area>
+     <text-area points="415,419 423,412 620,413 626,420 626,472 619,480 421,480 415,472" type="commentary">
+       <p>HOVORIA, ŽE NIE JE <emphasis>FÉR,</emphasis> KEĎ NÁS MIMOZEMŠŤANIA DRŽIA V NEJASNOSTIACH OHĽADOM ICH <emphasis>TECHNOLÓGIÍ.</emphasis></p>
+     </text-area>
+     <text-area points="692,431 698,425 894,425 900,431 900,482 893,489 700,489 692,482" type="commentary">
+       <p>HOVORIA, ŽE BY SME MALI ZAJAŤ ICH LOĎ A <emphasis>"ZREVERSE-INŽINÍROVAŤ"</emphasis> JU, POSTAVIŤ NAŠU VLASTNÚ A NAKOPAŤ IM ZADKY.</p>
+     </text-area>
+     <text-area points="614,772 619,767 724,767 729,772 729,790 723,796 621,796 614,790" type="commentary">
+       <p>NIEKTORÍ ĽUĎIA!</p>
+     </text-area>
+     <text-area points="653,815 660,809 872,809 879,816 879,855 871,862 661,862 653,855 653,815" type="commentary">
+       <p>ZA PRVÉ, NIKTO S ĽUDSKOU DNA BY NEMOHOL <emphasis>PREŽIŤ</emphasis> CESTU V ŽIADNEJ Z ICH LODÍ.</p>
+     </text-area>
+     <text-area points="60,1173 66,1167 270,1167 275,1172 275,1203 268,1209 68,1209 60,1202" type="commentary">
+       <p>ZA DRUHÉ, ONI <emphasis>V SKUTOČNOSTI</emphasis> ZDIEĽAJÚ ICH TECHNOLÓGIE S NAMI.</p>
+     </text-area>
+     <text-area points="516,1171 522,1164 766,1164 772,1171 772,1190 764,1197 523,1197 516,1190" type="commentary">
+       <p>ONI ICH LEN NEDÁVAJÚ ZADARMO.</p>
+     </text-area>
+     <text-area points="516,1438 521,1433 718,1433 723,1439 723,1461 717,1466 522,1466 516,1459" type="commentary">
+       <p>VŽDY IDE LEN O <emphasis>FÉROVÝ OBCHOD.</emphasis></p>
+     </text-area>
+   </text-layer>
+   <frame points="40,33 435,33 435,378 40,378"/>
+   <frame points="445,33 960,33 960,373 445,373"/>
+   <frame points="40,383 335,383 335,723 40,723"/>
+   <frame points="345,383 655,383 650,723 345,723"/>
+   <frame points="660,383 960,383 960,728 660,728"/>
+   <frame points="40,733 960,733 960,1143 40,1138"/>
+   <frame points="40,1148 490,1148 490,1488 40,1488"/>
+   <frame points="500,1148 955,1148 955,1488 500,1488"/>
+  </page>
+  <page>
+   <title lang="en">Meeting Stranger</title>
+   <title lang="sk">Stretnutie s cudzincom</title>
+   <image href="page10.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="57,55 60,52 408,52 411,55 411,88 408,91 60,91 57,88" type="commentary">
+       <p>PART OF MY THEORY OF YARD-SALE KARMA HOLDS THAT IF I MISS ONE DAY AT THE THRIFT SHOPS ...</p>
+     </text-area>
+     <text-area points="498,67 504,61 693,61 699,67 699,94 696,100 501,100 498,94" type="commentary">
+       <p>... THAT'LL BE THE DAY THEY PUT OUT <emphasis>BIG SCORE.</emphasis></p>
+     </text-area>
+     <text-area points="492,400 498,394 657,394 663,400 663,442 657,445 498,445 492,439" type="commentary">
+       <p>SO I HIT THE STORES <emphasis>DILIGENTLY.</emphasis> AND CAME UP WITH CRAPOLA.</p>
+     </text-area>
+     <text-area points="225,511 231,508 360,508 363,511 363,547 360,550 228,550 225,547" type="commentary">
+       <p>I HAD OFFENDED THE FATES, I KNEW.</p>
+     </text-area>
+     <text-area points="534,562 540,556 717,556 723,562 723,601 717,607 540,607 534,601" type="commentary">
+       <p>AND I KNEW I WOULDN'T MAKE ANOTHER SCORE UNTIL I <emphasis>PLACATED</emphasis> THEM.</p>
+     </text-area>
+     <text-area points="57,1021 63,1015 306,1015 312,1021 312,1051 306,1057 60,1057 57,1051" type="commentary">
+       <p>MAN, I MISSED CRAPHOUND'S GOOD EYE AND OBSESSIVE DELIGHT.</p>
+     </text-area>
+     <text-area points="155,1092 159,1087 168,1082 182,1080 195,1081 203,1084 209,1088 212,1094 212,1103 209,1107 204,1111 196,1114 171,1114 164,1112 158,1108 154,1102" bgcolor="#ffffff">
+       <p>SIR?</p>
+     </text-area>
+     <text-area points="429,1021 435,1015 678,1015 684,1021 684,1051 678,1054 432,1054 429,1048" type="commentary">
+       <p>HIS SUIT LOOKED <emphasis>EXPENSIVE,</emphasis> AS DID HIS MANICURE AND HIS HAIRCUT.</p>
+     </text-area>
+     <text-area points="430,1411 430,1411 430,1395 433,1389 440,1383 446,1380 456,1378 470,1376 495,1376 507,1378 521,1382 530,1388 534,1395 534,1412 530,1418 523,1424 513,1427 503,1429 495,1430 467,1430 454,1428 444,1425 435,1420" bgcolor="#ffffff">
+       <p>SORRY TO BOTHER YOU ...</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="57,55 60,52 408,52 411,55 411,88 408,91 60,91 57,88" type="commentary">
+       <p>ČASŤ MOJEJ TEÓRIE O KARME OBCHODNÍKA HOVORÍ, ŽE AK VYNECHÁM JEDEŇ DEŇ V BUTIKOCH ...</p>
+     </text-area>
+     <text-area points="498,67 504,61 693,61 699,67 699,94 696,100 501,100 498,94" type="commentary">
+       <p>... BUDE TO DEŇ, KEĎ SA TAM OBJAVÍ <emphasis>NIEČO VEĽKÉ.</emphasis></p>
+     </text-area>
+     <text-area points="492,400 498,394 657,394 663,400 663,442 657,445 498,445 492,439" type="commentary">
+       <p>TAK TAM CHODIEVAM <emphasis>NEUSTÁLE</emphasis> A ZVYČAJNE ODCHÁDZAM S NEJAKOU DROBNOSŤOU.</p>
+     </text-area>
+     <text-area points="225,511 231,508 360,508 363,511 363,547 360,550 228,550 225,547" type="commentary">
+       <p>VEDEL SOM, ŽE SOM URAZIL SVOJ OSUD.</p>
+     </text-area>
+     <text-area points="534,562 540,556 717,556 723,562 723,601 717,607 540,607 534,601" type="commentary">
+       <p>A VEDEL SOM, ŽE NEUROBÍM ŽIADEN VEĽKÝ OBCHOD, POKIAĽ SI HO <emphasis>NEUDOBRÍM.</emphasis></p>
+     </text-area>
+     <text-area points="57,1021 63,1015 306,1015 312,1021 312,1051 306,1057 60,1057 57,1051" type="commentary">
+       <p>ČLOVEČE, CHÝBA MI CRAPHOUNDOVO DOBRÉ OKO A JEHO POSADLÁ VÁŠEŇ.</p>
+     </text-area>
+     <text-area points="155,1092 159,1087 168,1082 182,1080 195,1081 203,1084 209,1088 212,1094 212,1103 209,1107 204,1111 196,1114 171,1114 164,1112 158,1108 154,1102" bgcolor="#ffffff">
+       <p>PANE?</p>
+     </text-area>
+     <text-area points="429,1021 435,1015 678,1015 684,1021 684,1051 678,1054 432,1054 429,1048" type="commentary">
+       <p>JEHO OBLEK VYZERAL <emphasis>DRAHO.</emphasis> TAKISTO AKO JEHO MANIKÚRA A ÚČES.</p>
+     </text-area>
+     <text-area points="430,1411 430,1411 430,1395 433,1389 440,1383 446,1380 456,1378 470,1376 495,1376 507,1378 521,1382 530,1388 534,1395 534,1412 530,1418 523,1424 513,1427 503,1429 495,1430 467,1430 454,1428 444,1425 435,1420" bgcolor="#ffffff">
+       <p>PREPÁČTE, ŽE VÁS RUŠÍM ...</p>
+     </text-area>
+   </text-layer>
+   <frame points="30,24 478,24 475,337 475,371 30,369"/>
+   <frame points="480,48 965,48 960,483 365,478 365,373 475,373"/>
+   <frame points="45,488 515,493 515,988 45,988"/>
+   <frame points="515,543 980,543 980,928 515,928"/>
+   <frame points="45,998 400,998 395,1498 40,1498"/>
+   <frame points="410,998 960,998 960,1503 405,1498"/>
+  </page>
+  <page>
+   <image href="page11.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="123,69 123,56 126,48 133,42 146,36 163,32 189,31 225,32 243,35 258,40 266,47 271,55 271,70 263,82 252,88 241,91 220,94 195,96 173,94 152,91 136,85 126,76" bgcolor="#ffffff">
+       <p>... BUT I WAS JUST WONDERING WHERE YOU FOUND THAT.</p>
+     </text-area>
+     <text-area points="48,496 54,490 339,490 345,493 345,538 342,541 54,541 48,535" type="commentary">
+       <p>I HAD PICKED IT UP WITH A <emphasis>GUILTY</emphasis> LITTLE THRILL, THINKING THAT CRAPHOUND MIGHT BUY IT AT THE NEXT AUCTION.</p>
+     </text-area>
+     <text-area points="610,96 610,81 615,74 623,68 635,63 654,60 675,59 701,60 719,63 731,67 739,74 744,83 745,90 743,99 738,106 730,111 717,116 707,117 688,118 651,118 646,117 637,115 627,112 621,109 614,103" bgcolor="#ffffff">
+       <p>SECOND FLOOR, IN THE TOY SECTION.</p>
+     </text-area>
+     <text-area points="600,157 603,150 608,142 617,136 629,131 644,129 666,128 685,129 697,131 708,134 718,139 724,145 729,155 729,176 725,185 717,193 705,198 690,201 665,202 640,201 630,199 621,196 612,192 605,184 602,177 600,170" bgcolor="#ffffff">
+       <p>THERE WASN'T ANYTHING ELSE LIKE IT, WAS THERE?</p>
+     </text-area>
+     <text-area points="622,332 622,321 625,313 631,308 639,305 648,303 659,302 672,303 681,305 691,310 696,316 697,326 697,337 690,343 680,348 672,350 647,350 639,348 633,346 627,342" bgcolor="#ffffff">
+       <p>'FRAID NOT.</p>
+     </text-area>
+     <text-area points="186,587 186,577 191,571 200,568 224,568 230,570 235,574 238,581 235,590 233,592 224,595 210,598 200,596 192,594 188,591" bgcolor="#ffffff">
+       <p>AH.</p>
+     </text-area>
+     <text-area points="193,623 196,616 200,609 207,601 213,598 236,592 258,593 271,597 283,603 291,614 294,623 295,632 295,648 293,661 287,672 278,679 266,685 227,685 218,683 209,679 200,671 195,661 193,650 192,644 192,632" bgcolor="#ffffff">
+       <p>I DON'T SUPPOSE YOU WANT TO <emphasis>SELL</emphasis> IT. WOULD YOU?</p>
+     </text-area>
+     <text-area points="199,778 199,768 202,762 207,757 214,754 222,752 248,752 257,754 266,759 271,767 271,780 265,787 253,793 218,793 209,790 203,785" bgcolor="#ffffff">
+       <p>HOW MUCH?</p>
+     </text-area>
+     <text-area points="525,454 531,448 735,448 741,454 741,472 738,478 528,478 525,472" type="commentary">
+       <p>I HAD PAID <emphasis>A DOLLAR</emphasis> FOR IT.</p>
+     </text-area>
+     <text-area points="601,516 601,503 606,495 615,491 627,488 661,488 673,492 682,500 684,509 682,519 676,525 663,529 647,530 626,530 615,527 605,522" bgcolor="#ffffff">
+       <p>TEN BUCKS?</p>
+     </text-area>
+     <text-area points="654,544 660,541 822,541 825,544 825,574 819,577 660,577 654,571" type="commentary">
+       <p>I <emphasis>NEARLY</emphasis> SAID "SOLD!" BUT I CAUGHT MYSELF.</p>
+     </text-area>
+     <text-area points="675,632 675,624 678,619 686,614 698,612 713,611 731,612 739,613 748,616 755,621 755,633 750,640 737,644 725,646 704,646 691,644 682,641 677,637" bgcolor="#ffffff">
+       <p>TWENTY.</p>
+     </text-area>
+     <text-area points="660,676 664,669 671,664 689,660 705,659 726,660 740,663 745,665 751,670 755,679 755,687 750,695 739,701 724,704 706,705 689,704 675,701 666,697 660,689" bgcolor="#ffffff">
+       <p>TWENTY DOLLARS?</p>
+     </text-area>
+     <text-area points="638,762 639,751 644,741 652,733 666,727 683,724 732,724 746,729 757,735 765,744 769,756 769,772 765,782 756,791 742,797 727,800 702,802 679,800 660,796 644,784 639,774" bgcolor="#ffffff">
+       <p>THAT'S WHAT THEY'D CHARGE AT A BOUTIQUE ON QUEEN STREET.</p>
+     </text-area>
+     <text-area points="222,877 222,872 224,866 231,859 243,855 255,853 278,853 291,855 302,858 310,864 312,868 313,876 310,884 304,890 297,893 282,896 251,896 246,895 238,893 231,890 225,885" bgcolor="#ffffff">
+       <p>FAIR ENOUGH.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="123,69 123,56 126,48 133,42 146,36 163,32 189,31 225,32 243,35 258,40 266,47 271,55 271,70 263,82 252,88 241,91 220,94 195,96 173,94 152,91 136,85 126,76" bgcolor="#ffffff">
+       <p>... ALE LEN BY MA ZAUJÍMALO, KDE STE TÚ VEC NAŠLI.</p>
+     </text-area>
+     <text-area points="48,496 54,490 339,490 345,493 345,538 342,541 54,541 48,535" type="commentary">
+       <p>ZOBRAL SOM TO TROCHU <emphasis>PREVINILE</emphasis> A TROCHU S NADŠENÍM, MYSLIAC SI, ŽE BY TO CRAPHOUND MOHOL KÚPIŤ NA ĎALŠEJ AUKCII.</p>
+     </text-area>
+     <text-area points="610,96 610,81 615,74 623,68 635,63 654,60 675,59 701,60 719,63 731,67 739,74 744,83 745,90 743,99 738,106 730,111 717,116 707,117 688,118 651,118 646,117 637,115 627,112 621,109 614,103" bgcolor="#ffffff">
+       <p>NA DRUHOM POSCHODÍ, V SEKCII HRAČIEK.</p>
+     </text-area>
+     <text-area points="600,157 603,150 608,142 617,136 629,131 644,129 666,128 685,129 697,131 708,134 718,139 724,145 729,155 729,176 725,185 717,193 705,198 690,201 665,202 640,201 630,199 621,196 612,192 605,184 602,177 600,170" bgcolor="#ffffff">
+       <p>NEBOLO TAM UŽ NIČ PODOBNÉ, ŽE ÁNO?</p>
+     </text-area>
+     <text-area points="622,332 622,321 625,313 631,308 639,305 648,303 659,302 672,303 681,305 691,310 696,316 697,326 697,337 690,343 680,348 672,350 647,350 639,348 633,346 627,342" bgcolor="#ffffff">
+       <p>OBÁVAM SA, ŽE NIE.</p>
+     </text-area>
+     <text-area points="186,587 186,577 191,571 200,568 224,568 230,570 235,574 238,581 235,590 233,592 224,595 210,598 200,596 192,594 188,591" bgcolor="#ffffff">
+       <p>AH.</p>
+     </text-area>
+     <text-area points="193,623 196,616 200,609 207,601 213,598 236,592 258,593 271,597 283,603 291,614 294,623 295,632 295,648 293,661 287,672 278,679 266,685 227,685 218,683 209,679 200,671 195,661 193,650 192,644 192,632" bgcolor="#ffffff">
+       <p>NEPREDPOKLADÁM, ŽE BY STE MI TO CHCELI <emphasis>PREDAŤ.</emphasis> ALEBO?</p>
+     </text-area>
+     <text-area points="199,778 199,768 202,762 207,757 214,754 222,752 248,752 257,754 266,759 271,767 271,780 265,787 253,793 218,793 209,790 203,785" bgcolor="#ffffff">
+       <p>ZA KOĽKO?</p>
+     </text-area>
+     <text-area points="525,454 531,448 735,448 741,454 741,472 738,478 528,478 525,472" type="commentary">
+       <p>ZAPLATIL SOM ZA TO <emphasis>JEDEN DOLÁR.</emphasis></p>
+     </text-area>
+     <text-area points="601,516 601,503 606,495 615,491 627,488 661,488 673,492 682,500 684,509 682,519 676,525 663,529 647,530 626,530 615,527 605,522" bgcolor="#ffffff">
+       <p>DESAŤ BABIEK?</p>
+     </text-area>
+     <text-area points="654,544 660,541 822,541 825,544 825,574 819,577 660,577 654,571" type="commentary">
+       <p><emphasis>TAKMER</emphasis> SOM POVEDAL, ŽE "PREDANÉ!".</p>
+     </text-area>
+     <text-area points="675,632 675,624 678,619 686,614 698,612 713,611 731,612 739,613 748,616 755,621 755,633 750,640 737,644 725,646 704,646 691,644 682,641 677,637" bgcolor="#ffffff">
+       <p>DVADSAŤ.</p>
+     </text-area>
+     <text-area points="660,676 664,669 671,664 689,660 705,659 726,660 740,663 745,665 751,670 755,679 755,687 750,695 739,701 724,704 706,705 689,704 675,701 666,697 660,689" bgcolor="#ffffff">
+       <p>DVADSAŤ DOLÁROV?</p>
+     </text-area>
+     <text-area points="638,762 639,751 644,741 652,733 666,727 683,724 732,724 746,729 757,735 765,744 769,756 769,772 765,782 756,791 742,797 727,800 702,802 679,800 660,796 644,784 639,774" bgcolor="#ffffff">
+       <p>TOĽKO MI ZA TO DAJÚ V BUTIKU NA QUEEN STREET.</p>
+     </text-area>
+     <text-area points="222,877 222,872 224,866 231,859 243,855 255,853 278,853 291,855 302,858 310,864 312,868 313,876 310,884 304,890 297,893 282,896 251,896 246,895 238,893 231,890 225,885" bgcolor="#ffffff">
+       <p>DOBRE TEDA.</p>
+     </text-area>
+   </text-layer>
+   <frame points="60,208 65,193 85,173 95,163 100,153 105,148 95,133 95,108 105,93 120,88 130,88 115,73 115,53 130,33 170,23 230,23 270,38 280,53 280,68 295,78 315,78 330,93 330,113 325,133 325,148 345,173 355,198 355,273 345,288 340,293 345,348 340,358 330,363 340,438 345,458 345,483 355,493 355,538 345,548 45,548 40,538 40,493 45,483 70,483 65,468 65,443 65,403 60,388"/>
+   <frame points="355,38 960,38 954,436 513,436 507,436 498,436 354,436"/>
+   <frame points="15,548 485,548 485,823 15,818"/>
+   <frame points="500,438 970,438 970,828 500,828 500,438"/>
+   <frame points="30,818 330,818 330,1488 30,1488"/>
+   <frame points="340,828 640,828 640,1498 340,1498"/>
+   <frame points="640,828 950,828 950,1498 640,1498"/>
+  </page>
+  <page>
+   <title lang="en">Childhood Memories</title>
+   <title lang="sk">Spomienky na detstvo</title>
+   <image href="page12.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="63,64 66,61 273,61 276,64 276,94 273,100 66,100 63,97" type="commentary">
+       <p>IT'S NOT THAT MY CHILDHOOD WAS PARTICULARLY HAPPY.</p>
+     </text-area>
+     <text-area points="198,508 204,505 480,505 483,508 483,541 480,547 204,547 198,541" type="commentary">
+       <p>THERE ARE <emphasis>MEMORIES</emphasis> I HAVE, THOUGH, THAT ARE LIKE A COOL DRINK OF WATER.</p>
+     </text-area>
+     <text-area points="528,145 534,142 816,142 819,145 819,187 816,193 531,193 528,187" type="commentary">
+       <p>SCALING MOUNTAINS OF AUTO-JUNK AT THE WRECKING YARD OWNED BY GRAMPA'S FRIEND FYODOR.</p>
+     </text-area>
+     <text-area points="41,680 46,675 325,675 330,681 330,698 326,704 46,704 41,699" type="commentary">
+       <p>THE GLOVE-BOXES YIELDED <emphasis>TREASURES.</emphasis></p>
+     </text-area>
+     <text-area points="351,912 346,907 346,890 351,886 513,886 517,892 517,906 511,913" type="commentary">
+       <p>IT ALL TOLD A STORY.</p>
+     </text-area>
+     <text-area points="566,826 571,820 822,820 827,827 827,864 821,870 570,870 566,864" type="commentary">
+       <p>MY GRANDMOTHER SAVED <emphasis>EVERY</emphasis> SCRAD OF MY MOTHER'S LIFE IN HER BASEMENT, IN DUSTY ARMY TRUNKS.</p>
+     </text-area>
+     <text-area points="693,899 697,895 867,895 872,901 872,927 866,934 698,934 693,929" type="commentary">
+       <p>I <emphasis>ENTERTAINED</emphasis> MYSELF BY TAKING IT ALL IN.</p>
+     </text-area>
+     <text-area points="77,1089 83,1083 235,1083 240,1087 240,1107 236,1111 82,1111 77,1105" type="commentary">
+       <p>IT ALL MADE <emphasis>POEMS.</emphasis></p>
+     </text-area>
+     <text-area points="70,1181 75,1176 395,1176 399,1180 399,1223 394,1227 75,1227 69,1220" type="commentary">
+       <p>WHEN I SPREAD THEM OUT IN FRONT OF THE TV, AND ARRANGED THEM JUST SO, THEY MADE UP A POEM THAT TOOK MY BREATH AWAY.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="63,64 66,61 273,61 276,64 276,94 273,100 66,100 63,97" type="commentary">
+       <p>NIE ŽE BY BOLO MOJE DETSTVO NEJAK OBZVLÁŠŤ ŠŤASTNÉ.</p>
+     </text-area>
+     <text-area points="198,508 204,505 480,505 483,508 483,541 480,547 204,547 198,541" type="commentary">
+       <p>ALE SÚ <emphasis>SPOMIENKY,</emphasis> KTORÉ MÁM A KTORÉ SÚ AKO OSVIEŽUJÚCI POHÁR VODY.</p>
+     </text-area>
+     <text-area points="528,145 534,142 816,142 819,145 819,187 816,193 531,193 528,187" type="commentary">
+       <p>NAVRŠENÉ HORY VRAKOV ÁUT NA VRAKOVISKU, KTORÉ VLASTNIL PRIATEĽ MÔJHO DEDA, FYODOR.</p>
+     </text-area>
+     <text-area points="41,680 46,675 325,675 330,681 330,698 326,704 46,704 41,699" type="commentary">
+       <p>PRIEHRADKY V AUTÁCH UKRÝVALI <emphasis>POKLADY.</emphasis></p>
+     </text-area>
+     <text-area points="351,912 346,907 346,890 351,886 513,886 517,892 517,906 511,913" type="commentary">
+       <p>ROZPRÁVALI PRÍBEHY.</p>
+     </text-area>
+     <text-area points="566,826 571,820 822,820 827,827 827,864 821,870 570,870 566,864" type="commentary">
+       <p>MOJA STARÁ MAMA UCHOVALA <emphasis>KAŽDÝ</emphasis> KÚSOK ŽIVOTA MOJEJ MAMI V PIVNICI, V ZAPRÁŠENÝCH ARMÁDNYCH KUFROCH.</p>
+     </text-area>
+     <text-area points="693,899 697,895 867,895 872,901 872,927 866,934 698,934 693,929" type="commentary">
+       <p>ČASTO SOM SA <emphasis>HRÁVAL</emphasis> S VECAMI V NICH.</p>
+     </text-area>
+     <text-area points="77,1089 83,1083 235,1083 240,1087 240,1107 236,1111 82,1111 77,1105" type="commentary">
+       <p>VYTVÁRALO TO <emphasis>POÉZIU.</emphasis></p>
+     </text-area>
+     <text-area points="70,1181 75,1176 395,1176 399,1180 399,1223 394,1227 75,1227 69,1220" type="commentary">
+       <p>KEĎ SOM ICH ROZPRESTREL PRED TELEVÍZIOU A PEKNE NAARANŽOVAL, VYTVÁRALI JEDNU BÁSEŇ, KTORÁ MI VZALA DYCH.</p>
+     </text-area>
+   </text-layer>
+   <frame points="36,28 510,28 510,112 492,112 492,436 510,436 510,580 36,580"/>
+   <frame points="492,112 972,112 972,436 492,436 492,112"/>
+   <frame points="24,652 528,652 528,940 24,940"/>
+   <frame points="510,508 954,508 954,1000 492,1000 492,940 528,940 528,658 510,658"/>
+   <frame points="42,1012 132,1012 138,994 150,976 174,970 198,970 228,982 264,1006 270,1012 288,1012 288,994 306,970 324,958 354,958 378,988 390,1012 960,1012 972,1018 978,1108 972,1114 960,1120 960,1348 972,1360 960,1372 960,1384 996,1396 996,1402 990,1426 960,1432 960,1444 990,1456 960,1468 960,1486 864,1486 840,1492 828,1486 600,1528 564,1528 528,1516 504,1522 462,1504 390,1510 270,1522 258,1504 216,1504 216,1492 168,1516 66,1492 36,1486 30,1480 24,1462 12,1468 0,1462 0,1336 42,1330 42,1324 12,1318 0,1300 0,1240 6,1216 12,1192 30,1180 36,1180 36,1126 30,1120 30,1114 36,1108 42,1108"/>
+  </page>
+  <page>
+   <title lang="en">Annual Rotary Club Charity Rummage Sale</title>
+   <title lang="sk">Výročný charitatívny predaj v Rotary klube</title>
+   <image href="page13.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="152,59 156,55 353,55 358,59 358,123 353,128 156,128 152,121" type="commentary">
+       <p>AFTER THE COWBOY TRUNK EPISODE, I DIDN'T RUN INTO CRAPHOUND AGAIN UNTIL THE ANNUAL ROTARY CLUB CHARITY RUMMAGE SALE.</p>
+     </text-area>
+     <text-area points="402,67 409,59 560,59 567,64 567,143 561,146 409,146 403,138" type="commentary">
+       <p>HE SHOULD HAVE LOOKED <emphasis>RIDICULOUS</emphasis> IN THAT GETUP, BUT THE NET EFFECT WAS <emphasis>NAIVE</emphasis> AND SOMEHOW <emphasis>CHARMING.</emphasis></p>
+     </text-area>
+     <text-area points="424,222 430,217 584,217 589,223 589,261 584,267 430,267 424,261" type="commentary">
+       <p>LIKE HE WAS A LITTLEBOY WHOSE HAIR YOU WANTED TO MUSS.</p>
+     </text-area>
+     <text-area points="328,588 334,582 495,582 499,587 499,629 493,633 334,633 328,627" type="commentary">
+       <p>I BOUGHT SOME STUFF AND KEPT BROWSING IGNORING CRAPHOUND.</p>
+     </text-area>
+     <text-area points="203,694 207,689 377,689 381,695 381,722 377,727 208,727 203,720 203,694" type="commentary">
+       <p>THAT'S WHEN I SPOTTED THE <emphasis>INDIAN</emphasis> TOYS.</p>
+     </text-area>
+     <text-area points="452,976 457,969 619,969 623,974 623,1006 617,1009 458,1009 452,1001" type="commentary">
+       <p>I BOUGHT THEM QUICK, FOR FIVE BUCKS.</p>
+     </text-area>
+     <text-area points="292,1101 294,1093 301,1085 311,1081 328,1078 348,1076 374,1078 391,1081 401,1085 409,1094 410,1101 408,1110 402,1117 392,1121 377,1124 327,1124 315,1122 303,1118 294,1109" bgcolor="#ffffff">
+       <p>THOSE ARE <emphasis>BEAUTIFUL.</emphasis></p>
+     </text-area>
+     <text-area points="256,1400 261,1395 461,1395 465,1400 465,1440 461,1445 260,1445 255,1439" type="commentary">
+       <p>HE'D GONE CASUAL FOR THE WEEKEND, IN AN EXPENSIVE, L.L. BEAN BUTTON-DOWN WAY.</p>
+     </text-area>
+     <text-area points="503,1066 505,1059 509,1054 518,1048 530,1045 541,1043 562,1042 590,1043 601,1045 612,1048 620,1053 625,1059 627,1067 624,1078 613,1084 592,1092 552,1092 535,1091 526,1089 514,1085 507,1079 504,1071" bgcolor="#ffffff">
+       <p>AREN'T THEY, THOUGH.</p>
+     </text-area>
+     <text-area points="592,1104 593,1096 598,1091 624,1082 648,1081 663,1082 670,1084 680,1089 685,1094 687,1099 687,1108 682,1116 674,1121 661,1124 638,1125 618,1124 605,1121 596,1115 592,1108" bgcolor="#ffffff">
+       <p>HOW'S THE <emphasis>UKE?</emphasis></p>
+     </text-area>
+     <text-area points="704,1092 706,1081 710,1070 718,1061 730,1055 742,1052 751,1051 770,1049 794,1051 810,1054 824,1059 834,1069 838,1077 841,1093 838,1109 830,1122 821,1128 808,1133 784,1136 728,1130 712,1119 705,1105" bgcolor="#ffffff">
+       <p>OH, I GOT IT ALL TUNED UP, I CAN PLAY "DON'T FENCE ME IN" ON IT.</p>
+     </text-area>
+     <text-area points="728,1133 740,1133 776,1138 779,1145 781,1155 778,1167 769,1175 755,1178 733,1178 725,1175 718,1169 714,1161 714,1148 718,1139" bgcolor="#ffffff">
+       <p>SILLY, HUH?</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="152,59 156,55 353,55 358,59 358,123 353,128 156,128 152,121" type="commentary">
+       <p>PO EPIZÓDE S KOVBOJSKOU TRUHLICOU SOM NA CRAPHOUNDA ZNOVA NARAZIL AŽ NA VÝROČNOM CHARITATÍVNOM PREDAJI V ROTARY KLUBE.</p>
+     </text-area>
+     <text-area points="402,67 409,59 560,59 567,64 567,143 561,146 409,146 403,138" type="commentary">
+       <p>MAL BY VYZERAŤ <emphasis>SMIEŠNE</emphasis> V TOM PRESTROJENÍ, ALE EFEKT BOL <emphasis>NAIVNÝ</emphasis> A AKOSI <emphasis>PÔVABNÝ.</emphasis></p>
+     </text-area>
+     <text-area points="424,222 430,217 584,217 589,223 589,261 584,267 430,267 424,261" type="commentary">
+       <p>AKOBY BOL MALÝ CHLAPEC, KTORÉHO VLASY CHCETE POHLADIŤ.</p>
+     </text-area>
+     <text-area points="328,588 334,582 495,582 499,587 499,629 493,633 334,633 328,627" type="commentary">
+       <p>KÚPIL SOM PÁR VECÍ A POKRAČOVAL V PREZERANÍ IGNORUJÚC CRAPHOUNDA.</p>
+     </text-area>
+     <text-area points="203,694 207,689 377,689 381,695 381,722 377,727 208,727 203,720 203,694" type="commentary">
+       <p>V TOM SOM ZBADAL <emphasis>INDIÁNSKE</emphasis> HRAČKY.</p>
+     </text-area>
+     <text-area points="452,976 457,969 619,969 623,974 623,1006 617,1009 458,1009 452,1001" type="commentary">
+       <p>RÝCHLO SOM ICH KÚPIL ZA PÄŤ BABIEK.</p>
+     </text-area>
+     <text-area points="292,1101 294,1093 301,1085 311,1081 328,1078 348,1076 374,1078 391,1081 401,1085 409,1094 410,1101 408,1110 402,1117 392,1121 377,1124 327,1124 315,1122 303,1118 294,1109" bgcolor="#ffffff">
+       <p>TIE SÚ <emphasis>NÁDHERNÉ.</emphasis></p>
+     </text-area>
+     <text-area points="256,1400 261,1395 461,1395 465,1400 465,1440 461,1445 260,1445 255,1439" type="commentary">
+       <p>OBLIEKOL SA NEFORMÁLNE NA VÍKEND, DO DRAHÉHO SAKA OD L.L. BEANA.</p>
+     </text-area>
+     <text-area points="503,1066 505,1059 509,1054 518,1048 530,1045 541,1043 562,1042 590,1043 601,1045 612,1048 620,1053 625,1059 627,1067 624,1078 613,1084 592,1092 552,1092 535,1091 526,1089 514,1085 507,1079 504,1071" bgcolor="#ffffff">
+       <p>SÚ PEKNÉ, ŽE?</p>
+     </text-area>
+     <text-area points="592,1104 593,1096 598,1091 624,1082 648,1081 663,1082 670,1084 680,1089 685,1094 687,1099 687,1108 682,1116 674,1121 661,1124 638,1125 618,1124 605,1121 596,1115 592,1108" bgcolor="#ffffff">
+       <p>AKÉ JE <emphasis>UKULELE?</emphasis></p>
+     </text-area>
+     <text-area points="704,1092 706,1081 710,1070 718,1061 730,1055 742,1052 751,1051 770,1049 794,1051 810,1054 824,1059 834,1069 838,1077 841,1093 838,1109 830,1122 821,1128 808,1133 784,1136 728,1130 712,1119 705,1105" bgcolor="#ffffff">
+       <p>OH, CELÉ SOM HO NALADIL, A DOKÁŽEM ZAHRAŤ <emphasis>"DON'T FENCE ME IN"</emphasis> NA ŇOM.</p>
+     </text-area>
+     <text-area points="728,1133 740,1133 776,1138 779,1145 781,1155 778,1167 769,1175 755,1178 733,1178 725,1175 718,1169 714,1161 714,1148 718,1139" bgcolor="#ffffff">
+       <p>HLÚPE, ČO?</p>
+     </text-area>
+   </text-layer>
+   <frame points="42,34 378,34 378,490 42,490"/>
+   <frame points="390,34 648,34 672,16 684,10 720,10 732,22 738,34 954,34 954,664 390,664 390,634 330,634 324,628 324,586 330,580 390,580"/>
+   <frame points="24,502 390,502 390,580 330,580 324,586 324,628 330,634 390,634 390,658 408,658 408,1030 24,1030"/>
+   <frame points="426,676 954,676 954,1036 426,1036"/>
+   <frame points="42,1042 480,1042 480,1168 468,1306 468,1444 462,1450 444,1450 420,1480 42,1480"/>
+   <frame points="480,1150 498,1138 546,1132 600,1138 612,1150 636,1150 654,1162 666,1144 654,1132 612,1132 588,1120 582,1102 516,1096 498,1078 498,1060 510,1042 534,1036 600,1036 630,1048 636,1060 636,1072 666,1072 690,1084 708,1054 750,1042 810,1042 840,1060 852,1084 846,1120 810,1150 864,1144 888,1144 936,1168 960,1204 966,1228 960,1264 930,1330 936,1354 954,1372 978,1378 990,1390 996,1414 996,1534 384,1534 384,1522 408,1480 420,1468 444,1444 456,1444 462,1438 462,1396 444,1378 450,1366 444,1348 450,1324 438,1312 444,1288 432,1270 432,1234 420,1240 444,1210 456,1186 456,1174 468,1168"/>
+  </page>
+  <page>
+   <image href="page14.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="84,63 85,59 88,51 94,45 101,42 228,42 235,49 240,59 240,69 237,78 228,86 217,91 204,94 179,96 130,95 113,92 100,88 89,79 85,69" bgcolor="#ffffff">
+       <p>NOT AT ALL. YOU'RE INTO <emphasis>COWBOY</emphasis> THINGS, HUH?</p>
+     </text-area>
+     <text-area points="254,57 260,51 492,51 497,56 497,110 490,116 261,116 254,111 254,57" type="commentary">
+       <p>AS I SAID IT, I WAS OVERCOME WITH THE KNOWLEDGE THAT THIS WAS "BILLY THE KID", THE ORIGINAL OWNER OF THE COWBOY TRUNK.</p>
+     </text-area>
+     <text-area points="231,398 237,392 495,392 501,398 500,427 496,432 237,432 231,424" type="commentary">
+       <p>I DON'T KNOW WHY I FELT THAT WAY, BUT I DID, WITH UTTER CERTAINTY.</p>
+     </text-area>
+     <text-area points="653,67 655,56 661,48 669,43 806,43 811,46 817,52 821,62 822,68 821,75 817,83 812,89 803,94 791,98 782,100 756,103 705,102 693,99 676,95 663,89 657,82 654,74" bgcolor="#ffffff">
+       <p>JUST TRYING TO RE-LIVE A PIECE OF MY CHILDHOOD, I GUESS. I'M SCOTT.</p>
+     </text-area>
+     <text-area points="710,280 714,274 851,274 855,278 855,307 849,312 716,312 710,306" type="commentary">
+       <p>SCOTT? MAYBE IT'S HIS MIDDLE NAME?</p>
+     </text-area>
+     <text-area points="688,343 690,335 694,329 701,324 713,322 725,321 736,322 748,325 755,330 758,335 760,343 758,350 755,356 747,361 725,364 706,362 696,358 690,351 688,344" bgcolor="#ffffff">
+       <p>I'M JERRY.</p>
+     </text-area>
+     <text-area points="55,515 56,505 61,496 71,489 85,486 110,486 123,489 132,496 138,507 137,523 133,532 124,541 110,544 83,544 68,540 58,530 55,515" bgcolor="#ffffff">
+       <p>YOU'RE A PRO, RIGHT?</p>
+     </text-area>
+     <text-area points="145,546 146,541 149,535 152,530 160,525 169,522 188,520 212,521 219,524 228,528 234,536 235,543 235,555 229,563 220,569 203,571 191,572 177,571 162,568 154,564 147,556" bgcolor="#ffffff">
+       <p>YOU COULD SAY THAT.</p>
+     </text-area>
+     <text-area points="241,523 243,517 245,509 252,501 267,495 275,493 291,492 317,492 331,493 344,496 354,501 360,508 364,515 364,531 359,541 351,547 340,552 320,555 285,555 272,553 255,547 247,540 242,528" bgcolor="#ffffff">
+       <p>I'M A RANK <emphasis>AMATEUR,</emphasis> ANY WORDS OF WISDOM?</p>
+     </text-area>
+     <text-area points="485,515 486,508 492,501 500,496 515,492 527,490 591,489 598,490 609,492 621,495 628,498 639,508 639,522 635,528 626,534 611,538 603,540 536,541 522,540 511,538 499,534 489,527 486,521" bgcolor="#ffffff">
+       <p>THERE'S NO SECRET TO IT. JUST DILIGENCE.</p>
+     </text-area>
+     <text-area points="495,580 496,570 500,562 509,553 525,548 535,545 567,542 603,543 620,546 635,551 647,558 653,567 656,581 653,594 647,603 636,610 622,615 601,618 549,618 534,616 522,613 509,608 501,600 496,592" bgcolor="#ffffff">
+       <p>YOU'VE GOT TO GO OUT <emphasis>EVERY</emphasis> CHANCE YOU GET, OR YOU'LL MISS THE BIG SCORE.</p>
+     </text-area>
+     <text-area points="742,506 744,497 750,490 762,486 779,484 798,486 809,490 815,496 818,506 817,512 814,519 807,525 802,527 756,527 753,525 748,521 744,515 742,506 742,506" bgcolor="#ffffff">
+       <p>I HEAR THAT.</p>
+     </text-area>
+     <text-area points="696,589 697,573 702,559 711,545 729,534 746,530 775,528 817,530 833,534 847,542 857,552 862,560 865,570 866,578 868,589 866,600 862,617 853,631 842,639 823,646 806,649 756,649 740,646 723,640 708,628 700,615 697,604" bgcolor="#ffffff">
+       <p>SOMETIMES I GET SO <emphasis>WOUND UP</emphasis> AT WORK, I'M NO GOOD UNTIL I GO DOWN TO THE GOODWILL AND HUNT FOR THAT PIECE OF PURE GOLD.</p>
+     </text-area>
+     <text-area points="217,1148 220,1133 224,1123 235,1113 248,1106 261,1103 294,1100 329,1101 344,1104 358,1109 369,1117 376,1124 380,1133 382,1146 381,1158 377,1171 370,1180 363,1185 354,1189 339,1194 328,1195 271,1195 254,1192 239,1186 229,1179 221,1167 218,1155" bgcolor="#ffffff">
+       <p>SO ... ABOUT THAT INDIAN STUFF. WHAT DO YOU FIGURE YOU'D GET FOR IT AT A QUEEN STREET BUTIQUE.</p>
+     </text-area>
+     <text-area points="89,1431 92,1425 470,1425 474,1429 474,1456 468,1463 95,1463 89,1457 89,1431" type="commentary">
+       <p>JUST THEN, HE WAS AS EAGER AND NERVOUS AS A KITCHEN-TABLE POKER-PLAYER AT A HIGH-STAKES GAME.</p>
+     </text-area>
+     <text-area points="629,1101 630,1096 635,1087 645,1082 660,1079 678,1077 698,1079 712,1082 722,1087 727,1094 728,1102 727,1110 721,1117 712,1122 697,1125 678,1126 660,1125 650,1123 641,1120 633,1114 629,1105" bgcolor="#ffffff">
+       <p>MAYBE FIFTY BUCKS.</p>
+     </text-area>
+     <text-area points="712,1144 713,1138 716,1132 723,1127 731,1125 745,1125 761,1125 769,1128 775,1135 778,1143 776,1153 772,1159 766,1163 753,1166 729,1165 719,1160 713,1154 712,1149" bgcolor="#ffffff">
+       <p>FIFTY, HUH?</p>
+     </text-area>
+     <text-area points="665,1190 666,1182 671,1175 683,1170 698,1168 718,1170 728,1175 733,1184 733,1194 732,1202 725,1209 716,1212 684,1213 676,1210 670,1205 666,1198" bgcolor="#ffffff">
+       <p>ABOUT THAT.</p>
+     </text-area>
+     <text-area points="686,1245 690,1235 699,1229 714,1226 741,1226 752,1227 763,1232 769,1241 769,1251 760,1261 749,1265 719,1266 705,1264 691,1258" bgcolor="#ffffff">
+       <p>ONCE IT SOLD.</p>
+     </text-area>
+     <text-area points="653,1295 655,1287 661,1280 669,1277 682,1275 697,1275 711,1276 721,1278 730,1286 733,1294 731,1302 727,1309 717,1314 710,1315 691,1317 674,1316 664,1312 656,1307 654,1300" bgcolor="#ffffff">
+       <p>THERE IS THAT.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="84,63 85,59 88,51 94,45 101,42 228,42 235,49 240,59 240,69 237,78 228,86 217,91 204,94 179,96 130,95 113,92 100,88 89,79 85,69" bgcolor="#ffffff">
+       <p>ALE VÔBEC NIE. STE DO <emphasis>KOVBOJSKÝCH</emphasis> VECÍ, ŽE ÁNO?</p>
+     </text-area>
+     <text-area points="254,57 260,51 492,51 497,56 497,110 490,116 261,116 254,111 254,57" type="commentary">
+       <p>HNEĎ AKO SOM TO DOPOVEDAL, BOL SOM PRESVEDČENÝ, ŽE TOTO JE "BILLY THE KID", PÔVODNÝ VLASTNÍK KOVBOJSKEJ TRUHLICE.</p>
+     </text-area>
+     <text-area points="231,398 237,392 495,392 501,398 500,427 496,432 237,432 231,424" type="commentary">
+       <p>NEVIEM, PREČO SOM SI TO MYSLEL, ALE BOL SOM O TOM NA 100 PERCENT PRESVEDČENÝ.</p>
+     </text-area>
+     <text-area points="653,67 655,56 661,48 669,43 806,43 811,46 817,52 821,62 822,68 821,75 817,83 812,89 803,94 791,98 782,100 756,103 705,102 693,99 676,95 663,89 657,82 654,74" bgcolor="#ffffff">
+       <p>LEN SA POKÚŠAM OŽIVIŤ KÚSOK MOJHO DETSTVA, MYSLÍM. SOM SCOTT.</p>
+     </text-area>
+     <text-area points="710,280 714,274 851,274 855,278 855,307 849,312 716,312 710,306" type="commentary">
+       <p>SCOTT? MOŽNO JE TO JEHO PROSTREDNÉ MENO?</p>
+     </text-area>
+     <text-area points="688,343 690,335 694,329 701,324 713,322 725,321 736,322 748,325 755,330 758,335 760,343 758,350 755,356 747,361 725,364 706,362 696,358 690,351 688,344" bgcolor="#ffffff">
+       <p>JA SOM JERRY.</p>
+     </text-area>
+     <text-area points="55,515 56,505 61,496 71,489 85,486 110,486 123,489 132,496 138,507 137,523 133,532 124,541 110,544 83,544 68,540 58,530 55,515" bgcolor="#ffffff">
+       <p>SI PROFÍK, ŽE?</p>
+     </text-area>
+     <text-area points="145,546 146,541 149,535 152,530 160,525 169,522 188,520 212,521 219,524 228,528 234,536 235,543 235,555 229,563 220,569 203,571 191,572 177,571 162,568 154,564 147,556" bgcolor="#ffffff">
+       <p>DALO BY SA POVEDAŤ.</p>
+     </text-area>
+     <text-area points="241,523 243,517 245,509 252,501 267,495 275,493 291,492 317,492 331,493 344,496 354,501 360,508 364,515 364,531 359,541 351,547 340,552 320,555 285,555 272,553 255,547 247,540 242,528" bgcolor="#ffffff">
+       <p>JA SOM IBA <emphasis>AMATÉR,</emphasis> NEJAKÉ RADY?</p>
+     </text-area>
+     <text-area points="485,515 486,508 492,501 500,496 515,492 527,490 591,489 598,490 609,492 621,495 628,498 639,508 639,522 635,528 626,534 611,538 603,540 536,541 522,540 511,538 499,534 489,527 486,521" bgcolor="#ffffff">
+       <p>NIE JE V TOM ŽIADNE TAJOMSTVO. LEN PRACOVITOSŤ.</p>
+     </text-area>
+     <text-area points="495,580 496,570 500,562 509,553 525,548 535,545 567,542 603,543 620,546 635,551 647,558 653,567 656,581 653,594 647,603 636,610 622,615 601,618 549,618 534,616 522,613 509,608 501,600 496,592" bgcolor="#ffffff">
+       <p>MUSÍŠ VYUŽIŤ <emphasis>KAŽDÚ</emphasis> ŠANCU, KTORÚ DOSTANEŠ, INAK TI UNIKNE NEJAKÁ VEĽKÁ VEC.</p>
+     </text-area>
+     <text-area points="742,506 744,497 750,490 762,486 779,484 798,486 809,490 815,496 818,506 817,512 814,519 807,525 802,527 756,527 753,525 748,521 744,515 742,506 742,506" bgcolor="#ffffff">
+       <p>ROZUMIEM.</p>
+     </text-area>
+     <text-area points="696,589 697,573 702,559 711,545 729,534 746,530 775,528 817,530 833,534 847,542 857,552 862,560 865,570 866,578 868,589 866,600 862,617 853,631 842,639 823,646 806,649 756,649 740,646 723,640 708,628 700,615 697,604" bgcolor="#ffffff">
+       <p>NIEKEDY SA TAK <emphasis>ZAMOTÁM</emphasis> DO PRÁCE, ŽE SOM K NIČOMU, DOKIAĽ SA NEVRÁTIM K SKUTOČNÝM HODNOTÁM A K TOMU, NA ČOM NAOZAJ ZÁLEŽÍ.</p>
+     </text-area>
+     <text-area points="217,1148 220,1133 224,1123 235,1113 248,1106 261,1103 294,1100 329,1101 344,1104 358,1109 369,1117 376,1124 380,1133 382,1146 381,1158 377,1171 370,1180 363,1185 354,1189 339,1194 328,1195 271,1195 254,1192 239,1186 229,1179 221,1167 218,1155" bgcolor="#ffffff">
+       <p>TAKŽE ... K TÝM INDIÁNSKYM VECIAM. ČO MYSLÍŠ, KOĽKO BY TI ZATO DALI V BUTIKU NA QUEEN STREET.</p>
+     </text-area>
+     <text-area points="89,1431 92,1425 470,1425 474,1429 474,1456 468,1463 95,1463 89,1457 89,1431" type="commentary">
+       <p>A VTEDY BOL DYCHTIVÝ A NERVÓZNY AKO HRÁČ POKRU PRI HRE O VYSOKÉ STÁVKY.</p>
+     </text-area>
+     <text-area points="629,1101 630,1096 635,1087 645,1082 660,1079 678,1077 698,1079 712,1082 722,1087 727,1094 728,1102 727,1110 721,1117 712,1122 697,1125 678,1126 660,1125 650,1123 641,1120 633,1114 629,1105" bgcolor="#ffffff">
+       <p>MOŽNO 50 BABIEK.</p>
+     </text-area>
+     <text-area points="712,1144 713,1138 716,1132 723,1127 731,1125 745,1125 761,1125 769,1128 775,1135 778,1143 776,1153 772,1159 766,1163 753,1166 729,1165 719,1160 713,1154 712,1149" bgcolor="#ffffff">
+       <p>PÄŤDESIAT HMM?</p>
+     </text-area>
+     <text-area points="665,1190 666,1182 671,1175 683,1170 698,1168 718,1170 728,1175 733,1184 733,1194 732,1202 725,1209 716,1212 684,1213 676,1210 670,1205 666,1198" bgcolor="#ffffff">
+       <p>ASI TAK.</p>
+     </text-area>
+     <text-area points="686,1245 690,1235 699,1229 714,1226 741,1226 752,1227 763,1232 769,1241 769,1251 760,1261 749,1265 719,1266 705,1264 691,1258" bgcolor="#ffffff">
+       <p>AK SA TO PREDÁ.</p>
+     </text-area>
+     <text-area points="653,1295 655,1287 661,1280 669,1277 682,1275 697,1275 711,1276 721,1278 730,1286 733,1294 731,1302 727,1309 717,1314 710,1315 691,1317 674,1316 664,1312 656,1307 654,1300" bgcolor="#ffffff">
+       <p>PRESNE TAK.</p>
+     </text-area>
+   </text-layer>
+   <frame points="36,34 516,34 516,460 36,460"/>
+   <frame points="528,34 954,34 954,460 522,460 528,34"/>
+   <frame points="36,472 378,472 378,1048 36,1048"/>
+   <frame points="390,472 666,472 666,1048 390,1048"/>
+   <frame points="678,472 954,472 954,1048 678,1048"/>
+   <frame points="36,1060 492,1060 492,1486 36,1486"/>
+   <frame points="498,1060 954,1060 954,1486 498,1486"/>
+  </page>
+  <page>
+   <image href="page15.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="216,82 219,71 228,61 247,54 266,52 304,52 326,55 345,63 352,73 353,83 350,95 344,102 335,107 325,110 318,111 306,113 267,113 251,111 238,108 229,104 222,98 217,89" bgcolor="#ffffff">
+       <p>MIGHT TAKE A MONTH, MIGHT TAKE A <emphasis>YEAR.</emphasis></p>
+     </text-area>
+     <text-area points="222,152 224,145 228,137 236,131 243,130 256,128 275,129 284,133 291,138 295,147 295,157 293,164 287,171 281,174 275,176 243,176 231,171 225,164 223,158" bgcolor="#ffffff">
+       <p>MIGHT TAKE A <emphasis>DAY.</emphasis></p>
+     </text-area>
+     <text-area points="232,211 234,203 238,197 243,193 252,190 260,188 277,187 301,188 311,192 320,198 323,206 325,217 323,221 312,230 297,234 278,235 260,234 247,231 237,225 234,219" bgcolor="#ffffff">
+       <p>IT MIGHT, IT MIGHT.</p>
+     </text-area>
+     <text-area points="673,134 674,127 678,120 685,115 693,112 706,109 720,107 753,107 769,109 782,112 793,117 799,124 801,133 798,144 794,150 785,155 776,158 759,161 722,161 705,159 692,156 680,150 674,141" bgcolor="#ffffff">
+       <p>I DON'T SUPPOSE YOU'D TAKE FORTY?</p>
+     </text-area>
+     <text-area points="810,277 815,272 936,272 941,277 941,318 934,323 816,323 810,317" type="commentary">
+       <p>I'D PAID <emphasis>FIVE</emphasis> FOR IT, NOT TEN MINUTES BEFORE.</p>
+     </text-area>
+     <text-area points="728,341 733,336 941,336 946,341 946,383 940,388 735,388 728,382" type="commentary">
+       <p>YOU DON'T MAKE A LIVING BY FEELING GUILTY OVER EIGHT HUNDRED PERCENT <emphasis>MARKUPS.</emphasis></p>
+     </text-area>
+     <text-area points="228,528 233,521 468,521 473,525 473,557 468,562 235,562 227,554" type="commentary">
+       <p>STILL I'D <emphasis>ANGERED</emphasis> THE FATES, AND NEEDED TO <emphasis>REDEEM</emphasis> MYSELF.</p>
+     </text-area>
+     <text-area points="246,616 250,607 255,603 261,601 271,599 288,599 297,601 304,604 310,610 313,620 311,631 307,638 301,641 289,644 269,644 256,643 252,638 247,632 246,627 246,616" bgcolor="#ffffff">
+       <p>MAKE IT FIVE.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="216,82 219,71 228,61 247,54 266,52 304,52 326,55 345,63 352,73 353,83 350,95 344,102 335,107 325,110 318,111 306,113 267,113 251,111 238,108 229,104 222,98 217,89" bgcolor="#ffffff">
+       <p>TO ALE MÔŽE TRVAŤ MESIAC, MÔŽE TO TRVAŤ AJ <emphasis>ROK.</emphasis></p>
+     </text-area>
+     <text-area points="222,152 224,145 228,137 236,131 243,130 256,128 275,129 284,133 291,138 295,147 295,157 293,164 287,171 281,174 275,176 243,176 231,171 225,164 223,158" bgcolor="#ffffff">
+       <p>MÔŽE TO TRVAŤ AJ JEDEN <emphasis>DEŇ.</emphasis></p>
+     </text-area>
+     <text-area points="232,211 234,203 238,197 243,193 252,190 260,188 277,187 301,188 311,192 320,198 323,206 325,217 323,221 312,230 297,234 278,235 260,234 247,231 237,225 234,219" bgcolor="#ffffff">
+       <p>TO BY MOHLO, TO BY MOHLO.</p>
+     </text-area>
+     <text-area points="673,134 674,127 678,120 685,115 693,112 706,109 720,107 753,107 769,109 782,112 793,117 799,124 801,133 798,144 794,150 785,155 776,158 759,161 722,161 705,159 692,156 680,150 674,141" bgcolor="#ffffff">
+       <p>ZOBRAL BY SI ŠTYRIDSAŤ?</p>
+     </text-area>
+     <text-area points="810,277 815,272 936,272 941,277 941,318 934,323 816,323 810,317" type="commentary">
+       <p>ZAPLATIL SOM ZA TO <emphasis>PÄŤKU</emphasis> ANI NIE 10 MINÚT PREDTÝM.</p>
+     </text-area>
+     <text-area points="728,341 733,336 941,336 946,341 946,383 940,388 735,388 728,382" type="commentary">
+       <p>NIKDY NEZAROBÍŠ NA SLUŠNÝ ŽIVOT, KEĎ SA BUDEŠ CÍTIŤ VINNÝ ZA 800 PERCENTNÚ <emphasis>MARŽU.</emphasis></p>
+     </text-area>
+     <text-area points="228,528 233,521 468,521 473,525 473,557 468,562 235,562 227,554" type="commentary">
+       <p>AVŠAK JA SOM <emphasis>URAZIL</emphasis> SVOJ OSUD, A POTREBOVAL SOM TO NEJAKO <emphasis>OPLATIŤ.</emphasis></p>
+     </text-area>
+     <text-area points="246,616 250,607 255,603 261,601 271,599 288,599 297,601 304,604 310,610 313,620 311,631 307,638 301,641 289,644 269,644 256,643 252,638 247,632 246,627 246,616" bgcolor="#ffffff">
+       <p>DÁM TI TO ZA PÄŤ.</p>
+     </text-area>
+   </text-layer>
+   <frame points="30,28 504,28 504,454 30,454"/>
+   <frame points="504,94 960,94 960,400 504,400"/>
+   <frame points="12,526 222,526 228,514 468,514 480,520 480,526 522,526 522,838 12,838"/>
+   <frame points="522,394 942,394 942,898 516,898"/>
+   <frame points="30,910 306,910 306,1486 30,1486"/>
+   <frame points="318,910 588,910 588,1486 312,1486"/>
+   <frame points="600,910 942,910 942,1486 600,1486"/>
+  </page>
+  <page>
+   <title lang="en">Lunch with Scott</title>
+   <title lang="sk">Obed so Scottom</title>
+   <image href="page16.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="61,55 66,51 341,51 346,55 346,85 343,90 65,90 61,85" type="commentary">
+       <p>SCOTT WAS A LAWYER, WHO SPECIALIZED IN ALIEN-TECHNOLOGY <emphasis>PATENTS.</emphasis></p>
+     </text-area>
+     <text-area points="182,115 188,109 377,109 383,113 383,145 379,149 187,149 182,144" type="commentary">
+       <p>I DIDN'T LET ON THAT I KNEW ABOUT BILLY THE KID.</p>
+     </text-area>
+     <text-area points="636,52 641,47 927,47 932,51 932,83 928,87 640,87 636,81" type="commentary">
+       <p>BUT I FELT A <emphasis>BOND</emphasis> WITH HIM, AS THOUGH WE SHARED AN UNSPOKEN SECRET.</p>
+     </text-area>
+     <text-area points="305,438 312,432 473,432 478,437 478,516 474,521 310,521 305,514" type="commentary">
+       <p>I PULLED ANY COWBOY FINDS FOR HIM, AND HE DEVELOPED A PRETTY GOOD EYE FOR WHAT I WAS AFTER AND RETURNED THE FAVOR.</p>
+     </text-area>
+     <text-area points="533,451 538,445 652,445 656,449 656,479 651,483 538,483 533,477" type="commentary">
+       <p>THE FATES WERE WITH ME AGAIN.</p>
+     </text-area>
+     <text-area points="551,503 556,498 665,498 672,505 672,565 665,572 556,572 551,566" type="commentary">
+       <p>AS FAR AS I WAS CONCERNED, SCOTT/BILLY WAS A FELLOW CRAPHOUND.</p>
+     </text-area>
+     <text-area points="341,884 342,876 345,871 352,866 362,863 373,861 395,861 408,863 417,866 424,872 428,883 427,891 423,898 415,903 404,906 377,907 365,906 357,904 348,900 343,894" bgcolor="#ffffff">
+       <p>LOOK AT <strong>THAT</strong>!</p>
+     </text-area>
+     <text-area points="52,1157 54,1149 60,1137 73,1130 90,1127 119,1127 135,1130 147,1136 154,1147 154,1165 149,1174 139,1180 130,1183 122,1185 90,1185 78,1183 66,1179 57,1171 54,1163" bgcolor="#ffffff">
+       <p>WAS THAT AN EXTEE DRIVING?</p>
+     </text-area>
+     <text-area points="220,1170 223,1160 231,1152 241,1148 254,1145 271,1143 308,1143 324,1145 338,1148 347,1152 356,1160 358,1171 355,1182 345,1191 332,1195 319,1198 271,1198 256,1197 247,1195 237,1192 229,1188 223,1182" bgcolor="#ffffff">
+       <p>YEAH. USED TO BE A FRIEND OF MINE.</p>
+     </text-area>
+     <text-area points="237,1251 238,1243 242,1237 249,1232 262,1229 279,1227 296,1229 308,1232 316,1238 321,1248 319,1256 315,1263 308,1267 298,1270 278,1272 259,1270 248,1267 241,1262 238,1256" bgcolor="#ffffff">
+       <p>HE'S A PICKER?</p>
+     </text-area>
+     <text-area points="720,1147 722,1140 727,1134 735,1131 755,1129 771,1130 784,1132 792,1139 794,1145 793,1150 790,1155 784,1159 780,1161 771,1162 743,1162 730,1159 723,1155" bgcolor="#ffffff">
+       <p>UH-HUH.</p>
+     </text-area>
+     <text-area points="672,1206 674,1195 677,1188 682,1181 692,1176 703,1173 720,1171 736,1171 751,1173 765,1178 774,1184 779,1191 781,1204 780,1217 777,1224 771,1231 758,1237 741,1240 712,1240 702,1239 686,1233 677,1224 674,1217" bgcolor="#ffffff">
+       <p>DO YOU KNOW HOW HE MADE HIS STAKE?</p>
+     </text-area>
+     <text-area points="636,1431 638,1423 640,1418 645,1412 656,1406 667,1403 678,1401 703,1400 728,1401 743,1404 754,1409 762,1415 766,1426 766,1437 762,1447 754,1453 744,1458 729,1461 675,1461 665,1459 655,1456 645,1450 640,1443 637,1437" bgcolor="#ffffff">
+       <p>THE CHLOROPHYL THING IN SAUDI ARABIA.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="61,55 66,51 341,51 346,55 346,85 343,90 65,90 61,85" type="commentary">
+       <p>SCOTT BOL PRÁVNIK, KTORÝ SA ŠPECIALIZOVAL NA <emphasis>PATENTY</emphasis> MIMOZEMSKEJ TECHNOLÓGIE.</p>
+     </text-area>
+     <text-area points="182,115 188,109 377,109 383,113 383,145 379,149 187,149 182,144" type="commentary">
+       <p>NEDAL SOM MU NAJAVO, ŽE VIEM O BILLY THE KIDOVI.</p>
+     </text-area>
+     <text-area points="636,52 641,47 927,47 932,51 932,83 928,87 640,87 636,81" type="commentary">
+       <p>ALE CÍTIL SOM S NÍM ZVLÁŠTNE <emphasis>PUTO,</emphasis> AKOBY SME ZDIELALI NEVYSLOVENÉ TAJOMSTVO.</p>
+     </text-area>
+     <text-area points="305,438 312,432 473,432 478,437 478,516 474,521 310,521 305,514" type="commentary">
+       <p>NECHÁVAL SOM MU VŠETKY KOVBOJSKÉ NÁLEZY A ON SI VYVINUL VEĽMI DOBRÉ OKO NA TO, ČO ZAUJÍMALO MŇA A OPLATIL MI TO.</p>
+     </text-area>
+     <text-area points="533,451 538,445 652,445 656,449 656,479 651,483 538,483 533,477" type="commentary">
+       <p>OSUD BOL OPÄŤ NA MOJEJ STRANE.</p>
+     </text-area>
+     <text-area points="551,503 556,498 665,498 672,505 672,565 665,572 556,572 551,566" type="commentary">
+       <p>BOLO MI JASNÉ, ŽE SCOTT/BILLY JE KOLEGA CRAPHOUND.</p>
+     </text-area>
+     <text-area points="341,884 342,876 345,871 352,866 362,863 373,861 395,861 408,863 417,866 424,872 428,883 427,891 423,898 415,903 404,906 377,907 365,906 357,904 348,900 343,894" bgcolor="#ffffff">
+       <p>POZRI SA <emphasis>NA TO!</emphasis></p>
+     </text-area>
+     <text-area points="52,1157 54,1149 60,1137 73,1130 90,1127 119,1127 135,1130 147,1136 154,1147 154,1165 149,1174 139,1180 130,1183 122,1185 90,1185 78,1183 66,1179 57,1171 54,1163" bgcolor="#ffffff">
+       <p>TO BOL MIMOZEMŠŤAN NA TOM AUTE?</p>
+     </text-area>
+     <text-area points="220,1170 223,1160 231,1152 241,1148 254,1145 271,1143 308,1143 324,1145 338,1148 347,1152 356,1160 358,1171 355,1182 345,1191 332,1195 319,1198 271,1198 256,1197 247,1195 237,1192 229,1188 223,1182" bgcolor="#ffffff">
+       <p>JASNE. BÝVAL TO MÔJ PRIATEĽ.</p>
+     </text-area>
+     <text-area points="237,1251 238,1243 242,1237 249,1232 262,1229 279,1227 296,1229 308,1232 316,1238 321,1248 319,1256 315,1263 308,1267 298,1270 278,1272 259,1270 248,1267 241,1262 238,1256" bgcolor="#ffffff">
+       <p>TAKISTO ZBERAČ?</p>
+     </text-area>
+     <text-area points="720,1147 722,1140 727,1134 735,1131 755,1129 771,1130 784,1132 792,1139 794,1145 793,1150 790,1155 784,1159 780,1161 771,1162 743,1162 730,1159 723,1155" bgcolor="#ffffff">
+       <p>UH-HUH.</p>
+     </text-area>
+     <text-area points="672,1206 674,1195 677,1188 682,1181 692,1176 703,1173 720,1171 736,1171 751,1173 765,1178 774,1184 779,1191 781,1204 780,1217 777,1224 771,1231 758,1237 741,1240 712,1240 702,1239 686,1233 677,1224 674,1217" bgcolor="#ffffff">
+       <p>VIEŠ AKO NAHROMADIL SVOJ MAJETOK?</p>
+     </text-area>
+     <text-area points="636,1431 638,1423 640,1418 645,1412 656,1406 667,1403 678,1401 703,1400 728,1401 743,1404 754,1409 762,1415 766,1426 766,1437 762,1447 754,1453 744,1458 729,1461 675,1461 665,1459 655,1456 645,1450 640,1443 637,1437" bgcolor="#ffffff">
+       <p>TÁ CHLOROPHYLOVÁ VEC V SAUDSKEJ ARÁBII.</p>
+     </text-area>
+   </text-layer>
+   <frame points="36,28 396,28 396,406 36,406"/>
+   <frame points="402,28 954,28 954,412 402,412"/>
+   <frame points="36,412 492,412 492,742 36,742"/>
+   <frame points="498,412 954,412 954,742 498,742"/>
+   <frame points="36,748 558,748 558,1102 36,1102"/>
+   <frame points="564,748 954,748 954,1102 564,1102"/>
+   <frame points="36,1114 492,1114 492,1492 36,1492"/>
+   <frame points="498,1114 954,1114 954,1486 504,1492"/>
+  </page>
+  <page>
+   <image href="page17.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="184,195 185,180 190,168 201,157 214,150 227,148 252,146 280,148 298,153 309,159 320,173 323,186 323,204 318,219 311,228 299,236 282,241 269,242 238,242 225,241 213,238 203,233 193,225 187,214 185,209" bgcolor="#ffffff">
+       <p><strong>SWEET!</strong> I'VE GOT A CLIENT WHO'S GOT SOME SECONDARY PATENTS FROM THAT ONE.</p>
+     </text-area>
+     <text-area points="431,246 433,232 437,222 445,213 457,207 470,204 493,202 518,204 531,207 542,213 551,222 555,235 555,255 552,265 546,274 535,281 519,286 509,287 462,285 452,281 442,274 435,265 433,257" bgcolor="#ffffff">
+       <p>YEAH. HE GOT INTO THE COWBOYS AND INJUNS STUFF RECENTLY.</p>
+     </text-area>
+     <text-area points="389,342 391,326 394,317 398,310 406,303 417,297 432,292 456,289 465,288 510,291 522,294 531,297 543,304 550,311 555,320 557,327 557,351 552,364 544,373 532,380 524,383 511,386 499,388 448,388 436,386 423,383 410,377 400,370 392,356" bgcolor="#ffffff">
+       <p>FOUND A <emphasis>TRUNK</emphasis> OF OLD COWBOY THINGS AT THE EAST MUSKOSA VOLUNTEER FIRE DEPARTMENT LADIE'S AUXILIARY.</p>
+     </text-area>
+     <text-area points="653,56 659,51 808,51 812,56 812,89 807,93 658,93 654,88" type="commentary">
+       <p>I WANTED FOR HIM TO SHOUT OR STARTLE.</p>
+     </text-area>
+     <text-area points="757,113 763,106 836,106 840,111 840,130 835,135 764,135 757,128" type="commentary">
+       <p>HE DIDN'T.</p>
+     </text-area>
+     <text-area points="745,362 746,351 752,340 764,333 778,328 790,327 832,328 845,331 857,337 864,345 867,352 867,370 862,379 854,386 837,392 824,394 789,394 776,392 765,389 754,382 748,374" bgcolor="#ffffff">
+       <p>YEAH? A GOOD FIND. I GUESS. WISH I'D MADE IT.</p>
+     </text-area>
+     <text-area points="152,475 155,462 163,451 173,445 190,441 210,439 231,439 247,441 264,445 276,452 282,463 284,470 284,481 281,492 270,502 264,506 187,509 175,506 164,500 157,492 154,484" bgcolor="#ffffff">
+       <p>I THINK ABOUT WHAT <emphasis>THEY</emphasis> GET OUT OF IT A LOT.</p>
+     </text-area>
+     <text-area points="155,552 157,540 162,530 170,522 181,516 189,512 264,509 279,511 297,516 312,525 320,536 322,548 321,564 315,575 304,584 292,589 280,592 267,594 210,593 190,590 175,584 166,578 160,570 157,562" bgcolor="#ffffff">
+       <p>I MEAN, THERE'S <emphasis>NOTHING</emphasis> WE HAVE HERE THAT THEY COULDN'T <emphasis>MAKE</emphasis> FOR THEMSELVES.</p>
+     </text-area>
+     <text-area points="370,917 371,904 376,890 388,876 408,867 431,862 462,860 489,861 518,867 534,874 546,884 552,895 555,908 555,925 552,939 540,956 534,958 500,965 463,973 441,973 411,968 391,960 378,946 373,936 371,930" bgcolor="#ffffff">
+       <p>YOU KNOW, I JUST CLOSED A DEAL FOR A BIOCHEMICAL COMPUTER THAT'S NO-SHIT 10,000 TIMES FASTER THAN <emphasis>ANYTHING</emphasis> WE'VE BUILT OUT OF SILICON!</p>
+     </text-area>
+     <text-area points="464,974 539,958 566,960 587,963 605,969 618,978 624,987 626,995 629,1008 627,1023 620,1037 618,1039 462,1039 455,1030 452,1021 452,996 455,987 464,976" bgcolor="#ffffff">
+       <p>YOU KNOW WHAT THE EXTEE TOOK IN TRADE? TITLE TO A <emphasis>DEFUNCT</emphasis> FAIRGROUND OUTSIDE OF CALGARY.</p>
+     </text-area>
+     <text-area points="739,467 742,456 750,447 768,441 789,439 808,441 824,445 833,452 837,463 837,473 834,480 829,487 754,489 745,482 740,472" bgcolor="#ffffff">
+       <p>DOESN'T THAT BEAT ALL?</p>
+     </text-area>
+     <text-area points="712,549 713,540 715,529 719,517 725,508 737,498 751,492 829,489 853,496 867,507 874,517 879,531 880,547 879,565 871,584 862,594 847,602 836,607 824,608 796,610 770,608 749,604 730,593 719,579 715,566" bgcolor="#ffffff">
+       <p>THIS THING IS WORTH A <emphasis>BILLION DOLLARS</emphasis> RIGHT OUT OF THE GATE. FOR A CRUMMY REAL-ESTATE DOG THAT YOU COULDN'T GET FIVE GRAND FOR.</p>
+     </text-area>
+     <text-area points="685,975 691,968 937,968 941,973 941,1025 937,1030 691,1030 685,1024" type="commentary">
+       <p>IT WAS EASY TO FORGET THAT HE WAS A HIGH-POWERED LAWYER WHEN WE WERE JAWING AND FOOLING AROUND LIKE OLD CRAPHOUNDS.</p>
+     </text-area>
+     <text-area points="397,1116 398,1108 401,1096 409,1085 422,1078 440,1074 462,1072 487,1074 502,1077 518,1085 526,1095 529,1102 530,1115 528,1129 524,1139 516,1147 506,1153 488,1157 441,1157 422,1153 408,1145 400,1130 398,1122" bgcolor="#ffffff">
+       <p>WHAT THE HELL IS SOME EXTEE GOING TO DO WITH A <emphasis>FAIRGROUND?</emphasis></p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="184,195 185,180 190,168 201,157 214,150 227,148 252,146 280,148 298,153 309,159 320,173 323,186 323,204 318,219 311,228 299,236 282,241 269,242 238,242 225,241 213,238 203,233 193,225 187,214 185,209" bgcolor="#ffffff">
+       <p><emphasis>ZAUJÍMAVÉ!</emphasis> MÁM KLIENTA, KTORÝ MÁ Z TOHO NEJAKÉ SEKUNDÁRNE PATENTY.</p>
+     </text-area>
+     <text-area points="431,246 433,232 437,222 445,213 457,207 470,204 493,202 518,204 531,207 542,213 551,222 555,235 555,255 552,265 546,274 535,281 519,286 509,287 462,285 452,281 442,274 435,265 433,257" bgcolor="#ffffff">
+       <p>NO ÁNO. NEDÁVNO SA POBLÁZNIL DO KOVBOJOV A INDIÁNOV.</p>
+     </text-area>
+     <text-area points="389,342 391,326 394,317 398,310 406,303 417,297 432,292 456,289 465,288 510,291 522,294 531,297 543,304 550,311 555,320 557,327 557,351 552,364 544,373 532,380 524,383 511,386 499,388 448,388 436,386 423,383 410,377 400,370 392,356" bgcolor="#ffffff">
+       <p>NAŠIEL <emphasis>TRUHLICU</emphasis> SO STARÝMI KOVBOJSKÝMI VECAMI VO VÝCHODNEJ MUSKOSE V DOBROVOĽNÍCKOM ŽENSKOM HASIČSKOM SPOLKU.</p>
+     </text-area>
+     <text-area points="653,56 659,51 808,51 812,56 812,89 807,93 658,93 654,88" type="commentary">
+       <p>CHCEL SOM ABY VYKRÍKOL ALEBO ZOSTAL ZARAZENÝ.</p>
+     </text-area>
+     <text-area points="757,113 763,106 836,106 840,111 840,130 835,135 764,135 757,128" type="commentary">
+       <p>ALE NIČ.</p>
+     </text-area>
+     <text-area points="745,362 746,351 752,340 764,333 778,328 790,327 832,328 845,331 857,337 864,345 867,352 867,370 862,379 854,386 837,392 824,394 789,394 776,392 765,389 754,382 748,374" bgcolor="#ffffff">
+       <p>ÁNO? DOBRÝ NÁLEZ. BODAJ BY SA AJ MNE TAKÉ NIEČO PODARILO.</p>
+     </text-area>
+     <text-area points="152,475 155,462 163,451 173,445 190,441 210,439 231,439 247,441 264,445 276,452 282,463 284,470 284,481 281,492 270,502 264,506 187,509 175,506 164,500 157,492 154,484" bgcolor="#ffffff">
+       <p>ČASTO PREMÝŠĽAM O TOM, ČO <emphasis>ONI</emphasis> Z TOHO MAJÚ.</p>
+     </text-area>
+     <text-area points="155,552 157,540 162,530 170,522 181,516 189,512 264,509 279,511 297,516 312,525 320,536 322,548 321,564 315,575 304,584 292,589 280,592 267,594 210,593 190,590 175,584 166,578 160,570 157,562" bgcolor="#ffffff">
+       <p>MÁM NA MYSLI ŽE, NIE JE <emphasis>NIČ,</emphasis> ČO TU MÁME MY A ČO BY NEDOKÁZALI <emphasis>VYROBIŤ</emphasis> PRE SEBA.</p>
+     </text-area>
+     <text-area points="370,917 371,904 376,890 388,876 408,867 431,862 462,860 489,861 518,867 534,874 546,884 552,895 555,908 555,925 552,939 540,956 534,958 500,965 463,973 441,973 411,968 391,960 378,946 373,936 371,930" bgcolor="#ffffff">
+       <p>A VIEŠ ČO? PRÁVE SOM UZATVORIL OBCHOD NA BIOCHEMICKÝ POČÍTAČ, KTORÝ, NEŽARTUJEM, JE 10000-KRÁT RÝCHLEJŠÍ AKO <emphasis>HOCIČO,</emphasis> ČO SME MY VYROBILI ZO SILIKÓNU!</p>
+     </text-area>
+     <text-area points="464,974 539,958 566,960 587,963 605,969 618,978 624,987 626,995 629,1008 627,1023 620,1037 618,1039 462,1039 455,1030 452,1021 452,996 455,987 464,976" bgcolor="#ffffff">
+       <p>VIEŠ, ČO TÝPEK ZOBRAL AKO PROTIHODNOTU? VLASTNÍCKE PRÁVO K <emphasis>ZANIKNUTÉMU</emphasis> TRHOVISKU NA OKRAJI CALGARY.</p>
+     </text-area>
+     <text-area points="739,467 742,456 750,447 768,441 789,439 808,441 824,445 833,452 837,463 837,473 834,480 829,487 754,489 745,482 740,472" bgcolor="#ffffff">
+       <p>NIE JE TOTO RIADEN GÓL?</p>
+     </text-area>
+     <text-area points="712,549 713,540 715,529 719,517 725,508 737,498 751,492 829,489 853,496 867,507 874,517 879,531 880,547 879,565 871,584 862,594 847,602 836,607 824,608 796,610 770,608 749,604 730,593 719,579 715,566" bgcolor="#ffffff">
+       <p>TÁ VEC MÁ HODNOTU <emphasis>MILIARDU DOLÁROV</emphasis> HNEĎ Z FLEKU. ZA MIZERNÚ BUDOVU, ZA KTORÚ NEDOSTANEŠ ANI PÄŤ TISÍC.</p>
+     </text-area>
+     <text-area points="685,975 691,968 937,968 941,973 941,1025 937,1030 691,1030 685,1024" type="commentary">
+       <p>BOLO ĽAHKÉ ZABUDNÚŤ NA TO, ŽE BOL VPLYVNÝ PRÁVNIK, KEĎ SME SA BAVILI A BLBLI AKO STARÍ CRAPHOUNDI.</p>
+     </text-area>
+     <text-area points="397,1116 398,1108 401,1096 409,1085 422,1078 440,1074 462,1072 487,1074 502,1077 518,1085 526,1095 529,1102 530,1115 528,1129 524,1139 516,1147 506,1153 488,1157 441,1157 422,1153 408,1145 400,1130 398,1122" bgcolor="#ffffff">
+       <p>ČO DO PEKLA BUDE TEN MIMOZEMŠŤAN ROBIŤ SO STARÝM <emphasis>TRHOVISKOM?</emphasis></p>
+     </text-area>
+   </text-layer>
+   <frame points="42,28 570,28 570,412 42,412"/>
+   <frame points="582,28 960,28 960,412 582,412"/>
+   <frame points="42,418 342,418 342,1048 42,1048"/>
+   <frame points="354,418 654,418 654,1048 354,1048"/>
+   <frame points="660,418 960,418 960,1048 660,1048"/>
+   <frame points="42,1054 960,1054 960,1486 42,1486"/>
+  </page>
+  <page>
+   <title lang="en">Thursday Night Auction</title>
+   <title lang="sk">Štvrtková nočná aukcia</title>
+   <image href="page18.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="36,45 41,40 286,40 291,45 291,77 286,82 40,82 36,77" type="commentary">
+       <p>THERE WERE <emphasis>BARGAINS</emphasis> TO BE HAD AT THE THURSDAY NIGHT AUCTIONS.</p>
+     </text-area>
+     <text-area points="175,255 181,248 369,248 376,254 376,284 370,290 181,290 175,284" type="commentary">
+       <p>I ROOTED THROUGH A BOX-LOT FULL OF OLD TINS.</p>
+     </text-area>
+     <text-area points="284,584 285,580 286,575 291,569 301,565 307,563 326,562 341,562 353,563 363,566 371,572 375,578 375,589 371,596 366,600 358,603 351,605 317,606 308,605 301,603 292,599 286,593" bgcolor="#ffffff">
+       <p>NICE PIECE, HUH?</p>
+     </text-area>
+     <text-area points="318,640 319,622 325,616 401,616 408,623 408,652 403,659 323,659 318,652" bgcolor="#ffffff" type="code">
+       <p>I LIKE IT VERY MUCH.</p>
+     </text-area>
+     <text-area points="722,587 723,572 729,565 846,565 853,571 853,602 847,608 729,608 723,601" bgcolor="#ffffff" type="code">
+       <p>I AM VERY SORRY THAT WE ARGUED.</p>
+     </text-area>
+     <text-area points="710,630 713,623 722,618 746,616 767,617 778,621 783,628 783,635 778,641 765,645 744,647 728,645 717,642 711,636" bgcolor="#ffffff">
+       <p>ME TOO.</p>
+     </text-area>
+     <text-area points="819,891 825,878 919,878 924,885 924,954 918,961 826,961 820,954" bgcolor="#ffffff" type="code">
+       <p>THEY'RE STARTING THE BIDDING. MAY I SIT WITH YOU?</p>
+     </text-area>
+     <text-area points="79,1019 85,1015 404,1015 409,1021 409,1036 403,1041 83,1041 79,1036" type="commentary">
+       <p>IT WAS A NIGHT FOR <emphasis>UNUSUAL</emphasis> OCCURANCES.</p>
+     </text-area>
+     <text-area points="270,1056 276,1051 484,1051 490,1059 490,1087 483,1094 275,1094 270,1087" type="commentary">
+       <p>I <emphasis>BID</emphasis> ON A PIECE, SOMETHING I TOLD MYSELF I'D <emphasis>NEVER</emphasis> DO.</p>
+     </text-area>
+     <text-area points="620,1069 625,1063 895,1063 899,1068 899,1097 894,1102 624,1102 620,1096" type="commentary">
+       <p>IT WAS A SET OF FOUR MATCHED LITTLE ORPHAN ANNIE OVALTINE GLASSES.</p>
+     </text-area>
+     <text-area points="679,1399 685,1393 919,1393 925,1399 925,1428 919,1433 684,1433 678,1426" type="commentary">
+       <p>SEEING THEM TOOK ME RIGHT BACK TO MY GRANDMA'S KITCHEN.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="36,45 41,40 286,40 291,45 291,77 286,82 40,82 36,77" type="commentary">
+       <p>BOLO MOŽNÉ OČAKÁVAŤ <emphasis>VÝHODNÉ OBCHODY</emphasis> NA ŠTVRKOVEJ NOČNEJ AUKCII.</p>
+     </text-area>
+     <text-area points="175,255 181,248 369,248 376,254 376,284 370,290 181,290 175,284" type="commentary">
+       <p>PREHRABÁVAL SOM SA CEZ PLNÚ KRABICU STARÝCH PLECHOVÍC.</p>
+     </text-area>
+     <text-area points="284,584 285,580 286,575 291,569 301,565 307,563 326,562 341,562 353,563 363,566 371,572 375,578 375,589 371,596 366,600 358,603 351,605 317,606 308,605 301,603 292,599 286,593" bgcolor="#ffffff">
+       <p>PEKNÝ KÚSOK. ŽE?</p>
+     </text-area>
+     <text-area points="318,640 319,622 325,616 401,616 408,623 408,652 403,659 323,659 318,652" bgcolor="#ffffff" type="code">
+       <p>VEĽMI SA MI TO PÁČI.</p>
+     </text-area>
+     <text-area points="722,587 723,572 729,565 846,565 853,571 853,602 847,608 729,608 723,601" bgcolor="#ffffff" type="code">
+       <p>JE MI ĽÚTO, ŽE SME SA POHÁDALI.</p>
+     </text-area>
+     <text-area points="710,630 713,623 722,618 746,616 767,617 778,621 783,628 783,635 778,641 765,645 744,647 728,645 717,642 711,636" bgcolor="#ffffff">
+       <p>MNE TIEŽ.</p>
+     </text-area>
+     <text-area points="819,891 825,878 919,878 924,885 924,954 918,961 826,961 820,954" bgcolor="#ffffff" type="code">
+       <p>AUKCIA SA ZAČÍNA. MÔŽEM SEDIEŤ VEDĽA TEBA?</p>
+     </text-area>
+     <text-area points="79,1019 85,1015 404,1015 409,1021 409,1036 403,1041 83,1041 79,1036" type="commentary">
+       <p>BOLA TO NOC <emphasis>NEOBYČAJNÝCH</emphasis> UDALOSTÍ.</p>
+     </text-area>
+     <text-area points="270,1056 276,1051 484,1051 490,1059 490,1087 483,1094 275,1094 270,1087" type="commentary">
+       <p><emphasis>PRIHADZOVAL SOM</emphasis> NA JEDEN KÚSOK. NIEČO, ČO SOM <emphasis>NIKDY</emphasis> NEVERIL, ŽE UROBÍM.</p>
+     </text-area>
+     <text-area points="620,1069 625,1063 895,1063 899,1068 899,1097 894,1102 624,1102 620,1096" type="commentary">
+       <p>BOLA TO SADA ŠTYROCH MLIEČNYCH POHÁROV S NÁMETOM MALEJ SIROTY ANNIE.</p>
+     </text-area>
+     <text-area points="679,1399 685,1393 919,1393 925,1399 925,1428 919,1433 684,1433 678,1426" type="commentary">
+       <p>VIDIAC ICH, MA TO HNEĎ SPOMIENKAMI VRÁTILO SPÄŤ DO BABKINEJ KUCHYNE.</p>
+     </text-area>
+   </text-layer>
+   <frame points="18,10 312,10 312,244 180,244 174,250 174,286 180,292 312,292 312,406 18,406"/>
+   <frame points="312,40 612,40 612,526 288,526 288,406 312,406 312,292 180,292 174,286 174,250 180,244 312,244"/>
+   <frame points="612,46 648,16 708,28 732,34 960,34 960,142 978,154 978,166 972,184 972,202 960,232 960,526 624,526 624,352 612,346"/>
+   <frame points="42,532 492,532 492,988 42,988"/>
+   <frame points="504,532 960,532 960,988 504,988"/>
+   <frame points="42,1000 594,1000 594,1486 42,1486"/>
+   <frame points="588,1054 978,1054 978,1444 588,1444"/>
+  </page>
+  <page>
+   <image href="page19.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="55,50 61,44 267,44 273,48 273,105 267,109 60,109 55,103" type="commentary">
+       <p>... AND ENDLESS AFTERNOONS PASSED WITH MY COLORING BOOKS AND WEIRD OLD-LADY HARD CANDIES.</p>
+     </text-area>
+     <text-area points="139,138 140,131 144,125 153,121 178,121 186,124 191,130 192,138 191,146 186,152 179,157 156,156 149,154 142,149 140,145" bgcolor="#ffffff">
+       <p>TEN.</p>
+     </text-area>
+     <text-area points="290,106 292,92 295,83 303,72 315,64 329,60 349,57 369,55 389,57 408,60 422,64 433,71 440,79 446,94 446,112 443,124 435,136 426,142 411,148 405,149 391,152 342,151 320,146 306,139 296,128 292,115" bgcolor="#ffffff">
+       <p>I GOT TEN, TEN, TEN, I GOT TEN. WHO'LL SAY TWENTY, WHO'LL SAY TWENTY, TWENTY FOR THE FOUR?</p>
+     </text-area>
+     <text-area points="614,102 619,79 629,64 651,54 671,50 704,50 723,54 741,61 750,70 756,82 759,104 756,121 752,130 743,140 728,148 714,151 699,152 672,152 660,151 642,146 627,137 620,127 617,119" bgcolor="#ffffff">
+       <p>I GOT <emphasis>TWENTY</emphasis> FROM THE SPACE COWBOY, I GOT TWENTY, SIR WILL YOU SAY <emphasis>THIRTY?</emphasis></p>
+     </text-area>
+     <text-area points="799,52 804,45 939,45 944,51 944,90 939,96 804,96 800,90" type="commentary">
+       <p>WHEN CRAPHOUND BID, I JUMPED AS IF I'D BEEN STUNG.</p>
+     </text-area>
+     <text-area points="236,438 238,433 243,426 251,423 259,421 275,420 291,421 299,423 306,426 311,431 312,438 311,446 306,451 300,454 294,455 282,457 273,457 256,456 249,454 243,451 239,447 237,443" bgcolor="#ffffff">
+       <p>THIRTY.</p>
+     </text-area>
+     <text-area points="95,682 101,677 311,677 316,683 316,722 309,728 100,728 95,721" type="commentary">
+       <p>AN OLD PRO, THE AUCTIONEER SETTLED BACK AND LET US DO THE WORK.</p>
+     </text-area>
+     <text-area points="371,720 372,709 378,703 434,703 440,709 441,720 440,730 436,735 376,735 372,729" bgcolor="#ffffff" type="code">
+       <p>FORTY.</p>
+     </text-area>
+     <text-area points="695,518 697,512 703,504 712,501 730,499 747,501 756,504 761,508 764,518 761,527 755,532 746,535 738,536 728,536 713,535 707,533 701,530 697,523" bgcolor="#ffffff">
+       <p>FIFTY.</p>
+     </text-area>
+     <text-area points="125,802 127,788 132,784 234,784 241,789 241,813 235,818 129,818 126,813" bgcolor="#ffffff" type="code">
+       <p>ONE HUNDRED.</p>
+     </text-area>
+     <text-area points="569,972 571,963 577,955 589,951 604,949 619,951 630,954 636,958 639,964 641,972 639,980 637,986 632,989 626,992 618,994 603,995 591,994 583,992 575,988 571,982" bgcolor="#ffffff">
+       <p>ONE FIFTY.</p>
+     </text-area>
+     <text-area points="682,983 683,972 688,967 793,967 799,974 799,991 794,997 687,997 683,993" bgcolor="#ffffff" type="code">
+       <p>TWO HUNDRED.</p>
+     </text-area>
+     <text-area points="63,1159 68,1153 408,1153 414,1158 414,1191 409,1195 68,1195 63,1188" type="commentary">
+       <p><emphasis>FINE,</emphasis> PAY TWO HUNDRED FOR THOSE. I CAN GET A SET ON QUEEN STREET FOR THIRTY BUCKS.</p>
+     </text-area>
+     <text-area points="182,1234 184,1224 188,1215 196,1208 209,1203 224,1200 248,1198 277,1200 292,1203 303,1207 312,1214 317,1221 319,1234 318,1244 315,1252 309,1259 303,1264 296,1267 284,1270 275,1271 224,1271 215,1270 201,1265 191,1259 185,1250 183,1245" bgcolor="#ffffff">
+       <p>THE BIDDING STANDS AT TWO. WILL YOU SAY TWO-TEN, SIR?</p>
+     </text-area>
+     <text-area points="688,1395 689,1384 693,1373 703,1363 719,1356 734,1353 769,1351 794,1353 809,1356 819,1360 828,1366 835,1374 839,1389 839,1398 837,1407 834,1414 829,1421 820,1427 809,1432 735,1436 718,1432 704,1426 695,1417 689,1403 688,1395" bgcolor="#ffffff">
+       <p>I HAVE TWO. DO I HAVE ANY OTHER BIDS FROM THE FLOOR? ANY OTHER BIDS?</p>
+     </text-area>
+     <text-area points="722,1456 724,1448 729,1442 735,1438 809,1434 822,1437 831,1442 835,1450 837,1456 835,1465 827,1472 816,1477 806,1479 786,1480 765,1480 749,1478 735,1474 727,1468 723,1462" bgcolor="#ffffff">
+       <p><strong>SOLD</strong>. 200 TO NUMBER 51.</p>
+     </text-area>
+   </text-layer>
+  <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="55,50 61,44 267,44 273,48 273,105 267,109 60,109 55,103" type="commentary">
+       <p>... NEKONEČNÉ POPOLUDNIA SOM TRÁVIL S PLNOFAREBNÝMI KNIŽKAMI A ZVLÁŠTNYMI TVRDÝMI CUKRÍKAMI STAREJ PANEJ.</p>
+     </text-area>
+     <text-area points="139,138 140,131 144,125 153,121 178,121 186,124 191,130 192,138 191,146 186,152 179,157 156,156 149,154 142,149 140,145" bgcolor="#ffffff">
+       <p>DESAŤ.</p>
+     </text-area>
+     <text-area points="290,106 292,92 295,83 303,72 315,64 329,60 349,57 369,55 389,57 408,60 422,64 433,71 440,79 446,94 446,112 443,124 435,136 426,142 411,148 405,149 391,152 342,151 320,146 306,139 296,128 292,115" bgcolor="#ffffff">
+       <p>DESAŤ, DESAŤ, MÁME DESAŤ. KTO DÁ DVADSAŤ, KTO DÁ DVADSAŤ, DVADSAŤ ZA ŠTYRI PREDMETY?</p>
+     </text-area>
+     <text-area points="614,102 619,79 629,64 651,54 671,50 704,50 723,54 741,61 750,70 756,82 759,104 756,121 752,130 743,140 728,148 714,151 699,152 672,152 660,151 642,146 627,137 620,127 617,119" bgcolor="#ffffff">
+       <p>MÁME <emphasis>DVADSAŤ</emphasis> OD VESMÍRNEHO KOVBOJA. MÁME DVASAŤ. PANE, DÁTE <emphasis>TRIDSAŤ?</emphasis></p>
+     </text-area>
+     <text-area points="799,52 804,45 939,45 944,51 944,90 939,96 804,96 800,90" type="commentary">
+       <p>KEĎ CRAPHOUND PRIHODIL, VYSKOČIL SOM AKO VČELOU PICHNUTÝ.</p>
+     </text-area>
+     <text-area points="236,438 238,433 243,426 251,423 259,421 275,420 291,421 299,423 306,426 311,431 312,438 311,446 306,451 300,454 294,455 282,457 273,457 256,456 249,454 243,451 239,447 237,443" bgcolor="#ffffff">
+       <p>TRIDSAŤ.</p>
+     </text-area>
+     <text-area points="95,682 101,677 311,677 316,683 316,722 309,728 100,728 95,721" type="commentary">
+       <p>STARÝ PROFÍK, DRAŽOBNÍK, NÁS NECHAL LICITOVAŤ SAMÝCH.</p>
+     </text-area>
+     <text-area points="371,720 372,709 378,703 434,703 440,709 441,720 440,730 436,735 376,735 372,729" bgcolor="#ffffff" type="code">
+       <p>ŠTYRIDSAŤ.</p>
+     </text-area>
+     <text-area points="695,518 697,512 703,504 712,501 730,499 747,501 756,504 761,508 764,518 761,527 755,532 746,535 738,536 728,536 713,535 707,533 701,530 697,523" bgcolor="#ffffff">
+       <p>PÄŤDESIAT.</p>
+     </text-area>
+     <text-area points="125,802 127,788 132,784 234,784 241,789 241,813 235,818 129,818 126,813" bgcolor="#ffffff" type="code">
+       <p>STO.</p>
+     </text-area>
+     <text-area points="569,972 571,963 577,955 589,951 604,949 619,951 630,954 636,958 639,964 641,972 639,980 637,986 632,989 626,992 618,994 603,995 591,994 583,992 575,988 571,982" bgcolor="#ffffff">
+       <p>STO PADE.</p>
+     </text-area>
+     <text-area points="682,983 683,972 688,967 793,967 799,974 799,991 794,997 687,997 683,993" bgcolor="#ffffff" type="code">
+       <p>DVESTO.</p>
+     </text-area>
+     <text-area points="63,1159 68,1153 408,1153 414,1158 414,1191 409,1195 68,1195 63,1188" type="commentary">
+       <p><emphasis>V PORIADKU.</emphasis> ZAPLAŤ SI ZATO DVESTO. MÔŽEM DOSTAŤ ROVNAKÉ NA QUEEN STREET ZA ŠTYRIDSAŤ BABIEK.</p>
+     </text-area>
+     <text-area points="182,1234 184,1224 188,1215 196,1208 209,1203 224,1200 248,1198 277,1200 292,1203 303,1207 312,1214 317,1221 319,1234 318,1244 315,1252 309,1259 303,1264 296,1267 284,1270 275,1271 224,1271 215,1270 201,1265 191,1259 185,1250 183,1245" bgcolor="#ffffff">
+       <p>CENA STOJÍ NA DVESTO. DÁTE DVESTO DESAŤ PANE?</p>
+     </text-area>
+     <text-area points="688,1395 689,1384 693,1373 703,1363 719,1356 734,1353 769,1351 794,1353 809,1356 819,1360 828,1366 835,1374 839,1389 839,1398 837,1407 834,1414 829,1421 820,1427 809,1432 735,1436 718,1432 704,1426 695,1417 689,1403 688,1395" bgcolor="#ffffff">
+       <p>MÁME DVESTO. DÁ NIEKTO VIAC? NEJAKÉ DALŠIE PONUKY?</p>
+     </text-area>
+     <text-area points="722,1456 724,1448 729,1442 735,1438 809,1434 822,1437 831,1442 835,1450 837,1456 835,1465 827,1472 816,1477 806,1479 786,1480 765,1480 749,1478 735,1474 727,1468 723,1462" bgcolor="#ffffff">
+       <p><emphasis>PREDANÉ</emphasis> ZA DVESTO ČÍSLU 51.</p>
+     </text-area>
+   </text-layer>
+   <frame points="42,28 552,28 552,382 42,382"/>
+   <frame points="558,28 960,28 960,382 558,382"/>
+   <frame points="42,394 336,394 336,748 42,748"/>
+   <frame points="348,388 648,388 648,748 348,748"/>
+   <frame points="660,388 960,388 960,748 660,748"/>
+   <frame points="42,766 336,766 336,1126 42,1126"/>
+   <frame points="348,766 648,766 648,1132 348,1132"/>
+   <frame points="660,766 954,766 954,1132 660,1132"/>
+   <frame points="42,1138 438,1138 438,1486 42,1486"/>
+   <frame points="450,1138 954,1138 954,1486 450,1486"/>
+  </page>
+  <page>
+   <title lang="en">Farewell</title>
+   <title lang="sk">Zbohom</title>
+   <image href="page20.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="65,78 72,71 238,71 245,76 245,109 239,114 71,114 64,106" type="commentary">
+       <p>CRAPHOUND WAS AT MY ELBOW WHEN WE LEFT.</p>
+     </text-area>
+     <text-area points="74,168 75,159 79,153 133,153 139,159 139,176 131,183 81,183 76,178" bgcolor="#ffffff" type="code">
+       <p>JERRY?</p>
+     </text-area>
+     <text-area points="336,64 344,58 522,58 528,63 528,105 522,110 342,110 336,103" type="commentary">
+       <p>I'D NEVER <emphasis>PUNCHED</emphasis> ANYONE IN MY LIFE, BUT I WANTED TO PUNCH <emphasis>HIM.</emphasis></p>
+     </text-area>
+     <text-area points="369,166 370,151 376,145 445,145 453,151 453,180 449,185 374,185 370,180" bgcolor="#ffffff" type="code">
+       <p>JERRY, MY FRIEND.</p>
+     </text-area>
+     <text-area points="640,486 643,479 650,473 663,470 692,470 707,474 713,480 713,492 710,496 706,499 696,503 659,503 653,501 649,499 643,494" bgcolor="#ffffff">
+       <p><strong>WHAT?</strong></p>
+     </text-area>
+     <text-area points="156,665 157,638 163,630 343,630 351,639 351,693 344,701 163,701 157,693" bgcolor="#ffffff" type="code">
+       <p>WE'RE GOING. I WANTED TO SAY GOODBYE, AND TO GIVE YOU SOME THINGS THAT I WON'T BE TAKING WITH ME.</p>
+     </text-area>
+     <text-area points="300,739 302,731 309,726 315,724 348,724 357,727 363,734 363,744 357,753 317,753 310,751 303,747 301,744" bgcolor="#ffffff">
+       <p>WHAT?</p>
+     </text-area>
+     <text-area points="270,878 271,851 277,844 434,844 440,850 440,905 433,911 277,911 271,904" bgcolor="#ffffff" type="code">
+       <p>MY PEOPLE ... WE'RE GOING. IT HAS BEEN DECIDED. WE'VE GOTTEN WHAT WE CAME FOR.</p>
+     </text-area>
+     <text-area points="88,1028 90,995 96,989 203,989 209,995 209,1056 203,1061 95,1061 88,1053" bgcolor="#ffffff" type="code">
+       <p>I WANTED TO GIVE YOU THIS. I WILL KEEP THE GLASSES.</p>
+     </text-area>
+     <text-area points="226,1012 228,1007 232,1001 243,995 257,992 285,990 315,992 332,996 341,1003 344,1012 342,1020 335,1026 325,1030 317,1032 304,1033 285,1035 266,1033 253,1032 237,1027 229,1020" bgcolor="#ffffff">
+       <p>I DON'T UNDERSTAND_</p>
+     </text-area>
+     <text-area points="669,1001 672,991 681,984 697,980 720,978 742,980 755,982 763,986 771,995 772,1001 770,1009 766,1015 760,1018 749,1023 709,1024 690,1021 678,1017 672,1011" bgcolor="#ffffff">
+       <p>YOU'RE <emphasis>ALL</emphasis> LEAVING?</p>
+     </text-area>
+     <text-area points="691,1042 693,1038 696,1033 704,1029 709,1028 728,1025 749,1025 766,1028 776,1031 782,1036 784,1042 782,1048 777,1053 770,1056 750,1059 727,1059 711,1057 701,1054 694,1049" bgcolor="#ffffff">
+       <p>BUT <emphasis>WHY?</emphasis></p>
+     </text-area>
+     <text-area points="732,1381 737,1374 898,1374 904,1380 904,1431 897,1437 739,1437 732,1431" bgcolor="#ffffff" type="code">
+       <p>IT HAS BEEN DECIDED. WE'LL GO OVER THE NEXT TWENTY-FOUR HOURS.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="65,78 72,71 238,71 245,76 245,109 239,114 71,114 64,106" type="commentary">
+       <p>MAL SOM CRAPHOUNDA HNEĎ ZA CHRBTOM, KEĎ SME ODCHÁDZALI.</p>
+     </text-area>
+     <text-area points="74,168 75,159 79,153 133,153 139,159 139,176 131,183 81,183 76,178" bgcolor="#ffffff" type="code">
+       <p>JERRY?</p>
+     </text-area>
+     <text-area points="336,64 344,58 522,58 528,63 528,105 522,110 342,110 336,103" type="commentary">
+       <p>NIKDY V ŽIVOTE SOM NIKOHO <emphasis>NEUDREL,</emphasis> ALE TERAZ SOM MAL CHUŤ MU JEDNU <emphasis>VRAZIŤ.</emphasis></p>
+     </text-area>
+     <text-area points="369,166 370,151 376,145 445,145 453,151 453,180 449,185 374,185 370,180" bgcolor="#ffffff" type="code">
+       <p>JERRY, PRIATEĽ MÔJ.</p>
+     </text-area>
+     <text-area points="640,486 643,479 650,473 663,470 692,470 707,474 713,480 713,492 710,496 706,499 696,503 659,503 653,501 649,499 643,494" bgcolor="#ffffff">
+       <p><strong>ČO?!</strong></p>
+     </text-area>
+     <text-area points="156,665 157,638 163,630 343,630 351,639 351,693 344,701 163,701 157,693" bgcolor="#ffffff" type="code">
+       <p>ODCHÁDZAME. CHCEL SOM SA ROZLÚČIŤ, A DAŤ TI NEJAKÉ VECI, KTORÉ SI SO SEBOU NEVEZMEM.</p>
+     </text-area>
+     <text-area points="300,739 302,731 309,726 315,724 348,724 357,727 363,734 363,744 357,753 317,753 310,751 303,747 301,744" bgcolor="#ffffff">
+       <p>ČOŽE?</p>
+     </text-area>
+     <text-area points="270,878 271,851 277,844 434,844 440,850 440,905 433,911 277,911 271,904" bgcolor="#ffffff" type="code">
+       <p>MOJI ĽUDIA ... ODCHÁDZAME. BOLO ROZHODNUTÉ. MÁME TO, PREČO SME SEM PRIŠLI.</p>
+     </text-area>
+     <text-area points="88,1028 90,995 96,989 203,989 209,995 209,1056 203,1061 95,1061 88,1053" bgcolor="#ffffff" type="code">
+       <p>CHCEL SOM TI DAŤ TOTO. POHÁRE SI NECHÁM.</p>
+     </text-area>
+     <text-area points="226,1012 228,1007 232,1001 243,995 257,992 285,990 315,992 332,996 341,1003 344,1012 342,1020 335,1026 325,1030 317,1032 304,1033 285,1035 266,1033 253,1032 237,1027 229,1020" bgcolor="#ffffff">
+       <p>NEROZUMIEM...</p>
+     </text-area>
+     <text-area points="669,1001 672,991 681,984 697,980 720,978 742,980 755,982 763,986 771,995 772,1001 770,1009 766,1015 760,1018 749,1023 709,1024 690,1021 678,1017 672,1011" bgcolor="#ffffff">
+       <p><emphasis>VŠETCI</emphasis> ODCHÁDZATE?</p>
+     </text-area>
+     <text-area points="691,1042 693,1038 696,1033 704,1029 709,1028 728,1025 749,1025 766,1028 776,1031 782,1036 784,1042 782,1048 777,1053 770,1056 750,1059 727,1059 711,1057 701,1054 694,1049" bgcolor="#ffffff">
+       <p>ALE <emphasis>PREČO?</emphasis></p>
+     </text-area>
+     <text-area points="732,1381 737,1374 898,1374 904,1380 904,1431 897,1437 739,1437 732,1431" bgcolor="#ffffff" type="code">
+       <p>BOLO ROZHODNUTÉ. ODÍDEME V PRIEBEHU NASLEDUJÚCICH DVADSAŤ-ŠTYRI HODÍN.</p>
+     </text-area>
+   </text-layer>
+   <frame points="42,34 306,34 306,580 42,580"/>
+   <frame points="318,34 594,34 594,580 318,580"/>
+   <frame points="606,34 954,34 954,580 606,580"/>
+   <frame points="36,592 594,592 594,934 36,934"/>
+   <frame points="606,592 954,592 954,934 606,934"/>
+   <frame points="36,940 468,940 468,1492 36,1492"/>
+   <frame points="474,940 954,940 954,1492 474,1492"/>
+  </page>
+  <page>
+   <image href="page21.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="134,99 135,70 141,66 248,66 254,73 254,127 246,133 141,133 135,129" bgcolor="#ffffff" type="code">
+       <p>IT'S NOT SOMETHING THAT I CAN EASILY EXPLAIN.</p>
+     </text-area>
+     <text-area points="268,70 273,63 476,63 482,69 482,154 474,161 276,161 268,153" bgcolor="#ffffff" type="code">
+       <p>THE THINGS WE GAVE YOU WERE TRINKETS TO US, ALMOST WORTHLESS. WE TRADED THEM FOR SOMETHING THAT WAS ALMOST WORTH LESS TO YOU. A FAIR TRADE, YOU'LL AGREE.</p>
+     </text-area>
+     <text-area points="337,206 338,189 342,183 439,183 443,188 443,222 438,227 343,227 337,219" bgcolor="#ffffff" type="code">
+       <p>BUT IT'S TIME TO MOVE ON.</p>
+     </text-area>
+     <text-area points="704,79 706,70 712,62 726,57 745,55 766,56 778,60 786,67 789,78 787,89 781,97 719,99 712,95 706,88" bgcolor="#ffffff">
+       <p>THIS IS FOR ME ...</p>
+     </text-area>
+     <text-area points="690,145 692,130 697,118 707,108 719,102 783,98 803,102 819,111 827,121 832,136 831,155 825,172 816,181 801,188 794,190 771,193 753,193 735,191 717,187 704,179 696,170 692,159" bgcolor="#ffffff">
+       <p>... THIS IS FOR <emphasis>ME,</emphasis> AND YOU'RE KEEPING THE GLASSES. AND I'LL LOOK AT THIS AND <emphasis>FEEL</emphasis>_</p>
+     </text-area>
+     <text-area points="293,908 294,898 301,893 417,893 425,902 425,916 418,924 299,924 293,917" bgcolor="#ffffff" type="code">
+       <p>YOU UNDERSTAND.</p>
+     </text-area>
+     <text-area points="478,575 484,569 558,569 566,575 566,595 560,601 483,601 478,594" type="commentary">
+       <p>AND I DID.</p>
+     </text-area>
+     <text-area points="583,576 589,568 813,568 821,577 821,628 814,637 589,637 582,629" type="commentary">
+       <p>I UNDERSTOOD THAT AN ALIEN WEARING A COWBOY HAT AND SIX-GUNS AND GIVING THEM AWAY WAS A <emphasis>POEM</emphasis> AND A <emphasis>STORY.</emphasis></p>
+     </text-area>
+     <text-area points="661,665 666,660 922,660 927,666 927,730 921,735 665,735 661,729" type="commentary">
+       <p>AND A THIRTYISH BACHELOR TRYING TO SPEND HALF A MONTH'S RENT ON FOUR GLASSES SO THAT HE COULD REMEMBER HIS GRANDMA'S KITCHEN WAS A STORY AND A POEM.</p>
+     </text-area>
+     <text-area points="62,978 68,972 74,971 315,971 322,978 322,1016 315,1023 68,1023 61,1015" type="commentary">
+       <p>AND THAT THE DISUSED FAIRGROUND OUTSIDE CALGARY WAS A STORY AND A POEM, TOO.</p>
+     </text-area>
+     <text-area points="490,1015 492,1004 501,995 514,990 535,987 575,987 595,990 605,993 615,1000 620,1010 618,1023 612,1031 601,1036 588,1039 575,1041 534,1041 520,1039 508,1036 498,1031 493,1025" bgcolor="#ffffff">
+       <p>YOU'RE <emphasis>CRAPHOUNDS</emphasis>! ALL OF YOU!</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="134,99 135,70 141,66 248,66 254,73 254,127 246,133 141,133 135,129" bgcolor="#ffffff" type="code">
+       <p>JE TO NIEČO, ČO NEDOKÁŽEM JEDNODUCHO VYSVETLIŤ.</p>
+     </text-area>
+     <text-area points="268,70 273,63 476,63 482,69 482,154 474,161 276,161 268,153" bgcolor="#ffffff" type="code">
+       <p>VECI, KTORÉ SME VÁM DALI, BOLI PRE NÁS DROBNOSTI, TAKMER BEZCENNÉ. VYMENILI SME ICH ZA NIEČO, ČO BOLO TAKMER BEZCENNÉ PRE VÁS. FÉROVÝ OBCHOD, URČITE SÚHLASÍŠ.</p>
+     </text-area>
+     <text-area points="337,206 338,189 342,183 439,183 443,188 443,222 438,227 343,227 337,219" bgcolor="#ffffff" type="code">
+       <p>ALE NADIŠIEL ČAS ÍSŤ ĎALEJ.</p>
+     </text-area>
+     <text-area points="704,79 706,70 712,62 726,57 745,55 766,56 778,60 786,67 789,78 787,89 781,97 719,99 712,95 706,88" bgcolor="#ffffff">
+       <p>TOTO JE PRE MŇA ...</p>
+     </text-area>
+     <text-area points="690,145 692,130 697,118 707,108 719,102 783,98 803,102 819,111 827,121 832,136 831,155 825,172 816,181 801,188 794,190 771,193 753,193 735,191 717,187 704,179 696,170 692,159" bgcolor="#ffffff">
+       <p>TOTO JE <emphasis>PRE MŇA,</emphasis> A TY SI NECHÁŠ POHÁRE. A KEĎ SA NA TOTO POZRIEM <emphasis>POCÍTIM</emphasis> ...</p>
+     </text-area>
+     <text-area points="293,908 294,898 301,893 417,893 425,902 425,916 418,924 299,924 293,917" bgcolor="#ffffff" type="code">
+       <p>ÁNO ROZUMIEŠ.</p>
+     </text-area>
+     <text-area points="478,575 484,569 558,569 566,575 566,595 560,601 483,601 478,594" type="commentary">
+       <p>A JA SOM ROZUMEL.</p>
+     </text-area>
+     <text-area points="583,576 589,568 813,568 821,577 821,628 814,637 589,637 582,629" type="commentary">
+       <p>ROZUMEL SOM, ŽE MIMOZEMŠŤAN OBLEČENÝ V KOVBOJSKOM KLOBÚKU A S KOLTMI, KTORÝ SVOJE VECI ROZDÁVAL BOLA <emphasis>BÁSEŇ</emphasis> A <emphasis>PRÍBEH.</emphasis></p>
+     </text-area>
+     <text-area points="661,665 666,660 922,660 927,666 927,730 921,735 665,735 661,729" type="commentary">
+       <p>A OSAMELÝ TRIDSIATNIK POKÚŠAJÚCI SA MINÚŤ POLOVICU MESAČNÉHO PRÍJMU NA POHÁRE, ABY SI PRIPOMENUL BABIČKINU KUCHYŇU BOL PRÍBEH A BOLA BÁSEŇ.</p>
+     </text-area>
+     <text-area points="62,978 68,972 74,971 315,971 322,978 322,1016 315,1023 68,1023 61,1015" type="commentary">
+       <p>A OPUSTENÉ STARÉ TRHOVISKO NA OKRAJI CALGARY BOL PRÍBEH A BOLA BÁSEŇ TAKISTO.</p>
+     </text-area>
+     <text-area points="490,1015 492,1004 501,995 514,990 535,987 575,987 595,990 605,993 615,1000 620,1010 618,1023 612,1031 601,1036 588,1039 575,1041 534,1041 520,1039 508,1036 498,1031 493,1025" bgcolor="#ffffff">
+       <p>VY STE <emphasis>CRAPHOUNDI!</emphasis> VY VŠETCI!</p>
+     </text-area>
+   </text-layer>
+   <frame points="42,34 510,34 504,532 42,532"/>
+   <frame points="516,34 960,34 960,532 516,532"/>
+   <frame points="42,538 444,538 444,934 42,934"/>
+   <frame points="450,538 960,538 960,934 450,934"/>
+   <frame points="42,946 342,946 342,1492 42,1492"/>
+   <frame points="354,946 654,946 648,1492 354,1492"/>
+   <frame points="660,946 960,946 960,1492 660,1492"/>
+  </page>
+  <page>
+   <image href="page22.jpg"/>
+   <text-layer lang="en" bgcolor="#ddb12a">
+     <text-area points="49,117 56,112 397,112 401,117 401,158 396,163 54,163 50,158" type="commentary">
+       <p>SCOTT RECOVERED FROM HIS SHOCK BY SPENDING THE NIGHT AT HIS OFFICE, CRUNCHING NUMBERS AND GETTING WHILE THE GETTING WAS GOOD.</p>
+     </text-area>
+     <text-area points="225,403 231,397 449,397 454,404 454,430 449,436 231,436 226,431" type="commentary">
+       <p>HE HAD AN EDGE - NO ONE ELSE KNEW THAT THEY WERE GOING.</p>
+     </text-area>
+     <text-area points="509,70 514,64 800,64 805,69 805,100 800,106 515,106 510,100" type="commentary">
+       <p>HE WENT PRO LATER THAT WEEK, OPENED A CHI-CHI BOUTIQUE ON QUEEN STREET.</p>
+     </text-area>
+     <text-area points="668,500 672,494 887,493 894,500 894,527 888,534 673,534 668,528" type="commentary">
+       <p>HE HIRED ME ON AS CHEF PICKER AND FACTUM FACTORUM.</p>
+     </text-area>
+     <text-area points="501,596 505,589 831,589 837,595 837,626 831,632 508,632 500,625" type="commentary">
+       <p>SCOTT WAS NOT BILLY THE KID. JUST ANOTHER BAY STREET SHYSTER WITH A COWBOY JONES.</p>
+     </text-area>
+     <text-area points="558,652 562,646 864,646 870,653 870,681 865,688 562,688 558,683" type="commentary">
+       <p>FROM THE WAY THEY COME DOWN AND SPEND, THERE MUST BE A MILLION OF THEM.</p>
+     </text-area>
+     <text-area points="118,916 124,910 428,910 434,915 434,956 429,962 123,962 118,956" type="commentary">
+       <p>OUR DRAW IN THE WINDOW IS A BEAUTIFUL MANNEQUIN I FOUND, STRAIGHT OUT OF THE FIFTIES, A LITTLE BOY WE CALL THE BEAVER.</p>
+     </text-area>
+     <text-area points="159,1451 164,1445 425,1445 430,1451 430,1470 424,1477 165,1477 159,1470" type="commentary">
+       <p>HE'S DRESSED IN FULL COWBOY GEAR.</p>
+     </text-area>
+     <text-area points="462,1035 468,1029 704,1029 710,1035 710,1056 705,1062 467,1062 462,1056" type="commentary">
+       <p>HE'S NOT FOR SALE AT ANY PRICE.</p>
+     </text-area>
+     <text-area points="849,1307 856,1301 922,1301 928,1306 928,1329 924,1333 856,1333 849,1328" bgcolor="#f1fb5e">
+       <p>THE END.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ddb12a">
+     <text-area points="49,117 56,112 397,112 401,117 401,158 396,163 54,163 50,158" type="commentary">
+       <p>SCOTT SA SPAMÄTÁVAL ZO ŠOKU TRÁVIAC NOC VO SVOJEJ KANCELÁRII. ZAHĹBENÝ V PRÁCI POČÍTAL O STO ŠESŤ.</p>
+     </text-area>
+     <text-area points="225,403 231,397 449,397 454,404 454,430 449,436 231,436 226,431" type="commentary">
+       <p>MAL VÝHODU ... NIKTO INÝ NEVEDEL, ŽE ONI ODCHÁDZAJÚ.</p>
+     </text-area>
+     <text-area points="509,70 514,64 800,64 805,69 805,100 800,106 515,106 510,100" type="commentary">
+       <p>STAL SA Z NEHO PROFÍK EŠTE TEN TÝŽDEŇ, OTVORIL CHI-CHI BUTIK NA QUEEN STREET.</p>
+     </text-area>
+     <text-area points="668,500 672,494 887,493 894,500 894,527 888,534 673,534 668,528" type="commentary">
+       <p>NAJAL MA AKO HLAVNÉHO ZBERAČA A ODBORNÍKA NA VŠETKO.</p>
+     </text-area>
+     <text-area points="501,596 505,589 831,589 837,595 837,626 831,632 508,632 500,625" type="commentary">
+       <p>SCOTT NEBOL BILLY THE KID. LEN ĎALŠÍ PREFÍKANÝ PRÁVNIK ZAMILOVANÝ DO KOVBOJOV.</p>
+     </text-area>
+     <text-area points="558,652 562,646 864,646 870,653 870,681 865,688 562,688 558,683" type="commentary">
+       <p>ZO SKÚSENOSTÍ, AKO ČASTO PRICHÁDZAJÚ A MÍŇAJÚ NA BLBOSTI, ICH MUSÍ BYŤ MILIÓN.</p>
+     </text-area>
+     <text-area points="118,916 124,910 428,910 434,915 434,956 429,962 123,962 118,956" type="commentary">
+       <p>NAŠE LÁKADLO VO VÝKLADE JE NÁDHERNÝ MANEKÝN, KTORÉHO SOM NAŠIEL. AKOBY ROVNO Z ROKOV PÄŤDESIATYCH. MALÝ CHLAPEC, KTORÉHO VOLÁME BOBOR.</p>
+     </text-area>
+     <text-area points="159,1451 164,1445 425,1445 430,1451 430,1470 424,1477 165,1477 159,1470" type="commentary">
+       <p>JE CELÝ OBLEČENÝ V KOVBOJSKOM.</p>
+     </text-area>
+     <text-area points="462,1035 468,1029 704,1029 710,1035 710,1056 705,1062 467,1062 462,1056" type="commentary">
+       <p>A NIE JE NA PREDAJ ZA ŽIADNU CENU.</p>
+     </text-area>
+     <text-area points="849,1307 856,1301 922,1301 928,1306 928,1329 924,1333 856,1333 849,1328" bgcolor="#f1fb5e">
+       <p>KONIEC.</p>
+     </text-area>
+   </text-layer>
+   <frame points="30,94 480,94 480,454 30,454"/>
+   <frame points="480,16 930,16 930,568 480,568"/>
+   <frame points="36,520 480,520 480,562 924,562 924,526 948,526 948,1012 450,1012 450,892 36,898"/>
+   <frame points="60,898 450,898 450,1504 60,1504"/>
+   <frame points="456,1024 708,1024 714,1030 714,1042 744,1048 780,1066 798,1084 810,1096 822,1108 810,1120 816,1132 810,1138 816,1156 822,1168 816,1180 822,1204 828,1222 822,1258 822,1282 822,1306 852,1294 924,1294 936,1300 936,1330 930,1342 858,1342 876,1360 912,1384 930,1402 954,1498 972,1504 978,1516 978,1528 474,1528 474,1456 492,1408 534,1372 618,1330 624,1300 612,1294 618,1282 624,1252 612,1228 600,1210 600,1198 606,1186 588,1156 594,1132 594,1108 600,1102 588,1090 612,1078 606,1072 462,1072 456,1066"/>
+  </page>
+  <page>
+   <title lang="en">Interview with Cory Doctorow</title>
+   <title lang="sk">Rozhovor s Cory Doctorowom</title>
+   <image href="page23.jpg"/>
+   <text-layer lang="en" bgcolor="#ffffff">
+     <text-area points="72,513 944,513 944,566 72,566" type="heading">
+	   <p>DOCTOROW ON: "CRAPHOUND"</p>
+	 </text-area>
+     <text-area points="72,577 495,577 495,619 72,619" type="formal">
+       <p><emphasis>Editor Tom Waltz:</emphasis> Okay, Cory, I gotta ask this first: are you a craphound?</p>
+     </text-area>
+     <text-area points="72,640 72,766 498,766 498,640" type="formal">
+       <p><emphasis>Cory Doctorow:</emphasis> In soul, but not in body. Several intercontinental moves over the past five years, and tens of thousands of dollars spent on storage lockers, have all but cured me of the acquiring stuff bug. But my instinct is to amass huge piles of crapola of various descriptions in great, towering burial mounds.</p>
+     </text-area>
+     <text-area points="72,784 498,784 498,994 498,1012 72,1015" type="formal">
+       <p><emphasis>TW:</emphasis> When I was reading this story, thematically I was struck by two ideas. First, I couldn’t get the saying out of my head that goes, “One man’s garbage is another man’s treasure.” And, second, I couldn’t stop thinking about how much the concept of these characters working so hard to seek out hidden “treasures” and, sometimes, competing against each other for said treasures, is very much like the online shopping culture that has developed over the last few years (as with eBay, etc.). Are these concepts close to what you were hoping to convey with “Craphound”?</p>
+     </text-area>
+     <text-area points="72,1036 498,1036 498,1201 72,1201" type="formal">
+       <p><emphasis>CD:</emphasis> Well, sure! I wrote this story just as eBay was starting, in the heyday of yard-saling in Toronto. There was a weekly estate auction, many annual rummage sales, and so on, and I was living in a giant warehouse with 20' ceilings that was literally stacked to the rafters with junk. I knew a million other junk collectors, pickers, etc., and we all had a culture of competition and appreciation.</p>
+     </text-area>
+     <text-area points="72,1222 498,1222 495,1327 72,1327" type="formal">
+       <p><emphasis>TW:</emphasis> Throughout the story, you use cowboy and Indian antiques as the alien character’s main shopping interest. Is there any particular reason you chose these items as something a creature from another world would so actively seek to own?</p>
+     </text-area>
+     <text-area points="72,1348 498,1348 498,1453 72,1453" type="formal">
+       <p><emphasis>CD:</emphasis> This is one of those questions that supposes that writers know why they choose what they choose— mostly, it's intuition at the time. In hindsight, I'd say that cowboys and Indians have the virtue of being alien to someone born in 1971 (like me), who wasn't alive during</p>
+     </text-area>
+     <text-area points="516,577 942,577 942,661 516,661" type="formal">
+       <p>their heyday, but familiar, too, in that I grew up reading stories and seeing movies and cartoons in which kids played with them. So they're like second-hand nostalgia, my nostalgia for the toys of a different generation.</p>
+     </text-area>
+     <text-area points="516,682 942,682 942,727 516,727" type="formal">
+       <p><emphasis>TW:</emphasis> What special item would you like to find in a forgotten corner of a rummage sale someday?</p>
+     </text-area>
+     <text-area points="517,745 942,745 942,1098 517,1098" type="formal">
+       <p><emphasis>CD:</emphasis> I have a great collection of Rosebuds and ones that got away. Foremost are the "changing portrait" Haunted Mansion souvenir cards I bought at the Haunted Mansion gift shop on my first trip to Disney World in 1977, when I was six. They were cardboard cards with portraits of slightly sinister looking people on them, over-painted with transparent, glow-in-the-dark pictures. When you exposed them to light, then looked at them in darkness, they glowed with "secret" faces revealing the pictures to be, in truth, of monsters: vampires, werewolves, etc.</p>
+       <p>I fell asleep in the rental car, clutching these. The car broke down on the way back to my grandparents' place in Ft. Lauderdale, and the rental agency sent out another car. My parents transferred me, sleeping, to the other car, and didn't bring along the portraits. When I woke in the morning and discovered them gone, I was heartbroken. We called the agency, but they couldn't find them. Gone.</p>
+     </text-area>
+     <text-area points="517,1097 943,1097 943,1451 517,1451" type="formal">
+       <p>I never found another set, not for love or money. The next time I went to Disney World, they were no longer selling them. I'm sure the luminescent paint had toxic levels of radium or something. In my imagination, they loom, perfect and magnificent, the best toys ever.</p>
+       <p>Also, once in the Portobello Road market, I found a stall with three or four reproduction Victorian pornographic watches; the watches featured a regular, chunk, old-fashioned dial on the front, but when you turned them over, the case sported a transparent window showing the mechanical works within. The works had been shaped in the form of men and women in sexual poses, cunningly arranged such that each tick of the clock was a thrust. They weren't very expensive, but the friend I was with convinced me not to buy them. I changed my mind and went back the next week and couldn't find them again—and I never have.</p>
+     </text-area>
+   </text-layer>
+   <text-layer lang="sk" bgcolor="#ffffff">
+     <text-area points="72,513 944,513 944,566 72,566" type="heading">
+	   <p>DOCTOROV O "CRAPHOUNDOVI"</p>
+	 </text-area>
+     <text-area points="72,577 495,577 495,619 72,619" type="formal">
+       <p><emphasis>Editor Tom Waltz:</emphasis> Oukej, Cory. Musím sa ťa to spýtať ako prvé. Si craphound?</p>
+     </text-area>
+     <text-area points="72,640 72,766 498,766 498,640" type="formal">
+       <p><emphasis>Cory Doctorow:</emphasis> Dušou áno, ale nie telom. Niekoľko interkontinentálnych sťahovaní v priebehu uplynulých piatich rokov a desiatky tisíc dolárov minutých na zamykateľné skrinky ma vyliečilo z choroby hromadenia vecí. Ale môj inštinkt je hromadiť obrovské kopy krámov ako starodávnych mohýl.</p>
+     </text-area>
+     <text-area points="72,784 498,784 498,994 498,1012 72,1015" type="formal">
+       <p><emphasis>TW:</emphasis> Keď som čítal tento príbeh, tematicky mi vzišli na um dve veci. Prvá je, že nemôžem z mysle dostať príslovie, že "Odpad pre jedného človeka je poklad pre iného." A druhá je, že nedokážem prestať premýšľať o tom, ako koncept týchto postáv, ktoré ťažko pracujú na hladaní skrytých "pokladov" a niekedy súperia medzi sebou, je veľmi podobný kultúre online nakupovaniu, ktorá sa rozvinula v posledných pár rokoch (napr. eBay, atď.). Sú tieto koncepty blízko k tomu, čo si chcel vyjadriť príbehom Craphounda?</p>
+     </text-area>
+     <text-area points="72,1036 498,1036 498,1201 72,1201" type="formal">
+       <p><emphasis>CD:</emphasis> Áno, zaiste! Napísal som tento príbeh práve v čase, keď eBay začínal, v zlatých časoch predaja po dvoroch v Toronte. Každý týždeň sa konala aukcia, bolo viacero výročných predajov a pod., a ja som v tom čase žil v obrovskom sklade so 6-metrovým stropom, ktorý bol doslova až po strechu naprataný haraburdím. Poznal som milión ďalších zberačov a mali sme kultúru plnú rivality a uznania.</p>
+     </text-area>
+     <text-area points="72,1222 498,1222 495,1327 72,1327" type="formal">
+       <p><emphasis>TW:</emphasis> V príbehu používaš kovbojské a indiánske predmety ako hlavný záujem mimozemšťana. Je nejaký konkrétny dôvod prečo si práve tieto predmety vybral ako niečo, čo bytosť z iného sveta bude tak aktívne vyhľadávať?</p>
+     </text-area>
+     <text-area points="72,1348 498,1348 498,1453 72,1453" type="formal">
+       <p><emphasis>CD:</emphasis> Toto je jedna z tých otázok, ktorá predpokladá, že spisovatelia vždy vedia, prečo si vyberú, to, čo si vyberú — zvyčajne je to intuícia. V pohľade späť by som povedal, že kovboji a indiáni pôsobia zvláštne a cudzo pre niekoho narodeného v roku 1971 (ako ja), kto nebol nažive</p>
+     </text-area>
+     <text-area points="516,577 942,577 942,661 516,661" type="formal">
+       <p>keď boli v móde, ale sú zároveň dobre známe tým, že som vyrastal čítajúc príbehy a pozerajúc filmy a kreslené rozprávky, v ktorých vystupovali. Takže sú istým druhom nostalgie z druhej ruky, mojej nostalgie pre hračky predchádzajúcej generácie.</p>
+     </text-area>
+     <text-area points="516,682 942,682 942,727 516,727" type="formal">
+       <p><emphasis>TW:</emphasis> Je nejaký špeciálny predmet, ktorý by si raz chcel nájsť v nejakom zabudnutom kúte počas predaja na dvore?</p>
+     </text-area>
+     <text-area points="517,745 942,745 942,1098 517,1098" type="formal">
+       <p><emphasis>CD:</emphasis> Mám veľku zbierku kvetov ruží. Ďalej "meniaci sa portrét" strašidelného domu na kartičkách, ktoré som kúpil v obchodíku so suvenírmi v strašidelnom dome na mojom prvom výlete v Disney parku v roku 1977, keď som mal šesť rokov. Boli to kartičky s portrétmi hrozivých ľudí premaľované priesvitnou v tme žiariacou farbou. Keď si ich vystavil svetlu a potom na ne pozrel v tme, ich tváre žiarili tak, že v skutočnosti to boli príšery, vampíri, vlkodlaci a pod.</p>
+       <p>Zaspal som v aute, ktoré sme mali požičané držiac ich v rukách. Auto sa pokazilo na ceste späť k domu mojich starých rodičov vo Ft. Lauderdale a požičovňa poslala náhradné auto. Moji rodičia ma preniesli spiaceho do náhradného auta a nechali v pokazenom aute kartičky. Keď som sa ráno prebudil a zistil, že sa stratili, bol som z toho zlomený. Zavolali sme do požičovne, ale nemohli ich už nájsť. Stratili sa.</p>
+     </text-area>
+     <text-area points="517,1097 943,1097 943,1451 517,1451" type="formal">
+       <p>Nikdy som nenašiel daľšiu rovnakú sadu kartičiek. Na ďalši krát, keď som bol v Disney parku, ich už nepredávali. Som si istý, že priesvitná farba mala v sebe toxický stupeň rádia alebo niečoho. V mojej predstavivosti to boli najlepšie a najúzašnejšie hračky na svete.</p>
+       <p>Takisto raz na trhu v Portobello Road som našiel obchodíka, ktorý predával tri alebo štyri reprodukcie viktoriánskych pornografických hodiniek. Hodinky mali vpredu obyčajný, staromódny ciferník, ale keď si ich otočil na druhú stranu, cez priesvitný obal bolo vidno mechaniku vo vnútri. Mechanika bola vytvarovaná do formy muža a ženy v sexuálnej pozícii lyšiacky usporiadaná tak, že každý tik hodiniek bolo vniknutie. Neboli veľmi drahé, ale kamarát, s ktorým som tam bol, ma presvedčil, aby som ich nekupoval. Zmenil som názor a išiel som tam späť nasledujúci týždeň, ale už ich nemali - a nikdy som ich už nenašiel.</p>
+     </text-area>
+   </text-layer>
+   <frame points="0,0 994,0 994,568 0,568"/>
+   <frame points="72,574 498,574 498,766 72,766"/>
+   <frame points="72,784 498,784 498,1018 72,1018"/>
+   <frame points="72,1036 498,1036 498,1210 72,1210"/>
+   <frame points="72,1222 498,1222 498,1456 72,1456"/>
+   <frame points="516,574 948,574 948,730 516,730"/>
+   <frame points="516,742 942,742 942,1096 516,1096"/>
+   <frame points="516,1096 942,1096 942,1450 516,1450"/>
+  </page>
+ </body>
+ <references>
+   <reference id="ref_001">
+     <p>This is a reference.</p>
+     <p>This is line 2 of reference.</p>
+   </reference>
+   <reference id="ref_002">
+     <p>This is a reference 2.</p>
+     <p>This is line 2 of reference 2.</p>
+   </reference>
+ </references>
+</ACBF>
