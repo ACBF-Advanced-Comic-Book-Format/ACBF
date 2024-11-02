@@ -1,0 +1,8 @@
+.token
+__pycache__
+acbfa.ini
+Android_Viewer/bin
+Android_Viewer/__pycache__
+Android_Viewer/.buildozer
+Android_Viewer/bin
+
