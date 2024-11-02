@@ -76,7 +76,6 @@ class FilePrepare():
           # extract files from CBZ into DATA_DIR
           z = zipfile.ZipFile(self.filename)
           if prepare_type == 'book':
-
             # thread count handling
             threads_status = App.get_running_app().config.get('general', 'threads').split(',')[0]
             threads = int(App.get_running_app().config.get('general', 'threads').split(',')[1])
@@ -160,7 +159,7 @@ class FilePrepare():
               for f in zip_files:
                 if f == sorted(safe_zip_files)[0]:
                   self.extract_file(z, f, prepare_type)
-
+          
         else:
           unrar_location = None
           if file_type == 'RAR':
@@ -222,11 +221,12 @@ class FilePrepare():
 
           if file_type == 'ZIP' and prepare_type != 'book':
             for zfile in zip_files:
-              all_files.append(zfile.encode('ascii', 'replace').replace('?', '_'))
+              all_files.append(zfile)
           else:
             for root, dirs, files in os.walk(self.tempdir):
               for f in files:
                 all_files.append(os.path.join(root, f)[len(self.tempdir) + 1:])
+          
           for datafile in sorted(all_files):
             if datafile[-4:].upper() in ('.JPG', '.PNG', '.GIF', 'WEBP', '.BMP', 'JPEG'):
               if cover_image == '':

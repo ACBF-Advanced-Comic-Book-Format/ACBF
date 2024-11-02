@@ -73,14 +73,6 @@ from acbf import history
 from acbf import text_layer
 from acbf import settingsjson
 
-try:
-  sys.path.append('./webm')
-  from webm import decode
-  webm_loaded = True
-except:
-  webm_loaded = False
-  print("Loading of WebP library failed ...")
-
 from PIL import Image as pil_image
 
 class ScatterBackGroundImage(FloatLayout):
@@ -165,7 +157,7 @@ class ScatterBackGroundImage(FloatLayout):
           self.toolbar_shown = False
           self.show_library()
           EventLoop.idle()
-          #self.populate_library()
+          self.populate_library()
         else:
           self.ids.bg_image.source = './images/default.png'
           self.filename = "./default.cbz"
@@ -390,14 +382,9 @@ class ScatterBackGroundImage(FloatLayout):
 
     def convert_webp(self, *args):
         print("convert_webp")
-        webp_file = bytearray(file(self.load_image, "rb").read())
+        im = pil_image.open(self.load_image).convert("RGB")
         self.load_image = os.path.join(self.tempdir, 'temp_webp.jpg')
-        result = decode.DecodeRGB(webp_file)
-        image = pil_image.frombuffer(
-            "RGB", (result.width, result.height), str(result.bitmap),
-            "raw", "RGB", 0, 1
-        )
-        image.save(self.load_image.format("RGB"), "JPEG")
+        im.save(self.load_image,"jpeg")
 
     def resize_source_image(self, *args):
         print("resize_source_image")
@@ -832,7 +819,6 @@ class ScatterBackGroundImage(FloatLayout):
           cover_width = int(cover_image.norm_image_size[0]*self.cover_height/float(cover_image.size[1]))
           comic = Cover()
           comic.height = self.cover_height
-          print(cover_width, self.cover_height)
           for widget in comic.children:
             if widget.name == 'book_cover':
               coverpage = widget
@@ -1295,18 +1281,12 @@ class CachedImage(): #cached_image
         self.file_name = self.original_name
 
         # WebP conversion
-        if self.original_name[-4:].upper() == 'WEBP' and webm_loaded:
+        if self.original_name[-4:].upper() == 'WEBP':
           print("Cache: webp conversion")
-          webp_file = bytearray(file(self.original_name, "rb").read())
+          im = pil_image.open(self.original_name).convert("RGB")
           self.file_name = self.cached_file
-          result = decode.DecodeRGB(webp_file)
-          image = pil_image.frombuffer(
-              "RGB", (result.width, result.height), str(result.bitmap),
-              "raw", "RGB", 0, 1
-          )
-          image.save(self.file_name.format("RGB"), "JPEG")
-        elif self.original_name[-4:].upper() == 'WEBP' and not webm_loaded:
-          self.file_name = './images/default.png'
+          im.save(self.file_name,"jpeg")
+
         # GIF conversion
         elif self.original_name[-4:].upper() == '.GIF':
           print("Cache: gif conversion")

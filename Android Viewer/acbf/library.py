@@ -37,14 +37,6 @@ except Exception:
   import fileprepare
   import acbfdocument
 
-try:
-  sys.path.append('./webm')
-  from webm import decode
-  webm_loaded = True
-except:
-  webm_loaded = False
-  print("Loading of WebP library failed ...")
-
 class Library():
 
   def __init__(self, config_dir):
@@ -235,14 +227,9 @@ class Library():
         return True
 
   def convert_webp(self, *args):
-        webp_file = bytearray(file(self.load_image, "rb").read())
+        im = Image.open(self.load_image).convert("RGB")
         self.load_image = self.load_image[:-5] + '.jpg'
-        result = decode.DecodeRGB(webp_file)
-        img = Image.frombuffer(
-            "RGB", (result.width, result.height), str(result.bitmap),
-            "raw", "RGB", 0, 1
-        )
-        img.save(self.load_image.format("RGB"), "JPEG")
+        im.save(self.load_image,"jpeg")
 
   def load_file(self, in_filename, library_dir):
         print("library - load_file")
@@ -250,17 +237,15 @@ class Library():
         self.tempdir = library_dir
         self.base_dir = os.path.dirname(in_filename)
         acbf_document = acbfdocument.ACBFDocument(self, self.prepared_file)
-
+        
         if not acbf_document.valid:
           return None, None, None, None, None, None, None, None, None, None, None, None
 
         # coverpage
         self.load_image = acbf_document.coverpage
-        if self.load_image[-4:].upper() == 'WEBP' and webm_loaded:
+        if self.load_image[-4:].upper() == 'WEBP':
           self.convert_webp()
-        elif self.load_image[-4:].upper() == 'WEBP' and not webm_loaded:
-          self.load_image = './images/default.png'
-        
+
         coverpage = Image.open(self.load_image)
         coverpage.thumbnail((int(coverpage.size[0]*300/float(coverpage.size[1])),300), Image.NEAREST)
         output_directory = os.path.join(os.path.join(self.config_dir, 'Covers'), acbf_document.book_title[list(acbf_document.book_title.items())[0][0]][0].upper())
