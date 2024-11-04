@@ -45,6 +45,7 @@ class TextLayer():
         self.PILBackgroundImage = Image.open(filename)
         self.PILBackgroundImageProcessed = None
         self.text_areas, self.references = acbf_document.load_page_texts(page_number, acbf_document.languages[language_layer][0])
+        
         self.updated = False
         #print(constants.FONTS_LIST)
         self.normal_font = normal_font

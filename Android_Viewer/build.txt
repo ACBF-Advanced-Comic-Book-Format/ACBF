@@ -4,5 +4,6 @@ buildozer android debug deploy run
 Debug:
 cd ~/.buildozer/android/platform/android-sdk/platform-tools
 sudo ./adb start-server
-./adb logcat | grep python
+cd -
+~/.buildozer/android/platform/android-sdk/platform-tools/adb logcat | grep python
 

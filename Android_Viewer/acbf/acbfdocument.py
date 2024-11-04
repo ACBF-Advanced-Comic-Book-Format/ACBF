@@ -347,7 +347,9 @@ class ACBFDocument():
                 coordinate_tuple = (int(coordinate.split(',')[0]), int(coordinate.split(',')[1]))
                 coordinate_list.append(coordinate_tuple)
               for paragraph in text_area.findall("p"):
-                paragraph_unicode = str(xml.tostring(paragraph, encoding='UTF-8', with_tail=False).decode('utf-8'))
+                paragraph_unicode = xml.tostring(paragraph, encoding='unicode')
+                paragraph_end = paragraph_unicode.find('</p>') + 4
+                paragraph_unicode = paragraph_unicode[0:paragraph_end]
                 area_text = area_text + re.sub(r'<p[^>]*>', "", paragraph_unicode).replace(u'</p>', u' <BR>')
                 # references
                 for reference in paragraph.findall("a"):

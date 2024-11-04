@@ -39,10 +39,10 @@ except Exception:
 
 class Library():
 
-  def __init__(self, config_dir):
-      self.config_dir = config_dir
+  def __init__(self, library_dir):
+      self.library_dir = library_dir
       self.prepared_file = None
-      self.library_file_path = os.path.join(config_dir, 'library.xml');
+      self.library_file_path = os.path.join(library_dir, 'library.xml');
       self.load_library()
 
   def create_new_tree(self):
@@ -56,24 +56,28 @@ class Library():
       #print(xml.tostring(self.tree, encoding='unicode', pretty_print=True))
       
   def load_library(self):
+      print('library - load_library')
       try:
         self.tree = xml.parse(source = self.library_file_path).getroot()
         if self.get_version() != constants.LIBRARY_VERSION:
            self.tree.find("version").text = constants.LIBRARY_VERSION
         if self.tree.find("library_info") == None:
           library_info = xml.SubElement(self.tree, "library_info")
-      except:
+      except Exception as err:
+        print('Exception: ', err)
         self.create_new_tree()
         f = open(self.library_file_path, 'w')
         f.write(xml.tostring(self.tree, encoding='unicode', pretty_print=True))
         f.close()
 
   def save_library(self):
+      print('library - save_library')
       f = open(self.library_file_path, 'w')
       f.write(xml.tostring(self.tree, encoding='unicode', pretty_print=True))
       f.close()
       
   def delete_book(self, path):
+      print('library - delete_book')
       for book in self.tree.findall("book"):
         if book.get("path") == path:
           book.getparent().remove(book)
@@ -117,9 +121,10 @@ class Library():
       self.save_library()
 
   def check_books(self, *args):
+      print('library - check_books')
       deleted = False
       for book in self.tree.findall("book"):
-        if not os.path.exists(book.get("path")):
+        if not os.path.exists(book.get("path") and '://' not in book.get("path")):
           self.delete_book(str(book.get("path")))
           deleted = True
 
@@ -128,7 +133,7 @@ class Library():
 
       # cleanup library covers directory
       if randint(0,9) == 0: #this is slow, therefore we do it once in 10 times
-        for root, dirs, files in os.walk(os.path.join(self.config_dir, 'Covers')):
+        for root, dirs, files in os.walk(os.path.join(self.library_dir, 'Covers')):
           for f in files:
             do_remove = True
             for book in self.tree.findall("book"):
@@ -143,6 +148,8 @@ class Library():
       return
 
   def sort_library(self, sort_key):
+      print('library - sort_library')
+      #print(xml.tostring(self.tree, encoding='unicode', pretty_print=True))
       data = []
       for elem in self.tree.findall("book"):
         key = elem.findtext(sort_key)
@@ -158,16 +165,19 @@ class Library():
       data.sort()
 
       self.tree[:] = [item[-1] for item in data]
-      
+      version = xml.SubElement(self.tree, "version")
+      version.text = constants.LIBRARY_VERSION
+      library_info = xml.SubElement(self.tree, "library_info")
+      #print(xml.tostring(self.tree, encoding='unicode', pretty_print=True))
 
-  def insert_new_book(self, filename, library_dir):
+  def insert_new_book(self, filename, library_dir, file_uri):
         print("library - insert_new_book")
         # check if already exists in library
         rating = '0'
         for book in self.tree.findall("book"):
           if book.get("path") == filename:
-            rating = self.get_value("rating", filename)
-            #self.delete_book(filename)
+            return
+          if book.get("path") == file_uri:
             return
         
         coverpage, book_title, publish_date, publisher, authors, genres, sequence, annotation, languages, characters, pages, license, has_frames = self.load_file(filename, library_dir)
@@ -175,7 +185,10 @@ class Library():
         if book_title == {}:
           return False
 
-        new_book = xml.SubElement(self.tree, "book", path=filename)
+        if file_uri != None:
+          new_book = xml.SubElement(self.tree, "book", path=file_uri)
+        else:
+          new_book = xml.SubElement(self.tree, "book", path=filename)
 
         for title in book_title.items():
           new_book_title = xml.SubElement(new_book, "title", lang=title[0])
@@ -248,7 +261,7 @@ class Library():
 
         coverpage = Image.open(self.load_image)
         coverpage.thumbnail((int(coverpage.size[0]*300/float(coverpage.size[1])),300), Image.NEAREST)
-        output_directory = os.path.join(os.path.join(self.config_dir, 'Covers'), acbf_document.book_title[list(acbf_document.book_title.items())[0][0]][0].upper())
+        output_directory = os.path.join(os.path.join(self.library_dir, 'Covers'), acbf_document.book_title[list(acbf_document.book_title.items())[0][0]][0].upper())
         if not os.path.exists(output_directory):
           os.makedirs(output_directory, 0o700)
 

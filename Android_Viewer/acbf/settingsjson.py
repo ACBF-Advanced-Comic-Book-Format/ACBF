@@ -13,21 +13,28 @@
 # -------------------------------------------------------------------------
 
 import json
+from kivy.utils import platform
 
 try:
   from . import constants
 except Exception:
   import constants
 
-try:
+if platform == 'android':
   from jnius import autoclass, cast
-  PythonActivity = autoclass('org.renpy.android.PythonActivity')
+  PythonActivity = autoclass('org.kivy.android.PythonActivity')
   activity = cast('android.app.Activity', PythonActivity.mActivity)
   manager = activity.getPackageManager()
   info = manager.getPackageInfo(activity.getPackageName(), 0);
   version = info.versionName
-except:
+  lib_path_type = 'string'
+  lib_path_disabled = True
+  lib_path_change_disabled = False
+else:
   version = '0'
+  lib_path_type = 'icon_path'
+  lib_path_disabled = False
+  lib_path_change_disabled = True
   print("Not running on Android ...")
 
 fonts_list = []
@@ -76,10 +83,17 @@ lib_json = json.dumps([
 
 {'type': 'title',
 'title': 'Library'},
-{'type': 'icon_path',
+{'type': 'bool',
+'title': 'Change Library Folder',
+'desc': 'Change path to your comics folder.',
+'section': 'general',
+'disabled': lib_path_change_disabled,
+'key': 'lib_path_change'},
+{'type': lib_path_type,
 'title': 'Comics Path',
 'desc': 'Path where comics are stored',
 'section': 'general',
+'disabled': lib_path_disabled,
 'key': 'lib_path'},
 {'type': 'scrolloptions',
 'title': 'Covers per Row',

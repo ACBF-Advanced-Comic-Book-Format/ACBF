@@ -39,7 +39,6 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.togglebutton import ToggleButton
 from kivy.uix.widget import Widget
 from kivy.uix.filechooser import FileChooserIconView
-
 from kivy.uix.modalview import ModalView
 from kivy.uix.popup import Popup
 from kivy.animation import Animation
@@ -49,14 +48,8 @@ from kivy.graphics import Color, Rectangle, Mesh
 from functools import partial
 from kivy.graphics.opengl_utils import gl_register_get_size
 from kivy.graphics.opengl import glGetIntegerv
-
-try:
-  from android.runnable import run_on_ui_thread
-  from jnius import autoclass
-  PythonActivity = autoclass('org.renpy.android.PythonActivity')
-  View = autoclass('android.view.View')
-except:
-  print("Not running on Android ...")
+from kivy.utils import platform
+from kivy.clock import Clock
 
 from io import StringIO
 import random
@@ -76,6 +69,26 @@ from acbf import text_layer
 from acbf import settingsjson
 
 from PIL import Image as pil_image
+
+if platform == 'android':
+  from android.runnable import run_on_ui_thread
+  from jnius import autoclass
+  from jnius import cast
+  from android import activity
+  from android.permissions import request_permissions, Permission
+  from androidstorage4kivy import SharedStorage
+    
+  PythonActivity = autoclass('org.kivy.android.PythonActivity')
+  Intent = autoclass('android.content.Intent')
+  Uri = autoclass('android.net.Uri')
+  View = autoclass('android.view.View')
+  DocumentsContract = autoclass('android.provider.DocumentsContract')
+  DocumentFile = autoclass('androidx.documentfile.provider.DocumentFile')
+  
+  MediaStore_Images_Media_DATA = "_data"
+  RESULT_LOAD_FILE = 1
+else:
+  print("Not running on Android ...")
 
 class ScatterBackGroundImage(FloatLayout):
     zoom_level = NumericProperty(1) #(1 = full page, 2 = fit width, 3 = frame level)
@@ -121,7 +134,19 @@ class ScatterBackGroundImage(FloatLayout):
         self.history = history.History(self.config_dir)
         self.loading_book_dialog = LoadingBookDialog()
 
-        self.library = library.Library(config_dir)
+        self.library_dir = os.path.join(config_dir, 'Library')
+        if not os.path.exists(self.library_dir):
+          os.makedirs(self.library_dir, 0o700)
+        print('LIBRARY DIR: ', self.library_dir)
+        #os.unlink('/data/user/0/org.acbf.acbfa/files/Library/library.xml')
+        #shutil.rmtree('/data/user/0/org.acbf.acbfa/files/Covers')
+        #print(os.listdir('/data/user/0/org.acbf.acbfa/files'))
+        #print(os.listdir('/data/user/0/org.acbf.acbfa/files/Library'))
+        #myfile = open('/data/user/0/org.acbf.acbfa/files/Library/library.xml')
+        #print(myfile.read())
+        #myfile.close()
+        
+        self.library = library.Library(self.library_dir)
         self.library.check_books()
         self.total_books = len(self.library.tree.findall("book"))
 
@@ -900,9 +925,8 @@ class ScatterBackGroundImage(FloatLayout):
           # don't go through whole directory structure
           return
 
-        library_dir = str(os.path.join(self.tempdir, 'Library'))
-        if not os.path.exists(library_dir):
-          os.makedirs(library_dir, 0o700)
+        if not os.path.exists(self.library_dir):
+          os.makedirs(self.library_dir, 0o700)
 
         for root, dirs, files in os.walk(folder):
           for f in files:
@@ -921,7 +945,7 @@ class ScatterBackGroundImage(FloatLayout):
                   self.loading_book_dialog.ids.loading_progress_bar.value = 0
                   self.loading_book_dialog.open()
                   EventLoop.idle()
-                  self.library.insert_new_book(os.path.join(root, f), library_dir)
+                  self.library.insert_new_book(os.path.join(root, f), self.tempdir, None)
                   self.library.save_library()
                   self.loading_book_dialog.dismiss()
                 except Exception as inst:
@@ -1050,7 +1074,14 @@ class ScatterBackGroundImage(FloatLayout):
         self.filename = path
         
         if scheduled:
-          t = threading.Thread(target=fileprepare.FilePrepare, args = (self, self.filename, self.tempdir, 'book'))
+          if platform == 'android':
+            cache_dir = SharedStorage().get_cache_dir()
+            if cache_dir and os.path.exists(cache_dir): shutil.rmtree(cache_dir)  # cleaning cache
+            print("Copying file from share: ", self.filename)
+            sharefile = SharedStorage().copy_from_shared(Uri.parse(self.filename))
+            t = threading.Thread(target=fileprepare.FilePrepare, args = (self, sharefile, self.tempdir, 'book'))
+          else:
+            t = threading.Thread(target=fileprepare.FilePrepare, args = (self, self.filename, self.tempdir, 'book'))
           t.daemon = True
           t.start()
 
@@ -1058,7 +1089,11 @@ class ScatterBackGroundImage(FloatLayout):
             time.sleep(0.1)
             EventLoop.idle()
           EventLoop.idle()
-            
+          
+          # cleaning cache
+          if platform == 'android':
+            if cache_dir and os.path.exists(cache_dir):
+              shutil.rmtree(cache_dir)
           self.loading_book_dialog.dismiss()
         else:
           fileprepare.FilePrepare(self, self.filename, self.tempdir, 'book')
@@ -1421,6 +1456,10 @@ class LoadingBookDialog(Popup):
 class ACBFaApp(App):
 
     def build(self):
+        # get Android permissions
+        if platform == 'android':
+          request_permissions([Permission.READ_EXTERNAL_STORAGE, Permission.WRITE_EXTERNAL_STORAGE])
+          
         # directories
         self.tempdir_root = constants.DATA_DIR
         self.tempdir =  str(os.path.join(self.tempdir_root, ''.join('tmp')))
@@ -1437,8 +1476,7 @@ class ACBFaApp(App):
 
         self.tmp_cleanup()
         self.cleaned_up = False
-        
-       # settings
+        # settings
         self.settings_cls = SettingsWithTabbedPanel
         self.use_kivy_settings = False
 
@@ -1469,7 +1507,7 @@ class ACBFaApp(App):
             os.unlink(os.path.join(root, f))
           for d in dirs:
             shutil.rmtree(os.path.join(root, d))
-          shutil.rmtree(self.tempdir)
+        #shutil.rmtree(self.tempdir)
         
         try:
           for root, dirs, files in os.walk(self.my_app.tempdir):
@@ -1491,6 +1529,7 @@ class ACBFaApp(App):
         self.tempdir =  str(os.path.join(self.tempdir_root, ''.join('tmp')))
         config.setdefaults('general', {
                            'lib_path': library_path,
+                           'lib_path_change': 0,
                            'use_temp_dir': 0,
                            'temp_dir_path': self.tempdir,
                            'zoom_to_frame': 1,
@@ -1539,9 +1578,70 @@ class ACBFaApp(App):
         settings.add_json_panel('General', self.config, data=settingsjson.lib_json)
         settings.add_json_panel('Image', self.config, data=settingsjson.image_json)
         self.settings = settings
+        
+    def user_select_folder(self, config):
+        currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
+        cache_dir = SharedStorage().get_cache_dir()
+        
+        def on_activity_result(request_code, result_code, intent):
+          if request_code != RESULT_LOAD_FILE:
+            print('user_select_image: ignoring activity result that was not RESULT_LOAD_FILE')
+            return
+          elif result_code == 0:
+            return
+
+          currentActivity.getContentResolver().takePersistableUriPermission(intent.getData(), Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
+          selectedFolder = intent.getData();  # Uri
+          print("selectedFolder:", selectedFolder.toString())
+          uri = cast('android.net.Uri', selectedFolder)
+          childrenUri = DocumentsContract.buildChildDocumentsUriUsingTree(uri, DocumentsContract.getTreeDocumentId(uri))
+          documentfile = DocumentFile.fromTreeUri(currentActivity, childrenUri)
+          print("DocumentFiles:", documentfile.listFiles())
+          
+          for f in documentfile.listFiles():
+            file_uri = f.getUri()
+            print(file_uri.toString())
+            opened_file = SharedStorage().copy_from_shared(file_uri)
+            print(opened_file)
+            print(os.listdir(cache_dir))
+            self.my_app.library.insert_new_book(opened_file, self.my_app.tempdir, file_uri.toString())
+            self.my_app.library.save_library()
+            
+            if cache_dir and os.path.exists(cache_dir): shutil.rmtree(cache_dir)  # cleaning cache
+          
+          self.my_app.total_books = len(self.my_app.library.tree.findall("book"))
+          
+          for child in self.settings.interface.children:
+            if str(type(child)) == "<class 'kivy.uix.tabbedpanel.TabbedPanel'>":
+              for child2 in child.children:
+                if str(type(child2)) == "<class 'kivy.uix.tabbedpanel.TabbedPanelContent'>":
+                  for child3 in child2.children:
+                    for child4 in child3.children:
+                      for child5 in child4.children:
+                        if str(type(child5)) == "<class 'kivy.uix.settings.SettingString'>":
+                          if child5.key == 'lib_path':
+                            child5.disabled = False
+                            child5.value = selectedFolder.toString()
+                            config.set('general', 'lib_path', selectedFolder.toString())
+                            child5.disabled = True
+                        if str(type(child5)) == "<class 'kivy.uix.settings.SettingBoolean'>":
+                          if child5.key == 'lib_path_change':
+                            config.set('general', 'lib_path_change', 0)
+          config.write()
+          return
+
+        activity.bind(on_activity_result=on_activity_result)
+        intent = Intent()
+        intent.setAction(Intent.ACTION_OPEN_DOCUMENT_TREE)
+        intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION)
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION)
+        #intent.addFlags(Intent.FLAG_GRANT_PREFIX_URI_PERMISSION)
+        currentActivity.startActivityForResult(intent, RESULT_LOAD_FILE)
 
     def on_config_change(self, config, section, key, value):
         self.my_app.load_settings()
+        if key == 'lib_path_change':
+          self.user_select_folder(config)
         if key == 'lib_path':
           self.my_app.populate_library()
         if key == 'temp_dir_path':
