@@ -202,10 +202,10 @@ class ScatterBackGroundImage(FloatLayout):
           self.load_book(self.filename, False)
           self.open_book()
 
-    @run_on_ui_thread
+    #@run_on_ui_thread
     def set_systemui_visibility(self, options):
-        if platform == 'android':
-          PythonActivity.mActivity.getWindow().getDecorView().setSystemUiVisibility(options)
+        #if platform == 'android':
+        #  PythonActivity.mActivity.getWindow().getDecorView().setSystemUiVisibility(options)
         pass
 
     @run_on_ui_thread
@@ -1222,8 +1222,8 @@ class ScatterBackGroundImage(FloatLayout):
         self.ids.toolbar.pos = (0, self.height + 10)
         self.ids.slider.pos = (0, self.height + 10)
         self.toolbar_shown = False
-        if not self.library_dialog.library_shown and platform == 'android':
-          self.set_systemui_visibility(View.SYSTEM_UI_FLAG_LOW_PROFILE)
+        #if not self.library_dialog.library_shown and platform == 'android':
+        #  self.set_systemui_visibility(View.SYSTEM_UI_FLAG_LOW_PROFILE)
 
     def hook_keyboard(self, window, key, *largs):
         if key == 27: # BACK BUTTON
