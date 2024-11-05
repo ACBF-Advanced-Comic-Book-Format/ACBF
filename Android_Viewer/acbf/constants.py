@@ -1,7 +1,7 @@
 """constants.py - Miscellaneous constants.
 
-Copyright (C) 2011-2014 Robert Pastierovic
-https://launchpad.net/~just-me
+Copyright (C) 2011-2024 Robert Kubik
+https://github.com/GeoRW/ACBF
 """
 
 # -------------------------------------------------------------------------

@@ -1,10 +1,10 @@
-# -*- coding: utf-8 -*-
 """text_layer.py - Comic page object and image manipulation methods.
 
-Copyright (C) 2011-2018 Robert Kubik
-https://launchpad.net/~just-me
+Copyright (C) 2011-2024 Robert Kubik
+https://github.com/GeoRW/ACBF
 """
 
+# -*- coding: utf-8 -*-
 # -------------------------------------------------------------------------
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License version 3 as published

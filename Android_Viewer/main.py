@@ -1,3 +1,9 @@
+"""main.py
+
+Copyright (C) 2011-2024 Robert Kubik
+https://github.com/GeoRW/ACBF
+"""
+
 # -*- coding: utf-8 -*-
 # -------------------------------------------------------------------------
 # This program is free software; you can redistribute it and/or modify
@@ -13,7 +19,7 @@
 # along with this program; if not, write to the Free Software
 # -------------------------------------------------------------------------
 
-__version__ = '1.21'
+__version__ = '2.0'
 
 import os
 import kivy

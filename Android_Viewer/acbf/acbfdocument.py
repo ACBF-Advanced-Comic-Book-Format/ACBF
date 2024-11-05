@@ -1,7 +1,7 @@
 """acbfdocument.py - ACBF Document object.
 
 Copyright (C) 2011-2024 Robert Kubik
-https://github.com/GeoRW
+https://github.com/GeoRW/ACBF
 """
 
 # -------------------------------------------------------------------------

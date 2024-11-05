@@ -1,7 +1,7 @@
 """library.py - Library Dialog.
 
 Copyright (C) 2011-2024 Robert Kubik
-https://launchpad.net/~just-me
+https://github.com/GeoRW/ACBF
 """
 
 # -------------------------------------------------------------------------
