@@ -202,17 +202,19 @@ class ScatterBackGroundImage(FloatLayout):
           self.load_book(self.filename, False)
           self.open_book()
 
-    #@run_on_ui_thread
+    @run_on_ui_thread
     def set_systemui_visibility(self, options):
-    #    PythonActivity.mActivity.getWindow().getDecorView().setSystemUiVisibility(options)
+        if platform == 'android':
+          PythonActivity.mActivity.getWindow().getDecorView().setSystemUiVisibility(options)
         pass
 
-    #@run_on_ui_thread
+    @run_on_ui_thread
     def set_keep_screen_on(self, options):
-    #    if options == '1':
-    #      PythonActivity.mActivity.getWindow().addFlags(128)
-    #    else:
-    #      PythonActivity.mActivity.getWindow().clearFlags(128)
+        if platform == 'android':
+          if options == '1':
+            PythonActivity.mActivity.getWindow().addFlags(128)
+          else:
+            PythonActivity.mActivity.getWindow().clearFlags(128)
         pass
 
     def scale_to_height(self, *args):
@@ -915,15 +917,6 @@ class ScatterBackGroundImage(FloatLayout):
     def populate_library(self, *args):
         print("populate_library")
 
-        #wait_time = int(len(self.library.tree.findall("book")) / 7) + 1
-
-        #wait for UI displaying to finish
-        #t = threading.Thread(target=time.sleep, args = ([wait_time]))
-        #t.daemon = True
-        #t.start()
-        #while t.is_alive():
-        #  EventLoop.idle()
-
         book_is_added = False
 
         folder = str(App.get_running_app().config.get('general', 'lib_path'))
@@ -931,42 +924,75 @@ class ScatterBackGroundImage(FloatLayout):
           # don't go through whole directory structure
           return
 
-        if not os.path.exists(self.library_dir):
-          os.makedirs(self.library_dir, 0o700)
-
-        for root, dirs, files in os.walk(folder):
-          for f in files:
-            if f == u'default.cbz':
-              break
-            if f[-4:].upper() == '.CBZ' or f[-5:].upper() == '.ACBF' or f[-4:].upper() == '.ACV' or f[-4:].upper() == '.CBR':
+        if platform == 'android':
+          currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
+          cache_dir = SharedStorage().get_cache_dir()
+          uri = Uri.parse(folder)
+          
+          print(" Comics Folder:", folder)
+          childrenUri = DocumentsContract.buildChildDocumentsUriUsingTree(uri, DocumentsContract.getTreeDocumentId(uri))
+          documentfile = DocumentFile.fromTreeUri(currentActivity, childrenUri)
+          
+          for f in documentfile.listFiles():
+            file_uri = f.getUri()
+            if file_uri.toString()[-4:].upper() == '.CBZ' or file_uri.toString()[-5:].upper() == '.ACBF' or file_uri.toString()[-4:].upper() == '.ACV' or file_uri.toString()[-4:].upper() == '.CBR':
               for book in self.library.tree.findall("book"):
-                if book.get("path") == os.path.join(root, f):
+                if book.get("path") == file_uri.toString():
                   break
               else:
                 try:
                   book_is_added = True
                   self.loading_book_dialog = LoadingBookDialog()
                   self.loading_book_dialog.title = 'Importing Comic Book ...'
-                  self.loading_book_dialog.book_path = os.path.join(root, f)
+                  self.loading_book_dialog.book_path = file_uri.toString()
                   self.loading_book_dialog.ids.loading_progress_bar.value = 0
                   self.loading_book_dialog.open()
                   EventLoop.idle()
-                  self.library.insert_new_book(os.path.join(root, f), self.tempdir, None)
+                  opened_file = SharedStorage().copy_from_shared(file_uri)
+                  print(' ', opened_file)
+                  print(' ', os.listdir(cache_dir))
+                  self.library.insert_new_book(opened_file, self.tempdir, file_uri.toString())
                   self.library.save_library()
                   self.loading_book_dialog.dismiss()
+                  if cache_dir and os.path.exists(cache_dir): shutil.rmtree(cache_dir)  # cleaning cache
                 except Exception as inst:
-                  print("Failed to import comic book:", os.path.join(root, f).encode('ascii','ignore'))
+                  print("Failed to import comic book:", file_uri.toString())
                   print("Exception: %s" % inst)
                   self.loading_book_dialog.dismiss()
+        else:
+          for root, dirs, files in os.walk(folder):
+            for f in files:
+              if f == u'default.cbz':
+                break
+              if f[-4:].upper() == '.CBZ' or f[-5:].upper() == '.ACBF' or f[-4:].upper() == '.ACV' or f[-4:].upper() == '.CBR':
+                for book in self.library.tree.findall("book"):
+                  if book.get("path") == os.path.join(root, f):
+                    break
+                else:
+                  try:
+                    book_is_added = True
+                    self.loading_book_dialog = LoadingBookDialog()
+                    self.loading_book_dialog.title = 'Importing Comic Book ...'
+                    self.loading_book_dialog.book_path = os.path.join(root, f)
+                    self.loading_book_dialog.ids.loading_progress_bar.value = 0
+                    self.loading_book_dialog.open()
+                    EventLoop.idle()
+                    self.library.insert_new_book(os.path.join(root, f), self.tempdir, None)
+                    self.library.save_library()
+                    self.loading_book_dialog.dismiss()
+                  except Exception as inst:
+                    print("Failed to import comic book:", os.path.join(root, f).encode('ascii','ignore'))
+                    print("Exception: %s" % inst)
+                    self.loading_book_dialog.dismiss()
 
-        # remove duplicates (cbz with same base filename as acbf file)
-        referenced_archives = []
-        for referenced_archive in self.library.tree.findall("book"):
-          if referenced_archive.get("path")[-4:].upper() == 'ACBF':
-            referenced_archives.append(referenced_archive.get("path")[0:-4] + 'cbz')
+          # remove duplicates (cbz with same base filename as acbf file)
+          referenced_archives = []
+          for referenced_archive in self.library.tree.findall("book"):
+            if referenced_archive.get("path")[-4:].upper() == 'ACBF':
+              referenced_archives.append(referenced_archive.get("path")[0:-4] + 'cbz')
 
-        for referenced_archive in referenced_archives:
-          self.library.delete_book(referenced_archive)
+          for referenced_archive in referenced_archives:
+            self.library.delete_book(referenced_archive)
 
         self.total_books = len(self.library.tree.findall("book"))
 
@@ -1196,8 +1222,8 @@ class ScatterBackGroundImage(FloatLayout):
         self.ids.toolbar.pos = (0, self.height + 10)
         self.ids.slider.pos = (0, self.height + 10)
         self.toolbar_shown = False
-        #if not self.library_dialog.library_shown:
-        #  self.set_systemui_visibility(View.SYSTEM_UI_FLAG_LOW_PROFILE)
+        if not self.library_dialog.library_shown and platform == 'android':
+          self.set_systemui_visibility(View.SYSTEM_UI_FLAG_LOW_PROFILE)
 
     def hook_keyboard(self, window, key, *largs):
         if key == 27: # BACK BUTTON
@@ -1519,7 +1545,6 @@ class ACBFaApp(App):
             os.unlink(os.path.join(root, f))
           for d in dirs:
             shutil.rmtree(os.path.join(root, d))
-        #shutil.rmtree(self.tempdir)
         
         try:
           for root, dirs, files in os.walk(self.my_app.tempdir):

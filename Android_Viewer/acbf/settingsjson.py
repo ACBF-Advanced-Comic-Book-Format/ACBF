@@ -118,7 +118,7 @@ lib_json = json.dumps([
 'key': 'version'},
 {'type': 'string',
 'title': 'Copyright',
-'desc': '(c) 2015-2018 Robert Kubik (www.launchpad.net/acbf).\n3DGlossy icons created by Aha-Soft (www.aha-soft.com), Creative Commons - Attribution 3.0 United States license.\nClean3D icons created by Mysitemyway.com, Creative Commons - Attribution 4.0 license.\nNuoveXT icons under GNU General Public License.\nRavenna3D icons by Double-J Design (http://www.doublejdesign.co.uk), Creative Common 3.0 Attribution license.',
+'desc': '(c) 2015-2024 Robert Kubik (https://github.com/GeoRW/ACBF).\n3DGlossy icons created by Aha-Soft (www.aha-soft.com), Creative Commons - Attribution 3.0 United States license.\nClean3D icons created by Mysitemyway.com, Creative Commons - Attribution 4.0 license.\nNuoveXT icons under GNU General Public License.\nRavenna3D icons by Double-J Design (http://www.doublejdesign.co.uk), Creative Common 3.0 Attribution license.',
 'disabled': True,
 'section': 'general',
 'key': 'copyright'},
