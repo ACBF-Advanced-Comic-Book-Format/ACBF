@@ -27,6 +27,17 @@ import base64
 import shutil
 import sys
 from random import randint
+from kivy.utils import platform
+
+if platform == 'android':
+  from jnius import autoclass
+  from jnius import cast
+    
+  PythonActivity = autoclass('org.kivy.android.PythonActivity')
+  Uri = autoclass('android.net.Uri')
+  DocumentFile = autoclass('androidx.documentfile.provider.DocumentFile')
+else:
+  print("Not running on Android ...")
 
 try:
   from . import constants
@@ -124,7 +135,15 @@ class Library():
       print('library - check_books')
       deleted = False
       for book in self.tree.findall("book"):
-        if not os.path.exists(book.get("path") and '://' not in book.get("path")):
+        if platform == 'android':
+          uri = Uri.parse(book.get("path"))
+          currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
+          documentfile = DocumentFile.fromSingleUri(currentActivity, uri)
+          if not documentfile.exists():
+            print('Not exists:', book.get("path"))
+            self.delete_book(str(book.get("path")))
+            deleted = True
+        elif not os.path.exists(book.get("path")):
           self.delete_book(str(book.get("path")))
           deleted = True
 

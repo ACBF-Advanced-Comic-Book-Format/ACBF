@@ -2,8 +2,6 @@ Build:
 buildozer android debug deploy run
 
 Debug:
-cd ~/.buildozer/android/platform/android-sdk/platform-tools
-sudo ./adb start-server
-cd -
+~/.buildozer/android/platform/android-sdk/platform-tools/adb start-server
 ~/.buildozer/android/platform/android-sdk/platform-tools/adb logcat | grep python
 

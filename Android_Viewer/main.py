@@ -1056,7 +1056,13 @@ class ScatterBackGroundImage(FloatLayout):
     def close_remove_dialog(self, dialog):
         if dialog.button_pressed == 'remove':
           try:
-            os.remove(dialog.book_path)
+            if platform == 'android':
+              currentActivity = cast('android.app.Activity', PythonActivity.mActivity)
+              uri = Uri.parse(dialog.book_path)
+              documentfile = DocumentFile.fromSingleUri(currentActivity, uri)
+              documentfile.delete()
+            else:
+              os.remove(dialog.book_path)
             self.library.check_books()
             self.refresh_library()
           except Exception as inst:
