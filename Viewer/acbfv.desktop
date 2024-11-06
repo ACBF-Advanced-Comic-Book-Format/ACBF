@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=ACBF Viewer
+Name[en_US]=ACBF Viewer
+GenericName=Comic Book Viewer
+Comment=A viewer for comic book files in ACBF and CBZ format
+Icon=acbfv
+Exec=acbfv %f
+Terminal=false
+MimeType=application/x-acbf;application/x-cbz;application/x-cbr;
+Categories=Graphics;2DGraphics;Viewer;Art;Literature;GTK;
+StartupNotify=true
+
