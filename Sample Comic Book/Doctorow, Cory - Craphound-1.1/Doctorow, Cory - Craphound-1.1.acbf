@@ -73,9 +73,9 @@
     <image href="cover.jpg"/>
    </coverpage>
    <languages>
-    <text-layer lang="en" show="False"/>
-    <text-layer lang="en" show="True"/>
-    <text-layer lang="sk" show="True"/>
+    <text-layer lang="en" show="false"/>
+    <text-layer lang="en" show="true"/>
+    <text-layer lang="sk" show="true"/>
    </languages>
    <sequence title="Cory Doctorow's Futuristic Tales of the Here and Now">3</sequence>
    <content-rating type="Marvel Rating System">T</content-rating>
