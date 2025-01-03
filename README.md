@@ -20,5 +20,5 @@ Besides XML Schema definition and comic book files examples, this project mainta
 * ACBF Editor - is an editor capable of creating CBZ archives with ACBF files inside. It is written in python using GTK toolkit. Repository at https://github.com/ACBF-Advanced-Comic-Book-Format/ACBF-Editor
 * ACBF Viewer for Android - is a port of ACBF Viewer to Android platform. It is written in python and using Kivy framework to handle user interface. Repository at https://github.com/ACBF-Advanced-Comic-Book-Format/ACBF-Viewer-for-Android
 
-Wiki pages are available at: https://acbf.fandom.com/wiki/Advanced_Comic_Book_Format_Wiki
+Wiki pages are available at: https://github.com/ACBF-Advanced-Comic-Book-Format/ACBF/wiki
 
